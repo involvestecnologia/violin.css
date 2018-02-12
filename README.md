@@ -1,6 +1,6 @@
 <p align="center">
   <a href="#">
-    <img src="https://raw.githubusercontent.com/kuroski/test/master/public/images/logo.jpg" alt="violin.css" />
+    <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/images/logo.jpg" alt="violin.css" />
   </a>
 
   <h3 align="center">Violin.css</h3>
@@ -8,30 +8,30 @@
   <p align="center">
     Design system e framework css da Involves.
     <br>
-    <a href="https://kuroski.github.io/test/"><strong>Documentação »</strong></a>
+    <a href="https://involvestecnologia.github.io/violin.css/index.html"><strong>Documentação »</strong></a>
   </p>
 </p>
 
 ### Status
 
-[![Travis](https://img.shields.io/travis/kuroski/test.svg)](https://travis-ci.org/kuroski/test)
-[![license](https://img.shields.io/github/license/kuroski/test.svg)](https://github.com/kuroski/test)
-[![David](https://img.shields.io/david/kuroski/test.svg)](https://david-dm.org/kuroski/test)
-[![David](https://img.shields.io/david/dev/kuroski/test.svg)](https://david-dm.org/kuroski/test)
+[![Travis](https://img.shields.io/travis/involvestecnologia/violin.css.svg)](https://travis-ci.org/involvestecnologia/violin.css)
+[![license](https://img.shields.io/github/license/involvestecnologia/violin.css.svg)](https://github.com/involvestecnologia/violin.css)
+[![David](https://img.shields.io/david/involvestecnologia/violin.css.svg)](https://david-dm.org/involvestecnologia/violin.css)
+[![David](https://img.shields.io/david/dev/involvestecnologia/violin.css.svg)](https://david-dm.org/involvestecnologia/violin.css)
 
 ### Utilizando
 
 Você poderá utilizar o framework de diversas formas:
 
-- [Baixando o último release](https://github.com/kuroski/test/archive/v0.0.1.zip)
-- Clonando o repositório: `git clone https://github.com/kuroski/test.git`
+- [Baixando o último release](https://github.com/involvestecnologia/violin.css/archive/v0.0.1.zip)
+- Clonando o repositório: `git clone https://github.com/involvestecnologia/violin.css.git`
 - Adicionando
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/kuroski/test/master/dist/index.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/dist/index.min.css">
 
 <!-- ou caso você queira dar suporte a navegadores antigos -->
 
-<link rel="stylesheet" href="https://raw.githubusercontent.com/kuroski/test/master/dist/index-old-browsers.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/dist/index-old-browsers.min.css">
 ```
 - Instalar com o npm: `npm install -d violin.css`
 
