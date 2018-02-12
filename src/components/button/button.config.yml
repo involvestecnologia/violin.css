@@ -1,0 +1,46 @@
+title: Button
+status: "ready"
+collated: true
+context:
+  name: "Button"
+variants:
+  - name: default
+    context:
+      name: "Default"
+  - name: disabled
+    context:
+      name: "Disabled"
+      disabled: true
+  - name: addon
+    context:
+      name: "Addon"
+      modifier: "inv-btn--addon"
+      icon: true
+  - name: primary
+    context:
+      name: "Primary"
+      modifier: "inv-btn--primary"
+  - name: accent
+    context:
+      name: "Accent"
+      modifier: "inv-btn--accent"
+  - name: outline-default
+    context:
+      name: "Outline default"
+      modifier: "inv-btn--outline"
+  - name: outline-primary
+    context:
+      name: "Outline primary"
+      modifier: "inv-btn--primary inv-btn--outline"
+  - name: outline-accent
+    context:
+      name: "Outline accent"
+      modifier: "inv-btn--accent inv-btn--outline"
+  - name: small
+    context:
+      name: "Small"
+      modifier: "inv-btn--primary inv-btn--small"
+  - name: very-large
+    context:
+      name: "Very large"
+      modifier: "inv-btn--accent inv-btn--very-large"

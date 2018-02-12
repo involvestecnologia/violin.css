@@ -1,0 +1,26 @@
+:root {
+  /* Z-INDEXES */
+  --z-index-1: 100;
+  --z-index-2: 200;
+  --z-index-3: 300;
+  --z-index-4: 400;
+  --z-index-5: 500;
+
+  /* SPACERS */
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+
+  /* SHADOWS */
+  --shadow-3: 0 2px 3px;
+  --shadow-6: 0 3px 6px;
+  --shadow-8: 0 4px 8px;
+  --shadow-12: 0 6px 12px;
+  --shadow-16: 0 8px 16px;
+  --shadow-24: 0 10px 24px;
+}

@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+
+const fractal = require('../fractal');
+const backstop = require('backstopjs');
+
+const takeSnapshot = async () => {
+  try {
+    await backstop('test');
+    process.exit(0);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+};
+
+(async () => {
+  try {
+    const server = fractal.web.server();
+    await server.start();
+    takeSnapshot();
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+})();

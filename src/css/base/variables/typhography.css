@@ -1,0 +1,27 @@
+:root {
+  --font-family: 'Open Sans', sans-serif;
+
+  /* TITLE */
+  --font-title--size: 18px;
+  --font-title--weight: bold;
+
+  /* SECTION HEADERS */
+  --font-section-headers--size: 14px;
+  --font-section-headers--weight: 600;
+
+  /* CONTENT */
+  --font-content--size: 14px;
+  --font-content--weight: 300;
+
+  /* CONTENT SMALL */
+  --font-content-small--size: 12px;
+  --font-content-small--weight: 300;
+
+  /* LINK */
+  --font-link--size: 14px;
+  --font-link--weight: bold;
+
+  /* LINK SMALL */
+  --font-link-small--size: 14px;
+  --font-link-small--weight: bold;
+}

@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  "node"
+addons:
+  chrome: stable
+install:
+  - npm install
+stages:
+  - test
+  - name: browser
+    if: type = push
+jobs:
+  include:
+    - stage: browser
+      node_js: "node"
+      script: npm test
+cache:
+  directories:
+    - node_modules

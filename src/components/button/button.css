@@ -1,0 +1,160 @@
+/*
+  Usado para ações de confirmação/criação.
+
+  .inv-btn--primary - Botão primário, comum para ações primárias mais comuns de acordo com a necessidade do usuário.
+  .inv-btn--accent - Botão acentuado, menos utilizado, é o botão de maior foco, para ações extremamente importantes.
+  .inv-btn--outline - Versão outline, com menos destaque.
+  .inv-btn--small - Versão menor do botão
+  .inv-btn--very-large - Versão maior do botão
+*/
+
+.inv-btn {
+  background-color: var(--color-default--regular);
+  border: none;
+  border-radius: 4px;
+  box-shadow: var(--shadow-8) var(--color-default--shadow);
+  color: var(--color-system--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;
+  min-height: 40px;
+  outline: 0;
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
+  transition: 0.2s box-shadow, 0.2s background-color;
+}
+
+.inv-btn:hover {
+  box-shadow: var(--shadow-12) var(--color-default--shadow);
+}
+
+.inv-btn:active {
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
+  background-color: var(--color-default--dark);
+}
+
+.inv-btn:disabled {
+  background-color: var(--color-default--white);
+  color: var(--color-default--light);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/*
+  COLOR VARIATIONS
+*/
+
+/* PRIMARY */
+.inv-btn--primary {
+  background-color: var(--color-primary--regular);
+  box-shadow: var(--shadow-8) var(--color-primary--shadow);
+}
+
+.inv-btn--primary:hover {
+  box-shadow: var(--shadow-12) var(--color-primary--shadow);
+}
+
+.inv-btn--primary:active {
+  box-shadow: var(--shadow-3) var(--color-primary--shadow);
+  background-color: var(--color-primary--dark);
+}
+
+/* ACCENT */
+.inv-btn--accent {
+  background-color: var(--color-accent--regular);
+  box-shadow: var(--shadow-8) var(--color-accent--shadow);
+}
+
+.inv-btn--accent:hover {
+  box-shadow: var(--shadow-12) var(--color-accent--shadow);
+}
+
+.inv-btn--accent:active {
+  box-shadow: var(--shadow-3) var(--color-accent--shadow);
+  background-color: var(--color-accent--dark);
+}
+
+/* OUTLINE */
+.inv-btn--outline {
+  background-color: var(--color-system--white);
+  box-shadow: none;
+  border: solid 1px var(--color-default--regular);
+  color: var(--color-default--regular);
+}
+
+.inv-btn--outline:hover {
+  background-color: var(--color-system--white);
+}
+
+.inv-btn--outline:active {
+  background-color: var(--color-system--white);
+  border-color: var(--color-default--dark);
+  color: var(--color-default--dark);
+}
+
+/* OUTLINE PRIMARY */
+.inv-btn--outline.inv-btn--primary {
+  border: solid 1px var(--color-primary--regular);
+  color: var(--color-primary--regular);
+}
+
+.inv-btn--outline.inv-btn--primary:hover {
+  box-shadow: var(--shadow-12) var(--color-primary--shadow);
+}
+
+.inv-btn--outline.inv-btn--primary:active {
+  box-shadow: var(--shadow-3) var(--color-primary--shadow);
+  border-color: var(--color-primary--dark);
+  color: var(--color-primary--dark);
+}
+
+/* OUTLINE ACCENT */
+.inv-btn--outline.inv-btn--accent {
+  border: solid 1px var(--color-accent--regular);
+  color: var(--color-accent--regular);
+}
+
+.inv-btn--outline.inv-btn--accent:hover {
+  box-shadow: var(--shadow-12) var(--color-accent--shadow);
+}
+
+.inv-btn--outline.inv-btn--accent:active {
+  box-shadow: var(--shadow-3) var(--color-accent--shadow);
+  border-color: var(--color-accent--dark);
+  color: var(--color-accent--dark);
+}
+
+/*
+  SIZE VARIATIONS
+*/
+
+.inv-btn--small {
+  min-height: 32px;
+}
+
+.inv-btn--very-large {
+  min-width: 320px;
+  min-height: 60px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.inv-btn--very-large.inv-btn--outline {
+  border-width: 2px;
+}
+
+/*
+  OTHER VARIATIONS
+*/
+
+.inv-btn--addon {
+  padding-left: 0;
+}
+
+.inv-btn > i {
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}

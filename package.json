@@ -1,0 +1,68 @@
+{
+  "name": "violin.css",
+  "version": "0.0.1",
+  "description": "Design system e framework css da Involves.",
+  "keywords": [
+    "css",
+    "involves",
+    "mobile-first",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "homepage": "https://kuroski.github.io/test/",
+  "author": "Os autores da Involves (https://github.com/kuroski/test/graphs/contributors)",
+  "contributors": [
+    "Involves Tecnologia"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "start": "concurrently 'npm run start:css' 'npm run start:fractal' --restart-after=3000 --restart-tries=1000",
+    "start:css": "postcss src/css/index.css -o public/assets/css/index.css -u postcss-import -w --verbose",
+    "start:fractal": "fractal start --sync",
+    "build": "npm run build:css && npm run build:themes && npm run build:css:support && npm run build:fractal",
+    "build:css": "postcss src/css/index.css -o dist/index.min.css -u postcss-import cssnano",
+    "build:themes": "postcss src/css/themes/default.css -o dist/themes/default.min.css -u cssnano --no-map",
+    "build:css:doc": "postcss src/css/index.css -o public/assets/css/index.css -u postcss-import",
+    "build:css:support": "postcss src/css/index.css -o dist/index-old-browers.min.css -u postcss-import postcss-cssnext cssnano",
+    "build:fractal": "fractal build",
+    "pretest": "npm run build:css:doc",
+    "test": "node bin/test",
+    "test:approve": "backstop approve",
+    "analyse": "parker dist/"
+  },
+  "dependencies": {
+    "normalize.css": "~8.0.0"
+  },
+  "devDependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "backstopjs": "^3.0.39",
+    "commitizen": "^2.9.6",
+    "concurrently": "^3.5.1",
+    "conventional-changelog-cli": "^1.3.9",
+    "cssnano": "^3.10.0",
+    "parker": "0.0.10",
+    "postcss-cli": "~5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.0.0",
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "style": "dist/index.min.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuroski/test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kuroski/test/issues"
+  },
+  "engines": {
+    "node": ">=6"
+  }
+}
