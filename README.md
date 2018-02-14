@@ -33,7 +33,7 @@ Você poderá utilizar o framework de diversas formas:
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/dist/index-old-browsers.min.css">
 ```
-- Instalar com o npm: `npm install -d violin.css`
+- Instalar com o npm: `npm install -d @involves/violin.css`
 
 ### Estrutura
 
