@@ -1,0 +1,18 @@
+.inv-label {
+  color: var(--color-system--dark);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-bottom: 3px;
+}
+
+.inv-label--disabled {
+  color: var(--color-default--regular);
+  cursor: not-allowed;
+}
+
+.inv-label > span {
+  color: var(--color-default--regular);
+  font-size: 12px;
+  font-style: italic;
+}
