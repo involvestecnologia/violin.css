@@ -1,0 +1,16 @@
+title: Input Icon
+status: "ready"
+collated: true
+variants:
+  - name: default
+    context:
+      icon: "event"
+  - name: active
+    context:
+      icon: "visibility"
+      modifier: "inv-input-icon--active"
+  - name: disable
+    context:
+      icon: "visibility"
+      disabled: true
+      modifier: "inv-input-icon--disabled"
