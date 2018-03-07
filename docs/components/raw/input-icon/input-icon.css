@@ -1,0 +1,15 @@
+.inv-input-icon {
+  cursor: pointer;
+  color: var(--color-default--regular);
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.inv-input-icon--active {
+  color: var(--color-primary--regular);
+}
+
+.inv-input-icon--disabled {
+  color: var(--color-default--light);
+  cursor: not-allowed;
+}

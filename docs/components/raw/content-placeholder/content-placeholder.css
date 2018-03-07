@@ -1,0 +1,17 @@
+.inv-content-placeholder {
+  background: var(--color-default--white);
+  background: linear-gradient(to right, var(--color-default--white) 10%, var(--color-system--light) 20%, var(--color-default--white) 35%);
+  background-size: 800px;
+  position: relative;
+  min-height: 10px;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: contentPlaceholderShimmer;
+}
+
+@keyframes contentPlaceholderShimmer {
+  0% { background-position: 120% 0; }
+  100% { background-position: -120% 0; }
+}

@@ -1,0 +1,78 @@
+.inv-checkbox {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: solid 2px var(--color-default--regular);
+  border-radius: 2px;
+  outline: none;
+  position: relative;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.inv-checkbox:disabled {
+  border-color: var(--color-default--light);
+  cursor: not-allowed;
+}
+
+.inv-checkbox:hover {
+  border-color: var(--color-primary--regular);
+}
+
+.inv-checkbox:active {
+  background-color: var(--color-primary--dark);
+  border-color: var(--color-primary--dark);
+}
+
+.inv-checkbox:checked {
+  background-color: var(--color-primary--regular);
+  border-color: var(--color-primary--regular);
+}
+
+.inv-checkbox:checked::before {
+  content: 'check';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  color: var(--color-system--white);
+  direction: ltr;
+  display: inline-block;
+  font-family: 'Material Icons';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.inv-checkbox:checked:hover,
+.inv-checkbox:active:hover {
+  background-color: transparent;
+}
+
+.inv-checkbox:checked:hover::before,
+.inv-checkbox:active:hover::before {
+  color: var(--color-primary--regular);
+}
+
+.inv-checkbox:disabled:hover {
+  border-color: var(--color-default--light);
+  cursor: not-allowed;
+}
+
+.inv-checkbox:disabled:checked,
+.inv-checkbox:disabled:checked:hover {
+  border-color: var(--color-default--light);
+  background-color: var(--color-default--light);
+  cursor: not-allowed;
+}
+
+.inv-checkbox:disabled:checked:hover::before,
+.inv-checkbox:disabled:active:hover::before {
+  color: var(--color-system--white);
+}

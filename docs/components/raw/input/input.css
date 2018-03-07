@@ -1,0 +1,36 @@
+.inv-input {
+  background-color: var(--color-system--light);
+  color: var(--color-system--dark);
+  font-size: 14px;
+  border-radius: 4px;
+  min-height: 40px;
+  border: none;
+  outline: none;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.inv-input::placeholder {
+  color: var(--color-system--regular);
+}
+
+.inv-input:disabled {
+  background-color: var(--color-default--white);
+  cursor: not-allowed;
+  color: var(--color-default--regular);
+}
+
+.inv-input:focus {
+  background-color: var(--color-system--white);
+  box-shadow: 0 0 0 2px var(--color-primary--regular) inset;
+}
+
+.inv-input--error {
+  background-color: var(--color-error--white);
+}
+
+.inv-input--error:focus {
+  box-shadow: 0 0 0 2px var(--color-error--regular) inset;
+}
+

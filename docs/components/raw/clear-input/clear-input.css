@@ -1,0 +1,40 @@
+.inv-clear-input {
+  min-width: 40px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: 1px;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--color-system--light);
+  transition: 0.2s box-shadow, 0.2s background-color;
+}
+
+.inv-clear-input > i {
+  color: var(--color-system--regular);
+}
+
+.inv-clear-input:hover {
+  box-shadow: var(--shadow-8) var(--color-default--shadow);
+}
+
+.inv-clear-input:active {
+  background-color: var(--color-default--light);
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
+}
+
+.inv-clear-input:disabled,
+.inv-clear-input:disabled:hover,
+.inv-clear-input:disabled:active {
+  background-color: var(--color-default--white);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.inv-clear-input:disabled > i {
+  color: var(--color-default--light);
+}

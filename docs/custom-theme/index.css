@@ -1,8 +1,8 @@
-.fra-button-group {
-  display: flex;
+.fra-container {
   margin: 10px;
 }
 
-.fra-button-group > .inv-btn {
+.fra-container > * {
   margin-right: 10px;
+  margin-bottom: 10px;
 }

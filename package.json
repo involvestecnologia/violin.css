@@ -25,7 +25,7 @@
     "build": "npm run build:css && npm run build:themes && npm run build:css:support && npm run build:fractal",
     "build:css": "postcss src/css/index.css -o dist/index.min.css -u postcss-import cssnano",
     "build:themes": "postcss src/css/themes/default.css -o dist/themes/default.min.css -u cssnano --no-map",
-    "build:css:doc": "postcss src/css/index.css -o public/assets/css/index.css -u postcss-import",
+    "build:css:doc": "postcss src/css/index.css -o public/assets/css/index.css -u postcss-import autoprefixer",
     "build:css:support": "postcss src/css/index.css -o dist/index-old-browers.min.css -u postcss-import postcss-cssnext cssnano",
     "build:fractal": "fractal build",
     "pretest": "npm run build:css:doc",
