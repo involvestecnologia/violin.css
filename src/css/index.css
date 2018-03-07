@@ -9,3 +9,5 @@
 
 /* MODULES */
 @import '../components/button/button.css';
+@import '../components/label/label.css';
+@import '../components/input/input.css';

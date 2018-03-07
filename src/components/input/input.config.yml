@@ -1,0 +1,8 @@
+title: Input
+status: "wip"
+collated: true
+variants:
+  - name: default
+  - name: error
+    context:
+      modifier: "inv-input--error"
