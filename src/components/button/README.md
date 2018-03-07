@@ -4,7 +4,7 @@ Usado para ações de confirmação/criação.
 Tendo a classe base `.inv-btn`, e podendo ser utilizado em conjunto com `<button>` e `<a>`
 
 ### Default Button
-Botão padrão, comum para ações regulares dos usuários,  menos “importante” que o primary button.
+Botão padrão, comum para ações regulares dos usuários, menos “importante” que o primary button.
 
 ``` html
 <a href="#" class="inv-btn">Default</a>
