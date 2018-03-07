@@ -1,7 +1,7 @@
 ## Labels
 Utilizadas nos campos de input
 
-Tendo a classe base `.inv-label`, podendo ser adicionado um texto adicionar através de uma `span`
+Tendo a classe base `.inv-label`, podendo ser adicionado um texto através de uma `span`
 
 ### Default Label
 Label padrão, comum para ações regulares dos usuários.
