@@ -1,6 +1,6 @@
 .inv-checkbox {
   appearance: none;
-  width: 18px;
+  min-width: 18px;
   height: 18px;
   border: solid 2px var(--color-default--regular);
   border-radius: 2px;
