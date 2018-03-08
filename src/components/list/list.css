@@ -1,0 +1,52 @@
+.inv-list {
+  background-color: var(--color-system--white);
+  max-height: 280px;
+  overflow-y: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 40px;
+  color: var(--color-system--dark);
+  font-size: 14px;
+  padding-left: var(--space-16);
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.2s background-color;
+  cursor: pointer;
+}
+
+.inv-list__item:hover {
+  background-color: var(--color-default--white);
+}
+
+.inv-list__item:active {
+  background-color: var(--color-system--light);
+}
+
+.inv-list__item > span {
+  max-height: 30px;
+  overflow: hidden;
+  margin-right: var(--space-8);
+}
+
+.inv-list__item--addon {
+  padding-left: 0;
+}
+
+.inv-list__item--check-all {
+  border: solid 1px var(--color-default--white);
+  min-height: 32px;
+  color: var(--color-default--dark);
+  font-weight: 600;
+}
+
+.inv-list__item--addon > .inv-checkbox {
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}
