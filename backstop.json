@@ -15,6 +15,54 @@
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Checkbox",
+      "url": "http://localhost:3000/components/preview/checkbox",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Content placeholder",
+      "url": "http://localhost:3000/components/preview/content-placeholder",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Form text",
+      "url": "http://localhost:3000/components/preview/form-text",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Input",
+      "url": "http://localhost:3000/components/preview/input",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Input icon",
+      "url": "http://localhost:3000/components/preview/input-icon",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Label",
+      "url": "http://localhost:3000/components/preview/label",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
