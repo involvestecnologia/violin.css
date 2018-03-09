@@ -1,0 +1,10 @@
+title: Addon
+status: "wip"
+collated: true
+context:
+  name: "Addon"
+variants:
+  - name: default
+  - name: disabled
+    context:
+      disabled: true
