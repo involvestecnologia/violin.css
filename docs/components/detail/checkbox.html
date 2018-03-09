@@ -157,11 +157,17 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-fbe705788c1e22be4789c714cc712bdc-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fra-container"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">"disabled"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">"checked"</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">"disabled"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Default --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> /&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Disabled --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> <span class="hljs-attr">disabled</span> /&gt;</span>
+
+</pre>
+        
         
     </code>
 </div>
@@ -169,11 +175,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-fbe705788c1e22be4789c714cc712bdc-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"fra-container"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">"disabled"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> <span class="hljs-attr">checked</span>=<span class="hljs-string">"checked"</span> <span class="hljs-attr">disabled</span>=<span class="hljs-string">"disabled"</span> /&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> </span></span><span class="hljs-template-variable">{{ternary disabled "disabled" "" }}</span><span class="xml"><span class="hljs-tag"> /&gt;</span></span></pre>
     </code>
 </div>
 
@@ -181,9 +183,20 @@
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-fbe705788c1e22be4789c714cc712bdc-panel-context">
     <code class="Code Code--lang-json">
         
-            
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
-            
+        
+            <pre>
+<span class="hljs-comment">/* Default: No context defined */</span>
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Disabled */</span>
+{
+  <span class="hljs-attr">"disabled"</span>: <span class="hljs-literal">true</span>
+}
+
+</pre>
+        
         
     </code>
 </div>
@@ -247,13 +260,13 @@
 <span class="hljs-selector-class">.inv-checkbox</span><span class="hljs-selector-pseudo">:checked</span><span class="hljs-selector-pseudo">::before</span> {
   <span class="hljs-attribute">content</span>: <span class="hljs-string">'check'</span>;
   <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: -<span class="hljs-number">3px</span>;
-  <span class="hljs-attribute">left</span>: -<span class="hljs-number">3px</span>;
+  <span class="hljs-attribute">top</span>: -<span class="hljs-number">2px</span>;
+  <span class="hljs-attribute">left</span>: -<span class="hljs-number">2px</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">direction</span>: ltr;
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Material Icons'</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
   <span class="hljs-attribute">font-style</span>: normal;
   <span class="hljs-attribute">font-weight</span>: normal;
   <span class="hljs-attribute">letter-spacing</span>: normal;
@@ -330,6 +343,21 @@
         
         
         <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="checkbox--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="checkbox--disabled.html">
+                    <span>Disabled</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
             <strong class="Meta-key">Preview:</strong>
             <span class="Meta-value">
                 <ul>
@@ -351,6 +379,17 @@
             <span class="Meta-value">src/components/checkbox/checkbox.hbs</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(2)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="list.html">@<span>list</span></a>, 
+            
+                <a href="list--multiselect.html">@<span>list--multiselect</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
