@@ -16,6 +16,5 @@ variants:
   - name: default
   - name: multiselect
     context:
-      checkbox: "@checkbox"
       multiselect: true
 
