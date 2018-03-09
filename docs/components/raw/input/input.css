@@ -6,8 +6,7 @@
   min-height: 40px;
   border: none;
   outline: none;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
   transition: background-color 0.1s ease-in-out;
 }
 
