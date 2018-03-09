@@ -3,6 +3,9 @@ status: "ready"
 collated: true
 variants:
   - name: default
+  - name: disabled
+    context:
+      disabled: true
   - name: error
     context:
       modifier: "inv-input--error"

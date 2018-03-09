@@ -3,3 +3,6 @@ status: "ready"
 collated: true
 variants:
   - name: default
+  - name: disabled
+    context:
+      disabled: true
