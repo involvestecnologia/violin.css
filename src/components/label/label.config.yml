@@ -4,13 +4,16 @@ collated: true
 variants:
   - name: default
     context:
-      value: "Input label"
+      label:
+        value: "Input label"
   - name: required
     context:
-      value: "Nome"
-      posfix: "- obrigatório"
+      label:
+        value: "Nome"
+        posfix: "- obrigatório"
   - name: disable
     context:
-      value: "Senha Genérica"
-      posfix: "- desabilitado"
-      modifier: "inv-label--disabled"
+      label:
+        value: "Senha Genérica"
+        posfix: "- desabilitado"
+        modifier: "inv-label--disabled"

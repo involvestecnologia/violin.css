@@ -8,4 +8,5 @@ variants:
       disabled: true
   - name: error
     context:
-      modifier: "inv-input--error"
+      input:
+        modifier: "inv-input--error"

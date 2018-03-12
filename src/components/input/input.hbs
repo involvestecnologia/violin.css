@@ -1,6 +1,8 @@
 <input
+  id="{{input.for}}"
+  name="{{input.for}}"
   type="text"
-  class="inv-input {{ modifier }}"
+  class="inv-input {{ input.modifier }}"
   placeholder="Ex: 000-00-000"
   {{ternary disabled "disabled" "" }}
 />

@@ -4,12 +4,15 @@ collated: true
 variants:
   - name: default
     context:
-      value: "Texto de ajuda para o campo"
+      form-text:
+        value: "Texto de ajuda para o campo"
   - name: error
     context:
-      value: "Cara, nunca vi uma senha menos segura."
-      modifier: "inv-form-text--error"
+      form-text:
+        value: "Cara, nunca vi uma senha menos segura."
+        modifier: "inv-form-text--error"
   - name: success
     context:
-      value: "Senha segura"
-      modifier: "inv-form-text--success"
+      form-text:
+        value: "Senha segura"
+        modifier: "inv-form-text--success"

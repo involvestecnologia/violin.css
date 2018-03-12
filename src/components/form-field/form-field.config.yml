@@ -1,0 +1,30 @@
+title: Form Field
+status: "ready"
+collated: true
+context:
+  label:
+    value: "Input label"
+variants:
+  - name: default
+    context:
+      label:
+        for: "default"
+      input:
+        for: "default"
+  - name: error
+    context:
+      label:
+        posfix: "- obrigatório"
+        for: "error"
+      input:
+        modifier: "inv-input--error"
+        for: "error"
+      form-text:
+        value: "Cara, nunca vi uma senha menos segura."
+        modifier: "inv-form-text--error"
+  - name: disabled
+    context:
+      disabled: true
+      label:
+        posfix: "- desabilitado"
+        modifier: "inv-label--disabled"
