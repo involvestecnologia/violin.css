@@ -167,8 +167,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4dedb8a8b8a89515753ba425716405ad-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-text </span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-  </span><span class="hljs-template-variable">{{ value }}</span><span class="xml">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-text </span></span></span><span class="hljs-template-variable">{{ form-text.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  </span><span class="hljs-template-variable">{{ form-text.value }}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -179,7 +179,9 @@
         
             
             <pre>{
-  <span class="hljs-attr">"value"</span>: <span class="hljs-string">"Texto de ajuda para o campo"</span>
+  <span class="hljs-attr">"form-text"</span>: {
+    <span class="hljs-attr">"value"</span>: <span class="hljs-string">"Texto de ajuda para o campo"</span>
+  }
 }</pre>
             
         
@@ -302,6 +304,19 @@
             <span class="Meta-value">src/components/form-text/form-text.hbs</span>
         </li>
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="form-field.html">@<span>form-field</span></a>, 
+            
+                <a href="form-field--error.html">@<span>form-field--error</span></a>, 
+            
+                <a href="form-field--disabled.html">@<span>form-field--disabled</span></a>
+            
+            </span>
+        </li>
         
     </ul>
 </div>
@@ -497,6 +512,30 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-field.html" data-pjax>
+                <span>Form Field</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
