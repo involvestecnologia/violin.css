@@ -40,7 +40,7 @@
 }
 
 .inv-list__item--check-all {
-  border: solid 1px var(--color-default--white);
+  border-bottom: solid 1px var(--color-default--white);
   min-height: 32px;
   color: var(--color-default--dark);
   font-weight: 600;
