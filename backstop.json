@@ -74,14 +74,6 @@
     },
     {
       "readySelector": "body",
-      "label": "Addon",
-      "url": "http://localhost:3000/components/preview/addon",
-      "selectorExpansion": true,
-      "misMatchThreshold" : 0,
-      "requireSameDimensions": true
-    },
-    {
-      "readySelector": "body",
       "label": "Form Field",
       "url": "http://localhost:3000/components/preview/form-field",
       "selectorExpansion": true,

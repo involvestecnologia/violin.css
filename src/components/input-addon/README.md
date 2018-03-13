@@ -14,7 +14,7 @@ Ao colocar um campo ao lado esquedo do input, deverá ser criada uma `div` com a
 Input addon padrão, comum para ações regulares dos usuários.
 
 ``` html
-<div class="inv-input-addon ">
+<div class="inv-input-addon">
   <div class="inv-input-addon__prepend">
     <input type="checkbox" class="inv-checkbox" />
   </div>
@@ -25,11 +25,11 @@ Input addon padrão, comum para ações regulares dos usuários.
 </div>
 
 <div class="inv-input-addon inv-input-addon--disabled">
-    <div class="inv-input-addon__prepend">
-        <input type="checkbox" class="inv-checkbox" disabled />
-    </div>
-    <input id="" name="" type="text" class="inv-input " placeholder="Ex: 000-00-000" disabled />
-    <button class="inv-clear-input" disabled>
+  <div class="inv-input-addon__prepend">
+    <input type="checkbox" class="inv-checkbox" disabled />
+  </div>
+  <input id="" name="" type="text" class="inv-input " placeholder="Ex: 000-00-000" disabled />
+  <button class="inv-clear-input" disabled>
     <i class="material-icons">clear</i>
   </button>
 </div>
@@ -37,11 +37,19 @@ Input addon padrão, comum para ações regulares dos usuários.
 
 | Modificadores 	| Uso 	|
 |-------------------------------------------------	|----------------------------------------------------------	|
-| [`.inv-input--error`](#error-input) 	| Modifica o input com estilização de erro	|
+| [`.inv-input-addon--disabled`](#addon-disabled) 	| Modifica o addon com estilização de desabilitado	|
 
-### Error Input
-Versão de indicação de erro no input.
+### Addon Disabled
+Versão desabilitada.
 
 ``` html
-<input type="text" class="inv-input inv-input--error" name="" placeholder="" value="" />
+<div class="inv-input-addon inv-input-addon--disabled">
+  <div class="inv-input-addon__prepend">
+    <input type="checkbox" class="inv-checkbox" disabled />
+  </div>
+  <input id="" name="" type="text" class="inv-input " placeholder="Ex: 000-00-000" disabled />
+  <button class="inv-clear-input" disabled>
+    <i class="material-icons">clear</i>
+  </button>
+</div>
 ```
