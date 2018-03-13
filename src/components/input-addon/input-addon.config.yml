@@ -1,0 +1,8 @@
+title: Input Addon
+status: "wip"
+collated: true
+variants:
+  - name: default
+  - name: disabled
+    context:
+      disabled: true
