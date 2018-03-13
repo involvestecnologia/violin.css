@@ -1,0 +1,33 @@
+.inv-input-addon {
+  display: flex;
+  align-items: stretch;
+}
+
+.inv-input-addon__prepend {
+  background-color: var(--color-system--white);
+  box-shadow: 0 0 0 1px var(--color-system--light) inset;
+  border-radius: 4px 0 0 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  margin-right: 1px;
+}
+
+.inv-input-addon--disabled > .inv-input-addon__prepend {
+  background-color: var(--color-default--white);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.inv-input-addon > .inv-input:not(:last-child) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inv-input-addon > .inv-input:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

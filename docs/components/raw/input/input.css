@@ -1,4 +1,5 @@
 .inv-input {
+  flex: 1 1 auto;
   background-color: var(--color-system--light);
   color: var(--color-system--dark);
   font-size: 14px;
