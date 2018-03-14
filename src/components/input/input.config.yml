@@ -10,3 +10,7 @@ variants:
     context:
       input:
         modifier: "inv-input--error"
+  - name: focused
+    context:
+      input:
+        modifier: "inv-input--focused"
