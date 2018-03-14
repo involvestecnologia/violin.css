@@ -1,5 +1,5 @@
 title: Dropdown
-status: "wip"
+status: "ready"
 context:
   icon: "arrow_drop_down"
   dropdown:

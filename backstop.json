@@ -81,6 +81,14 @@
       "requireSameDimensions": true
     },
     {
+      "readySelector": "body",
+      "label": "Input addon",
+      "url": "http://localhost:3000/components/preview/input-addon",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "selectors": ["body"],
       "readySelector": "body",
       "label": "Dropdown - default",
