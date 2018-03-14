@@ -1,0 +1,13 @@
+{{#each radial-select.options as |value|}}
+  <div class="inv-radial-select">
+    <input
+      id="{{ value }}"
+      name="sex"
+      type="radio"
+      class="inv-radial-select__radio"
+      value="{{ value }}"
+      {{ternary ../disabled "disabled" "" }}
+    />
+    <label class="inv-radial-select__label" for="{{ value }}">{{ value }}</label>
+  </div>
+{{/each}}

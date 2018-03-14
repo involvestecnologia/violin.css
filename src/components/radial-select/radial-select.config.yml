@@ -1,0 +1,17 @@
+title: Radial Select
+status: "wip"
+collated: true
+variants:
+  - name: default
+    context:
+      radial-select:
+        options:
+          - "male"
+          - "female"
+  - name: disabled
+    context:
+      disabled: true
+      radial-select:
+        options:
+          - "disabled"
+
