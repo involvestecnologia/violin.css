@@ -21,7 +21,8 @@
   color: var(--color-default--regular);
 }
 
-.inv-input:focus {
+.inv-input:focus,
+.inv-input--focused {
   background-color: var(--color-system--white);
   box-shadow: 0 0 0 2px var(--color-primary--regular) inset;
 }

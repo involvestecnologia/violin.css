@@ -1,0 +1,36 @@
+<div class="inv-dropdown">
+  <div class="inv-dropdown__content {{ternary dropdown.open "inv-dropdown__content--open" "" }}">
+    {{> @input}}
+    {{> @input-icon}}
+
+    {{#if dropdown.counter}}
+      <div class="inv-dropdown-counter">
+        3/10
+      </div>
+    {{/if}}
+
+    <div class="inv-dropdown__box">
+
+      {{#if dropdown.action}}
+        <div class="inv-dropdown-action">
+          <div class="inv-dropdown-action__result">
+            Nenhum resultado cadastrado.
+          </div>
+          <div class="inv-dropdown-action__action">
+            Aperte Enter para adicionar um novo.
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if dropdown.select}}
+        {{ render '@list' }}
+      {{/if}}
+
+      {{#if dropdown.multiselect}}
+        {{ render '@list--multiselect' }}
+      {{/if}}
+
+    </div>
+  </div>
+  {{> @clear-input}}
+</div>

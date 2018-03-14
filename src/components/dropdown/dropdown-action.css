@@ -1,0 +1,22 @@
+.inv-dropdown-action {
+  max-width: 120px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.inv-dropdown-action__result {
+  color: var(--color-system--dark);
+  font-weight: normal;
+}
+
+.inv-dropdown-action__action {
+  color: var(--color-primary--regular);
+  font-weight: bold;
+}

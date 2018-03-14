@@ -1,0 +1,32 @@
+title: Dropdown
+status: "wip"
+context:
+  icon: "arrow_drop_down"
+  dropdown:
+    open: true
+  input:
+    modifier: "inv-input--focused"
+variants:
+  - name: default
+    context:
+      dropdown:
+        open: false
+      input:
+        modifier: ""
+  - name: open
+  - name: action
+    context:
+      dropdown:
+        action: true
+  - name: counter
+    context:
+      dropdown:
+        counter: true
+  - name: select
+    context:
+      dropdown:
+        select: true
+  - name: multiselect
+    context:
+      dropdown:
+        multiselect: true
