@@ -79,6 +79,68 @@
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - default",
+      "url": "http://localhost:3000/components/preview/dropdown--default",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - open",
+      "url": "http://localhost:3000/components/preview/dropdown--open",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - action",
+      "url": "http://localhost:3000/components/preview/dropdown--action",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - counter",
+      "url": "http://localhost:3000/components/preview/dropdown--counter",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - select",
+      "url": "http://localhost:3000/components/preview/dropdown--select",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "selectors": ["body"],
+      "readySelector": "body",
+      "label": "Dropdown - multiselect",
+      "url": "http://localhost:3000/components/preview/dropdown--multiselect",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Radial Select",
+      "url": "http://localhost:3000/components/preview/radial-select",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
