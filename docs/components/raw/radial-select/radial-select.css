@@ -1,0 +1,59 @@
+.inv-radial-select {
+  appearance: none;
+  display: flex;
+}
+
+.inv-radial-select__radio {
+  display: none;
+}
+
+.inv-radial-select__label {
+  background-color: var(--color-default--white);
+  box-shadow: var(--shadow-border-1) var(--color-system--regular);
+  color: var(--color-default--dark);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  min-height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s box-shadow, 0.2s background-color;
+}
+
+.inv-radial-select__label:hover {
+  box-shadow:
+    var(--shadow-border-1) var(--color-system--regular),
+    var(--shadow-8) var(--color-default--shadow);
+  background-color: var(--color-default--white);
+}
+
+.inv-radial-select__radio ~ .inv-radial-select__label:active {
+  background-color: var(--color-primary--white);
+  box-shadow:
+    var(--shadow-border-1) var(--color-primary--dark),
+    var(--shadow-8) var(--color-primary--shadow);
+  color: var(--color-primary--dark);
+}
+
+.inv-radial-select__radio:disabled ~ .inv-radial-select__label {
+  background-color: var(--color-default--white);
+  box-shadow: none;
+  color: var(--color-default--light);
+  cursor: not-allowed;
+}
+
+.inv-radial-select__radio:checked ~ .inv-radial-select__label {
+  background-color: var(--color-primary--white);
+  box-shadow: var(--shadow-border-1) var(--color-primary--regular);
+  color: var(--color-primary--regular);
+}
+
+.inv-radial-select__radio:checked ~ .inv-radial-select__label:hover {
+  background-color: var(--color-primary--white);
+  box-shadow:
+    var(--shadow-border-1) var(--color-primary--regular),
+    var(--shadow-8) var(--color-primary--shadow);
+}

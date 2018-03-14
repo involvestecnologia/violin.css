@@ -1,0 +1,14 @@
+.inv-dropdown-counter {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 32px;
+  background-color: var(--color-default--white);
+  color: var(--color-system--regular);
+  height: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}

@@ -25,7 +25,7 @@ Você poderá utilizar o framework de diversas formas:
 
 - [Baixando o último release](https://github.com/involvestecnologia/violin.css/archive/v0.0.1.zip)
 - Clonando o repositório: `git clone https://github.com/involvestecnologia/violin.css.git`
-- Adicionando
+- Adicionando no `head` do seu html
 ```html
 <link rel="stylesheet" href="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/dist/index.min.css">
 

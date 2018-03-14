@@ -21,9 +21,10 @@
   color: var(--color-default--regular);
 }
 
-.inv-input:focus {
+.inv-input:focus,
+.inv-input--focused {
   background-color: var(--color-system--white);
-  box-shadow: 0 0 0 2px var(--color-primary--regular) inset;
+  box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
 }
 
 .inv-input--error {
@@ -31,6 +32,6 @@
 }
 
 .inv-input--error:focus {
-  box-shadow: 0 0 0 2px var(--color-error--regular) inset;
+  box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }
 
