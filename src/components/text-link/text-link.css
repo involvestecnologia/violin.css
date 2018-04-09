@@ -1,0 +1,11 @@
+.inv-text-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-primary--regular);
+  text-decoration: none;
+  transition: 0.2s color;
+}
+
+.inv-text-link:active {
+  color: var(--color-primary--dark);
+}

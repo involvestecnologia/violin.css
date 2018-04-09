@@ -1,5 +1,5 @@
 {
-  "id": "gallo",
+  "id": "violin",
   "viewports": [
     {
       "label": "tablet",
@@ -146,6 +146,14 @@
       "readySelector": "body",
       "label": "Radial Select",
       "url": "http://localhost:3000/components/preview/radial-select",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "Text Link",
+      "url": "http://localhost:3000/components/preview/text-link",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
