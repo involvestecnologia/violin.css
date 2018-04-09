@@ -1,0 +1,18 @@
+title: Warning
+status: "ready"
+collated: true
+variants:
+  - name: default
+    context:
+      warning:
+        text: "Alerta default"
+  - name: success
+    context:
+      warning:
+        text: "Operação realizada com sucesso"
+        modifier: "inv-warning--success"
+  - name: error
+    context:
+      warning:
+        text: "Ocorreu um erro interno no sistema"
+        modifier: "inv-warning--error"
