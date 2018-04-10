@@ -1,6 +1,7 @@
 ## Form Field
 Utilizado para entrada de dados no sistema, possuindo: 
   - label
+  - icon (opcional)
   - input
   - form-text (opcional)
 
@@ -12,9 +13,17 @@ Campo de formulário padrão, comum para ações regulares dos usuários.
 ``` html
 <div class="inv-form-field">
   <label for="name" class="inv-label">
-    Nome
+    Name
   </label>
   <input id="name" name="name" type="text" class="inv-input" placeholder="Ex: John Doe" />
+</div>
+
+<div class="inv-form-field">
+  <label for="name" class="inv-label">
+    Event
+  </label>
+  <i class="material-icons inv-input-icon">event</i>
+  <input id="event" name="event" type="date" class="inv-input" placeholder="10/10/2010" />
 </div>
 
 <div class="inv-form-field">

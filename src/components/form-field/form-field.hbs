@@ -1,5 +1,8 @@
 <div class="inv-form-field">
   {{> @label}}
+  {{#if icon}}
+    {{> @input-icon}}
+  {{/if}}
   {{> @input}}
   {{> @form-text}}
 </div>

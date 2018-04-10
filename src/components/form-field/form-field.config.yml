@@ -11,6 +11,21 @@ variants:
         for: "default"
       input:
         for: "default"
+  - name: icon
+    context:
+      label:
+        for: "icon"
+      input:
+        for: "icon"
+      icon: "visibility"
+  - name: progress
+    context:
+      label:
+        for: "progress"
+      input:
+        for: "progress"
+        progress: true
+      icon: "visibility"
   - name: error
     context:
       label:
