@@ -7,7 +7,11 @@
   min-height: 40px;
   border: none;
   outline: none;
-  padding: 0 16px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: normal;
   transition: background-color 0.1s ease-in-out;
 }
 
@@ -35,3 +39,6 @@
   box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }
 
+.inv-input-icon + .inv-input {
+  padding-right: 35px;
+}
