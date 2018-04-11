@@ -38,7 +38,3 @@
 .inv-input--error:focus {
   box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }
-
-.inv-input-icon + .inv-input {
-  padding-right: 35px;
-}

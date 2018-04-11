@@ -13,19 +13,29 @@ variants:
         for: "default"
   - name: icon
     context:
+      icon: "visibility"
+      formField:
+        modifier: "inv-form-field--icon"
       label:
         for: "icon"
       input:
         for: "icon"
-      icon: "visibility"
   - name: progress
     context:
+      icon: "visibility"
+      formField:
+        modifier: "inv-form-field--icon inv-form-field--progress"
       label:
         for: "progress"
       input:
         for: "progress"
         progress: true
-      icon: "visibility"
+      form-text:
+        value: "Cara, nunca vi uma senha menos segura."
+        modifier: "inv-form-text--error"
+      inputProgress:
+        value: 15
+        modifier: "inv-input-progress--invalid"
   - name: error
     context:
       label:

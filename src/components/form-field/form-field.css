@@ -4,8 +4,27 @@
   flex-direction: column;
 }
 
-.inv-form-field > .inv-input-icon {
+.inv-form-field--icon > .inv-input-icon {
   position: absolute;
   top: 28px;
   right: 8px;
+}
+
+.inv-form-field--icon > .inv-input {
+  padding-right: 35px;
+}
+
+.inv-form-field--progress > .inv-input-progress {
+  position: absolute;
+  top: 59px;
+  left: 0;
+}
+
+.inv-form-field--progress > .inv-input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inv-form-field--progress > .inv-form-text {
+  margin-top: 4px;
 }
