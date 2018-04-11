@@ -38,7 +38,8 @@ Input addon padrão, comum para ações regulares dos usuários.
 | Modificadores 	| Uso 	|
 |-------------------------------------------------	|----------------------------------------------------------	|
 | [`.inv-input-addon--disabled`](#addon-disabled) 	| Modifica o addon com estilização de desabilitado	|
-
+| [`.inv-input-addon--icon`](#addon-icon) 	| Modifica o addon para ter suporte a icone de ação	|
+| [`.inv-input-addon--progress`](#addon-progress) 	| Modifica o addon para ter suporte a barra de progresso	|
 ### Addon Disabled
 Versão desabilitada.
 
@@ -49,6 +50,59 @@ Versão desabilitada.
   </div>
   <input id="" name="" type="text" class="inv-input " placeholder="Ex: 000-00-000" disabled />
   <button class="inv-clear-input" disabled>
+    <i class="material-icons">clear</i>
+  </button>
+</div>
+```
+### Addon Icon
+Campo de addon com icone de ação do input.
+
+``` html
+<div class="inv-input-addon">
+  <div class="inv-input-addon__prepend">
+    <input type="checkbox" class="inv-checkbox" />
+  </div>
+
+  <div class="inv-input-addon__input inv-input-addon__input--icon">
+    <input name="icon" type="text" class="inv-input" />
+    <i class="material-icons inv-input-icon">visibility</i>
+  </div>
+
+  <button class="inv-clear-input">
+    <i class="material-icons">clear</i>
+  </button>
+</div>
+```
+### Addon Progress
+Campo de addon com barra de progresso.
+
+``` html
+<div class="inv-input-addon ">
+  <div class="inv-input-addon__prepend">
+    <input type="checkbox" class="inv-checkbox" />
+  </div>
+
+  <div 
+    class="
+      inv-input-addon__input
+      inv-input-addon__input--icon
+      inv-input-addon__input--progress
+    "
+  >
+    <input name="" type="text" class="inv-input" />
+
+    <progress 
+      class="inv-input-progress inv-input-progress--invalid" 
+      max="100" 
+      value="15"
+    ></progress>
+
+    <i class="material-icons inv-input-icon ">
+      visibility
+    </i>
+  </div>
+
+  <button class="inv-clear-input">
     <i class="material-icons">clear</i>
   </button>
 </div>

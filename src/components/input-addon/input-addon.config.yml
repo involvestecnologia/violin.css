@@ -6,3 +6,17 @@ variants:
   - name: disabled
     context:
       disabled: true
+  - name: icon
+    context:
+      icon: "visibility"
+      inputAddon:
+        modifier: "inv-input-addon__input--icon"
+  - name: progress
+    context:
+      icon: "visibility"
+      inputAddon:
+        progress: true
+        modifier: "inv-input-addon__input--icon inv-input-addon__input--progress"
+      inputProgress:
+        value: 15
+        modifier: "inv-input-progress--invalid"
