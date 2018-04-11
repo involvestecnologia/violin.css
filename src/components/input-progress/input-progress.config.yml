@@ -1,0 +1,29 @@
+title: Input Progress
+status: "ready"
+collated: true
+variants:
+  - name: default
+    context:
+      inputProgress:
+        value: 0
+  - name: invalid
+    context:
+      inputProgress:
+        modifier: "inv-input-progress--invalid"
+        value: 15
+  - name: alert
+    context:
+      inputProgress:
+        modifier: "inv-input-progress--alert"
+        value: 66
+  - name: done
+    context:
+      inputProgress:
+        modifier: "inv-input-progress--done"
+        value: 100
+  - name: disabled
+    context:
+      inputProgress:
+        modifier: "inv-input-progress--disabled"
+        value: 60
+
