@@ -183,14 +183,10 @@
     </span><span class="hljs-template-variable">{{&gt; <a href="input-icon.html">@input-icon</a>}}</span><span class="xml">
   </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
-  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> input.progress}}</span><span class="xml">
-    </span><span class="hljs-template-variable">{{&gt; <a href="input-progress--invalid.html">@input-progress--invalid</a>}}</span><span class="xml">
-  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
 
-  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> addon}}</span><span class="xml">
-    </span><span class="hljs-template-variable">{{&gt; <a href="input-addon--progress.html">@input-addon--progress</a>}}</span><span class="xml">
-  </span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
-    </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> input.progress}}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>-progress--invalid}}</span><span class="xml">
   </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
   </span><span class="hljs-template-variable">{{&gt; <a href="form-text.html">@form-text</a>}}</span><span class="xml">
@@ -258,18 +254,12 @@
 }
 
 <span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-input-progress</span> {
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">top</span>: <span class="hljs-number">59px</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-}
-
-<span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-input</span> {
-  <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-built_in">calc</span>(100% - 2px);
 }
 
 <span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-form-text</span> {
-  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">4px</span>;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">2px</span>;
 }
 </pre>
                             </code>
@@ -287,7 +277,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">517 Bytes</span>
+                    <span class="Meta-value">408 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -359,18 +349,16 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="label.html">@<span>label</span></a>, 
             
                 <a href="input-icon.html">@<span>input-icon</span></a>, 
             
-                <a href="input-progress--invalid.html">@<span>input-progress--invalid</span></a>, 
-            
-                <a href="input-addon--progress.html">@<span>input-addon--progress</span></a>, 
-            
                 <a href="input.html">@<span>input</span></a>, 
+            
+                <a href="input-progress--invalid.html">@<span>input-progress--invalid</span></a>, 
             
                 <a href="form-text.html">@<span>form-text</span></a>
             

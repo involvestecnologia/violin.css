@@ -186,10 +186,6 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-addon__input </span></span></span><span class="hljs-template-variable">{{ inputAddon.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
     </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
 
-    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> inputAddon.progress}}</span><span class="xml">
-      </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>-progress--invalid}}</span><span class="xml">
-    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
-
     </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> icon}}</span><span class="xml">
       </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>-icon}}</span><span class="xml">
     </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
@@ -264,21 +260,11 @@
   <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
   <span class="hljs-attribute">display</span>: flex;
-}
-
-<span class="hljs-selector-class">.inv-input-addon__input--progress</span> {
-  <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">flex-direction</span>: column;
 }
 
 <span class="hljs-selector-class">.inv-input-addon__input--icon</span> &gt; <span class="hljs-selector-class">.inv-input</span> {
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">32px</span>;
-}
-
-<span class="hljs-selector-class">.inv-input-addon__input--progress</span> &gt; <span class="hljs-selector-class">.inv-input-progress</span> {
-  <span class="hljs-attribute">position</span>: absolute;
-  <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">4px</span>;
-  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-selector-class">.inv-input-addon__input</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-pseudo">:last-child)</span> &gt; <span class="hljs-selector-class">.inv-input</span> {
@@ -312,7 +298,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -335,7 +321,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="">
@@ -348,10 +334,6 @@
             
                 <a href="input-addon--icon.html">
                     <span>Icon</span>
-                </a>, 
-            
-                <a href="input-addon--progress.html">
-                    <span>Progress</span>
                 </a>
             
             </span>
@@ -380,14 +362,12 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(5)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="checkbox.html">@<span>checkbox</span></a>, 
             
                 <a href="input.html">@<span>input</span></a>, 
-            
-                <a href="input-progress--invalid.html">@<span>input-progress--invalid</span></a>, 
             
                 <a href="input-icon.html">@<span>input-icon</span></a>, 
             
@@ -450,10 +430,6 @@
 <td><a href="#addon-icon"><code>.inv-input-addon--icon</code></a></td>
 <td>Modifica o addon para ter suporte a icone de ação</td>
 </tr>
-<tr>
-<td><a href="#addon-progress"><code>.inv-input-addon--progress</code></a></td>
-<td>Modifica o addon para ter suporte a barra de progresso</td>
-</tr>
 </tbody>
 </table>
 <h3 id="addon-disabled">Addon Disabled</h3>
@@ -476,36 +452,6 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-addon__input inv-input-addon__input--icon"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon"</span>&gt;</span>visibility<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="addon-progress">Addon Progress</h3>
-<p>Campo de addon com barra de progresso.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-addon "</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-addon__prepend"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span> /&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> 
-    <span class="hljs-attr">class</span>=<span class="hljs-string">"
-      inv-input-addon__input
-      inv-input-addon__input--icon
-      inv-input-addon__input--progress
-    "</span>
-  &gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> /&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">progress</span> 
-      <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-progress inv-input-progress--invalid"</span> 
-      <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span> 
-      <span class="hljs-attr">value</span>=<span class="hljs-string">"15"</span>
-    &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
-
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon "</span>&gt;</span>
-      visibility
-    <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>

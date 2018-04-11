@@ -26,21 +26,11 @@
   position: relative;
   flex: 1;
   display: flex;
-}
-
-.inv-input-addon__input--progress {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  flex-direction: column;
 }
 
 .inv-input-addon__input--icon > .inv-input {
   padding-right: 32px;
-}
-
-.inv-input-addon__input--progress > .inv-input-progress {
-  position: absolute;
-  bottom: -4px;
-  left: 0;
 }
 
 .inv-input-addon__input:not(:last-child) > .inv-input {
