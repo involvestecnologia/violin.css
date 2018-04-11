@@ -5,14 +5,10 @@
     {{> @input-icon}}
   {{/if}}
 
+  {{> @input}}
+
   {{#if input.progress}}
     {{> @input-progress--invalid}}
-  {{/if}}
-
-  {{#if addon}}
-    {{> @input-addon--progress}}
-  {{else}}
-    {{> @input}}
   {{/if}}
 
   {{> @form-text}}
