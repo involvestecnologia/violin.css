@@ -1,15 +1,10 @@
 .inv-warning {
-  display: flex;
-  align-content: center;
-  justify-content: center;
+  text-align: center;
   background-color: var(--color-default--white);
   color: var(--color-default--dark);
   box-shadow: var(--shadow-border-1) var(--color-default--regular) inset;
   font-size: 14px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 8px;
   line-height: normal;
   border-radius: 6px;
 }
