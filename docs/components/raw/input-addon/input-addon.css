@@ -30,7 +30,7 @@
 }
 
 .inv-input-addon__input--icon > .inv-input {
-  padding-right: 32px;
+  padding-right: 40px;
 }
 
 .inv-input-addon__input:not(:last-child) > .inv-input {

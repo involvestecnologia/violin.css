@@ -1,7 +1,7 @@
 .inv-input-progress {
   height: 4px;
-  width: 100%;
-  border-radius: 4px;
+  width: calc(100% - 2px);
+  border-radius: 2px;
   overflow: hidden;
   border: none;
   appearance: none;

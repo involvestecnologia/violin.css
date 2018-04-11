@@ -11,12 +11,11 @@
 }
 
 .inv-form-field--icon > .inv-input {
-  padding-right: 35px;
+  padding-right: 40px;
 }
 
 .inv-form-field--progress > .inv-input-progress {
   margin-top: 4px;
-  width: calc(100% - 2px);
 }
 
 .inv-form-field--progress > .inv-form-text {

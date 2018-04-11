@@ -10,3 +10,7 @@
 .inv-form-text--success {
   color: var(--color-done--dark);
 }
+
+.inv-form-text--alert {
+  color: var(--color-alert--dark);
+}
