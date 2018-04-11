@@ -1,23 +1,32 @@
 
 
-<div class="inv-form-field">
+<div class="inv-form-field inv-form-field--icon inv-form-field--progress">
   <label for="progress" class="inv-label ">
     Input label
     <span></span>
   </label>
+
     <i class="material-icons inv-input-icon ">
       visibility
     </i>
-  <input
-    id="progress"
-    name="progress"
-    type="text"
-    class="inv-input "
-    placeholder="Ex: 000-00-000"
-    
-  />
-  <div class="inv-form-text ">
-    
+
+    <progress
+      class="inv-input-progress inv-input-progress--invalid"
+      max="100"
+      value="15"
+    ></progress>
+
+    <input
+      id="progress"
+      name="progress"
+      type="text"
+      class="inv-input "
+      placeholder="Ex: 000-00-000"
+      
+    />
+
+  <div class="inv-form-text inv-form-text--error">
+    Cara, nunca vi uma senha menos segura.
   </div>
 </div>
 

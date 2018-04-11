@@ -157,17 +157,22 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-442fb39c964dc66536599266cab5784d-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field inv-form-field--icon inv-form-field--progress"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label "</span>&gt;</span>
     Input label
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon "</span>&gt;</span>
       visibility
     <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input "</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: 000-00-000"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-text "</span>&gt;</span>
 
+    <span class="hljs-tag">&lt;<span class="hljs-name">progress</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-progress inv-input-progress--invalid"</span> <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"15"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input "</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: 000-00-000"</span> /&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-text inv-form-text--error"</span>&gt;</span>
+        Cara, nunca vi uma senha menos segura.
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
@@ -177,12 +182,23 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-442fb39c964dc66536599266cab5784d-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field </span></span></span><span class="hljs-template-variable">{{ formField.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
   </span><span class="hljs-template-variable">{{&gt; <a href="label.html">@label</a>}}</span><span class="xml">
+
   </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> icon}}</span><span class="xml">
     </span><span class="hljs-template-variable">{{&gt; <a href="input-icon.html">@input-icon</a>}}</span><span class="xml">
   </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
-  </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
+
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> input.progress}}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{&gt; <a href="input-progress--invalid.html">@input-progress--invalid</a>}}</span><span class="xml">
+  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> addon}}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{&gt; <a href="input-addon--progress.html">@input-addon--progress</a>}}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{<span class="hljs-builtin-name">else</span>}}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
+  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+
   </span><span class="hljs-template-variable">{{&gt; <a href="form-text.html">@form-text</a>}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
@@ -198,11 +214,22 @@
     <span class="hljs-attr">"value"</span>: <span class="hljs-string">"Input label"</span>,
     <span class="hljs-attr">"for"</span>: <span class="hljs-string">"progress"</span>
   },
+  <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>,
+  <span class="hljs-attr">"formField"</span>: {
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-form-field--icon inv-form-field--progress"</span>
+  },
   <span class="hljs-attr">"input"</span>: {
     <span class="hljs-attr">"for"</span>: <span class="hljs-string">"progress"</span>,
     <span class="hljs-attr">"progress"</span>: <span class="hljs-literal">true</span>
   },
-  <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>
+  <span class="hljs-attr">"form-text"</span>: {
+    <span class="hljs-attr">"value"</span>: <span class="hljs-string">"Cara, nunca vi uma senha menos segura."</span>,
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-form-text--error"</span>
+  },
+  <span class="hljs-attr">"inputProgress"</span>: {
+    <span class="hljs-attr">"value"</span>: <span class="hljs-number">15</span>,
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-input-progress--invalid"</span>
+  }
 }</pre>
             
         
@@ -240,10 +267,29 @@
   <span class="hljs-attribute">flex-direction</span>: column;
 }
 
-<span class="hljs-selector-class">.inv-form-field</span> &gt; <span class="hljs-selector-class">.inv-input-icon</span> {
+<span class="hljs-selector-class">.inv-form-field--icon</span> &gt; <span class="hljs-selector-class">.inv-input-icon</span> {
   <span class="hljs-attribute">position</span>: absolute;
   <span class="hljs-attribute">top</span>: <span class="hljs-number">28px</span>;
   <span class="hljs-attribute">right</span>: <span class="hljs-number">8px</span>;
+}
+
+<span class="hljs-selector-class">.inv-form-field--icon</span> &gt; <span class="hljs-selector-class">.inv-input</span> {
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">35px</span>;
+}
+
+<span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-input-progress</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">59px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-input</span> {
+  <span class="hljs-attribute">border-bottom-left-radius</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">border-bottom-right-radius</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.inv-form-field--progress</span> &gt; <span class="hljs-selector-class">.inv-form-text</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">4px</span>;
 }
 </pre>
                             </code>
@@ -261,7 +307,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">173 Bytes</span>
+                    <span class="Meta-value">517 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -333,12 +379,16 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(6)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="label.html">@<span>label</span></a>, 
             
                 <a href="input-icon.html">@<span>input-icon</span></a>, 
+            
+                <a href="input-progress--invalid.html">@<span>input-progress--invalid</span></a>, 
+            
+                <a href="input-addon--progress.html">@<span>input-addon--progress</span></a>, 
             
                 <a href="input.html">@<span>input</span></a>, 
             
@@ -396,6 +446,58 @@
     Name <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>- disabled<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: John Doe"</span> <span class="hljs-attr">disabled</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><table>
+<thead>
+<tr>
+<th>Modificadores</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#icon"><code>.inv-form-field--icon</code></a></td>
+<td>Modifica o form field para ter suporte a icons de input</td>
+</tr>
+<tr>
+<td><a href="#progress"><code>.inv-form-field--progress</code></a></td>
+<td>Modifica o form field para ter suporte a barras de progresso de input</td>
+</tr>
+</tbody>
+</table>
+<h3 id="form-field-with-icon">Form Field with icon</h3>
+<p>Campo de formulário com icone de ação do input.</p>
+<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field inv-form-field--icon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label"</span>&gt;</span>
+    Field with icon
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon"</span>&gt;</span>
+    visibility
+  <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"icon"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="form-field-with-progress">Form Field with progress</h3>
+<p>Campo de formulário com barra de progresso de ação do input.</p>
+<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field inv-form-field--icon inv-form-field--progress"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label"</span>&gt;</span>
+    Field with icon and progress bar
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon "</span>&gt;</span>
+    visibility
+  <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">progress</span>
+    <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input-progress inv-input-progress--invalid"</span>
+    <span class="hljs-attr">max</span>=<span class="hljs-string">"100"</span>
+    <span class="hljs-attr">value</span>=<span class="hljs-string">"15"</span>
+  &gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">progress</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"progress"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> /&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-text inv-form-text--error"</span>&gt;</span>
+      Cara, nunca vi uma senha menos segura.
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code>
         
     </div>

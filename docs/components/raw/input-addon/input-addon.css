@@ -22,12 +22,39 @@
   cursor: not-allowed;
 }
 
-.inv-input-addon > .inv-input:not(:last-child) {
+.inv-input-addon__input {
+  position: relative;
+  flex: 1;
+  display: flex;
+}
+
+.inv-input-addon__input--progress {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inv-input-addon__input--icon > .inv-input {
+  padding-right: 32px;
+}
+
+.inv-input-addon__input--progress > .inv-input-progress {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.inv-input-addon__input:not(:last-child) > .inv-input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.inv-input-addon > .inv-input:not(:first-child) {
+.inv-input-addon__input:not(:first-child) > .inv-input {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.inv-input-addon__input > .inv-input-icon {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
