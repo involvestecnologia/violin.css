@@ -16,3 +16,8 @@ variants:
       form-text:
         value: "Senha segura"
         modifier: "inv-form-text--success"
+  - name: alert
+    context:
+      form-text:
+        value: "Senha segura"
+        modifier: "inv-form-text--alert"

@@ -20,6 +20,7 @@ Texto de formulário padrão, comum para ações regulares dos usuários.
 |-------------------------------------------------	|----------------------------------------------------------	|
 | [`.inv-form-text--error`](#error-form-text) 	| Modifica o form text com estilização de erro	|
 | [`.inv-form-text--success`](#success-form-text) 	| Modifica o form text com estilização de sucesso	|
+| [`.inv-form-text--alert`](#alert-form-text) 	| Modifica o form text com estilização de alerta	|
 
 ### Error Form Text
 Versão de erro.
@@ -44,5 +45,18 @@ Versão de sucesso.
 
 <span class="inv-form-text inv-form-text--sucess">
   Sou um texto de formulário com sucesso
+</span>
+```
+
+### Alert Form Text
+Versão de alerta.
+
+``` html
+<div class="inv-form-text inv-form-text--alert">
+  Sou um texto de formulário com alerta
+</div>
+
+<span class="inv-form-text inv-form-text--alert">
+  Sou um texto de formulário com alerta
 </span>
 ```

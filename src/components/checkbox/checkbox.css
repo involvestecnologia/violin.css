@@ -29,7 +29,8 @@
   border-color: var(--color-primary--regular);
 }
 
-.inv-checkbox:checked::before {
+.inv-checkbox:checked::before,
+.inv-checkbox:active::before {
   content: 'check';
   position: absolute;
   top: -1px;
@@ -48,16 +49,6 @@
   word-wrap: normal;
   font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
-}
-
-.inv-checkbox:checked:hover,
-.inv-checkbox:active:hover {
-  background-color: transparent;
-}
-
-.inv-checkbox:checked:hover::before,
-.inv-checkbox:active:hover::before {
-  color: var(--color-primary--regular);
 }
 
 .inv-checkbox:disabled:hover {
