@@ -1,0 +1,85 @@
+.inv-input-progress {
+  height: 4px;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  border: none;
+  appearance: none;
+}
+
+.inv-input-progress--disabled {
+  color: var(--color-system--light);
+  cursor: not-allowed;
+}
+
+.inv-input-progress::-webkit-progress-bar {
+  background-color: var(--color-default--light);
+}
+
+.inv-input-progress--disabled::-webkit-progress-bar {
+  background-color: var(--color-system--light);
+}
+
+.inv-input-progress::-webkit-progress-value {
+  background-color: var(--color-default--regular);
+}
+
+.inv-input-progress::-moz-progress-bar {
+  background-color: var(--color-default--regular);
+}
+
+.inv-input-progress::-ms-fill {
+  background-color: var(--color-default--regular);
+}
+
+/* INVALID STATE */
+.inv-input-progress--invalid::-webkit-progress-value {
+  background-color: var(--color-error--regular);
+}
+
+.inv-input-progress--invalid::-moz-progress-bar {
+  background-color: var(--color-error--regular);
+}
+
+.inv-input-progress--invalid::-ms-fill {
+  background-color: var(--color-error--regular);
+}
+
+/* ALERT STATE */
+.inv-input-progress--alert::-webkit-progress-value {
+  background-color: var(--color-alert--regular);
+}
+
+.inv-input-progress--alert::-moz-progress-bar {
+  background-color: var(--color-alert--regular);
+}
+
+.inv-input-progress--alert::-ms-fill {
+  background-color: var(--color-alert--regular);
+}
+
+/* DONE STATE */
+.inv-input-progress--done::-webkit-progress-value {
+  background-color: var(--color-done--regular);
+}
+
+.inv-input-progress--done::-moz-progress-bar {
+  background-color: var(--color-done--regular);
+}
+
+.inv-input-progress--done::-ms-fill {
+  background-color: var(--color-done--regular);
+}
+
+/* DISABLED STATE */
+.inv-input-progress--disabled::-webkit-progress-value {
+  background-color: var(--color-system--light);
+}
+
+.inv-input-progress--disabled::-moz-progress-bar {
+  background-color: var(--color-system--light);
+}
+
+.inv-input-progress--disabled::-ms-fill {
+  background-color: var(--color-system--light);
+}

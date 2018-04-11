@@ -1,5 +1,6 @@
 .fra-container {
   margin: 10px;
+  background: black;
 }
 
 .fra-container > * {

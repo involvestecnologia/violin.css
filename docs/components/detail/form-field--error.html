@@ -176,6 +176,9 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
   </span><span class="hljs-template-variable">{{&gt; <a href="label.html">@label</a>}}</span><span class="xml">
+  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> icon}}</span><span class="xml">
+    </span><span class="hljs-template-variable">{{&gt; <a href="input-icon.html">@input-icon</a>}}</span><span class="xml">
+  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
   </span><span class="hljs-template-variable">{{&gt; <a href="input.html">@input</a>}}</span><span class="xml">
   </span><span class="hljs-template-variable">{{&gt; <a href="form-text.html">@form-text</a>}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -233,8 +236,15 @@
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.inv-form-field</span> {
+  <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-direction</span>: column;
+}
+
+<span class="hljs-selector-class">.inv-form-field</span> &gt; <span class="hljs-selector-class">.inv-input-icon</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">28px</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">8px</span>;
 }
 </pre>
                             </code>
@@ -252,7 +262,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">63 Bytes</span>
+                    <span class="Meta-value">173 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -275,11 +285,19 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(5)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="form-field--default.html">
                     <span>Default</span>
+                </a>, 
+            
+                <a href="form-field--icon.html">
+                    <span>Icon</span>
+                </a>, 
+            
+                <a href="form-field--progress.html">
+                    <span>Progress</span>
                 </a>, 
             
                 <a href="">
@@ -316,10 +334,12 @@
         </li>
         
         <li class="Meta-item">
-            <strong class="Meta-key">References <em class="Meta-count">(3)</em>:</strong>
+            <strong class="Meta-key">References <em class="Meta-count">(4)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="label.html">@<span>label</span></a>, 
+            
+                <a href="input-icon.html">@<span>input-icon</span></a>, 
             
                 <a href="input.html">@<span>input</span></a>, 
             
@@ -340,6 +360,7 @@
 <p>Utilizado para entrada de dados no sistema, possuindo: </p>
 <ul>
 <li>label</li>
+<li>icon (opcional)</li>
 <li>input</li>
 <li>form-text (opcional)</li>
 </ul>
@@ -348,9 +369,17 @@
 <p>Campo de formulário padrão, comum para ações regulares dos usuários.</p>
 <code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label"</span>&gt;</span>
-    Nome
+    Name
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: John Doe"</span> /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label"</span>&gt;</span>
+    Event
+  <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon"</span>&gt;</span>event<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"event"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"event"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"date"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"10/10/2010"</span> /&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-field"</span>&gt;</span>
@@ -758,6 +787,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="input-icon.html" data-pjax>
                 <span>Input Icon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-progress.html" data-pjax>
+                <span>Input Progress</span>
                 
 
 <div class="Status Status--unlabelled">

@@ -165,6 +165,14 @@
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
+    },
+    {
+      "readySelector": "body",
+      "label": "InputProgress",
+      "url": "http://localhost:3000/components/preview/input-progress",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
