@@ -10,8 +10,8 @@
     "framework",
     "web"
   ],
-  "homepage": "https://kuroski.github.io/test/",
-  "author": "Os autores da Involves (https://github.com/kuroski/test/graphs/contributors)",
+  "homepage": "https://involvestecnologia.github.io/violin.css/index.html",
+  "author": "Os autores da Involves (https://github.com/involvestecnologia/violin.css/graphs/contributors)",
   "contributors": [
     "Involves Tecnologia"
   ],
@@ -58,10 +58,10 @@
   "style": "dist/index.min.css",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kuroski/test.git"
+    "url": "git+https://github.com/involvestecnologia/violin.css.git"
   },
   "bugs": {
-    "url": "https://github.com/kuroski/test/issues"
+    "url": "https://github.com/involvestecnologia/violin.css/issues"
   },
   "engines": {
     "node": ">=6"
