@@ -2,10 +2,14 @@
 
 const fractal = require('../fractal');
 const backstop = require('backstopjs');
+const del = require('del');
 
 const takeSnapshot = async () => {
   try {
-    await backstop('test');
+    await del(['test/visual/backstop_data/bitmaps_test']);
+    await backstop('test', {
+      config: 'test/visual/backstop.json',
+    });
     process.exit(0);
   } catch (err) {
     console.error(err);

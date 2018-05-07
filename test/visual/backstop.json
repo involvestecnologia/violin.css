@@ -8,7 +8,7 @@
     }
   ],
   "scenarios": [
-    { 
+    {
       "label": "Button",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/button",
@@ -127,7 +127,7 @@
     {
       "label": "Dropdown - select",
       "selectors": ["body"],
-      "readySelector": "body",   
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/dropdown--select",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -176,11 +176,11 @@
     }
   ],
   "paths": {
-    "bitmaps_reference": "backstop_data/bitmaps_reference",
-    "bitmaps_test": "backstop_data/bitmaps_test",
-    "engine_scripts": "backstop_data/engine_scripts",
-    "html_report": "backstop_data/html_report",
-    "ci_report": "backstop_data/ci_report"
+    "bitmaps_reference": "test/visual/backstop_data/bitmaps_reference",
+    "bitmaps_test": "test/visual/backstop_data/bitmaps_test",
+    "engine_scripts": "test/visual/backstop_data/engine_scripts",
+    "html_report": "test/visual/backstop_data/html_report",
+    "ci_report": "test/visual/backstop_data/ci_report"
   },
   "report": ["browser", "CI"],
   "engine": "chrome",
