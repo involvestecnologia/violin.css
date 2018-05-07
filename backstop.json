@@ -2,9 +2,9 @@
   "id": "violin",
   "viewports": [
     {
-      "label": "tablet",
-      "width": 1024,
-      "height": 768
+      "label": "desktop",
+      "width": 1280,
+      "height": 1024
     }
   ],
   "scenarios": [
