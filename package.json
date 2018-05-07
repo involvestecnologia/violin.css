@@ -29,11 +29,12 @@
     "build:css:support": "postcss src/css/index.css -o dist/index-old-browers.min.css -u postcss-import postcss-cssnext cssnano",
     "build:fractal": "fractal build",
     "pretest": "npm run build:css:doc",
-    "test": "node bin/test",
-    "test:approve": "backstop approve",
+    "test:visual": "node bin/test",
+    "test:visual:approve": "node bin/test-approve",
     "analyse": "parker dist/"
   },
   "dependencies": {
+    "del": "^3.0.0",
     "normalize.css": "~8.0.0"
   },
   "devDependencies": {

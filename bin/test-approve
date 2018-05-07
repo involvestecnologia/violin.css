@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+const backstop = require('backstopjs');
+
+(async () => {
+  try {
+    await backstop('approve', {
+      config: 'test/visual/backstop.json',
+    });
+    process.exit(0);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+})();
