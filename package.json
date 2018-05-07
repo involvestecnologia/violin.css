@@ -30,7 +30,8 @@
     "build:fractal": "fractal build",
     "pretest": "npm run build:css:doc",
     "test": "node bin/test",
-    "test:approve": "backstop approve",
+    "test:visual": "cd test/visual && rm -rf backstop_data/bitmaps_test && backstop test",
+    "test:visual:approve": "cd test/visual && backstop approve",
     "analyse": "parker dist/"
   },
   "dependencies": {
