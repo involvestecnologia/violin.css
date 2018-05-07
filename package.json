@@ -29,7 +29,6 @@
     "build:css:support": "postcss src/css/index.css -o dist/index-old-browers.min.css -u postcss-import postcss-cssnext cssnano",
     "build:fractal": "fractal build",
     "pretest": "npm run build:css:doc",
-    "test": "node bin/test",
     "test:visual": "cd test/visual && rm -rf backstop_data/bitmaps_test && backstop test",
     "test:visual:approve": "cd test/visual && backstop approve",
     "analyse": "parker dist/"

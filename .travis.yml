@@ -12,7 +12,6 @@ stages:
 jobs:
   include:
     - stage: browser
-      node_js: "node"
       script: npm run test:visual
 cache:
   directories:
