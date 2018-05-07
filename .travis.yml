@@ -12,8 +12,7 @@ stages:
 jobs:
   include:
     - stage: browser
-      script: npm run test:visual:approve
-      script: npm run test:visual
+      script: npm run test:visual:approve && npm run test:visual
 cache:
   directories:
     - node_modules
