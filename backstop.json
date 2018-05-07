@@ -8,167 +8,167 @@
     }
   ],
   "scenarios": [
-    {
-      "readySelector": "body",
+    { 
       "label": "Button",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/button",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Checkbox",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/checkbox",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Content Placeholder",
       "readySelector": "body",
-      "label": "Content placeholder",
       "url": "http://localhost:3000/components/preview/content-placeholder",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Form Text",
       "readySelector": "body",
-      "label": "Form text",
       "url": "http://localhost:3000/components/preview/form-text",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Input ",
       "readySelector": "body",
-      "label": "Input",
       "url": "http://localhost:3000/components/preview/input",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Input Icon",
       "readySelector": "body",
-      "label": "Input icon",
       "url": "http://localhost:3000/components/preview/input-icon",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Label",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/label",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "List",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/list",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Form Field",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/form-field",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Input addon",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/input-addon",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "selectors": ["body"],
-      "readySelector": "body",
       "label": "Dropdown - default",
+      "readySelector": "body",
+      "selectors": ["body"],
       "url": "http://localhost:3000/components/preview/dropdown--default",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Dropdown - open",
       "selectors": ["body"],
       "readySelector": "body",
-      "label": "Dropdown - open",
       "url": "http://localhost:3000/components/preview/dropdown--open",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Dropdown - action",
       "selectors": ["body"],
       "readySelector": "body",
-      "label": "Dropdown - action",
       "url": "http://localhost:3000/components/preview/dropdown--action",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Dropdown - counter",
       "selectors": ["body"],
       "readySelector": "body",
-      "label": "Dropdown - counter",
       "url": "http://localhost:3000/components/preview/dropdown--counter",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "selectors": ["body"],
-      "readySelector": "body",
       "label": "Dropdown - select",
+      "selectors": ["body"],
+      "readySelector": "body",   
       "url": "http://localhost:3000/components/preview/dropdown--select",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "Dropdown - multiselect",
       "selectors": ["body"],
       "readySelector": "body",
-      "label": "Dropdown - multiselect",
       "url": "http://localhost:3000/components/preview/dropdown--multiselect",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Radial Select",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/radial-select",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Text Link",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/text-link",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "Warning",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/warning",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "readySelector": "body",
       "label": "InputProgress",
+      "readySelector": "body",
       "url": "http://localhost:3000/components/preview/input-progress",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
