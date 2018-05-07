@@ -12,7 +12,8 @@ stages:
 jobs:
   include:
     - stage: browser
-      script: npm run test:visual
+      script: cd test/visual && backstop approve
+      script: cd test/visual && rm -rf backstop_data/bitmaps_test && backstop test
 cache:
   directories:
     - node_modules
