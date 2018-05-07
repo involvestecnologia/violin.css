@@ -13,7 +13,7 @@ jobs:
   include:
     - stage: browser
       node_js: "node"
-      script: npm test
+      script: npm run test:visual
 cache:
   directories:
     - node_modules
