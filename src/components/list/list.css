@@ -29,10 +29,8 @@
   background-color: var(--color-system--light);
 }
 
-.inv-list__item > span {
-  max-height: 30px;
-  overflow: hidden;
-  margin-right: var(--space-8);
+.inv-list__item--selected {
+  background-color: var(--color-default--white);
 }
 
 .inv-list__item--addon {
@@ -48,5 +46,11 @@
 
 .inv-list__item--addon > .inv-checkbox {
   margin-left: var(--space-8);
+  margin-right: var(--space-8);
+}
+
+.inv-list__item > span {
+  max-height: 30px;
+  overflow: hidden;
   margin-right: var(--space-8);
 }

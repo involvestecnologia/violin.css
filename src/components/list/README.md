@@ -25,9 +25,20 @@ Lista de itens padrão para seleção
 
 | Modificadores 	| Uso 	|
 |-------------------------------------------------	|----------------------------------------------------------	|
+| [`.inv-list__item--selected`](#selected) 	| Modifica o item da lista para o mesmo estar selecionado |
 | [`.inv-list__item--addon`](#addon-item) 	| Modifica o item da lista para inserir um novo componente na lateral esquerda	|
 | [`.inv-list__item--check-all`](#check-all) 	| Modifica o item da lista, seleção de itens internos	|
 
+### Selected item
+Modifica o item da lista para o mesmo estar selecionado
+
+``` html
+<div class="inv-list">
+  <a href="#" class="inv-list__item inv-list__item--selected">
+    <span>#Opção 1</span>
+  </a>
+</div>
+```
 ### Addon item
 Modifica o item da lista para inserir um novo componente na lateral esquerda
 
@@ -50,7 +61,7 @@ Modifica o item da lista para inserir um novo componente na lateral esquerda
  ### Check all
  Modifica o item da lista, seleção de itens internos
 
-``` html 
+``` html
 <div class="inv-list">
   <label for="selecionarTodos" class="inv-list__item inv-list__item--addon inv-list__item--check-all">
     <input id="selecionarTodos" type="checkbox" class="inv-checkbox" />
