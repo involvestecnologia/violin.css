@@ -1,5 +1,11 @@
 title: Menu
 status: "wip"
+preview: "@preview-menu"
+context:
+  test: "12354"
 variants:
   - name: default
   - name: open
+    context:
+      menu:
+          open: true

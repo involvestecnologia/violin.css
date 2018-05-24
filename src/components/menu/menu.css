@@ -1,5 +1,6 @@
 .inv-menu {
   min-width: 72px;
+  width: 72px;
   height: 100%;
 }
 
@@ -13,6 +14,11 @@
 
 .inv-menu__content {
   background-color: var(--color-system--dark);
+}
+
+.inv-menu__content--open {
+  width: 236px;
+  min-width: 236px;
 }
 
 .inv-menu__content--open > .inv-input {
