@@ -1,0 +1,17 @@
+.inv-menu-expand-button {
+  background-color: var(--color-system--dark);
+  border: none;
+  border-radius: 0 0 6px 0;
+  color: var(--color-system--white);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 72px;
+  min-height: 72px;
+  outline: 0;
+}
+
+.inv-menu-expand-button__icon {
+  font-size: 40px;
+}
