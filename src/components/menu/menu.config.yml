@@ -1,6 +1,7 @@
 title: Menu
 status: "wip"
 preview: "@preview-menu"
+collated: true
 context:
   test: "12354"
 variants:
@@ -8,4 +9,4 @@ variants:
   - name: open
     context:
       menu:
-          open: true
+        open: true

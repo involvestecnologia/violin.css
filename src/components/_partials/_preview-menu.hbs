@@ -9,12 +9,22 @@
     <title>Oi Violin.css | {{ _target.label }}</title>
     <style>
       html,
-      body {
+      body,
+      .container {
         height: 100%;
+      }
+      .container {
+        display: flex;
+        max-width: 100px;
+      }
+      .container > div {
+        padding-left: 10px;
       }
     </style>
 </head>
-<body style="padding: 10px; height: 100%;">
-  {{{ yield }}}
+<body>
+  <div class="container">
+    {{{ yield }}}
+  </div>
 </body>
 </html>
