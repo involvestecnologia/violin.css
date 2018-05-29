@@ -1,12 +1,45 @@
 title: Menu
 status: "wip"
 preview: "@preview-menu"
-collated: true
-context:
-  test: "12354"
+collated: false
 variants:
   - name: default
+    context:
+      menu:
+        open: false
   - name: open
     context:
       menu:
         open: true
+  - name: logo
+    context:
+      menu:
+        open: false
+        logo: true
+  - name: logo-full
+    context:
+      menu:
+        open: true
+        logo: true
+  - name: search
+    context:
+      icon: search
+      formField:
+        modifier: "inv-menu__search"
+      input:
+        modifier: "inv-menu__search"
+      menu:
+        open: false
+        logo: true
+        search: true
+  - name: search-full
+    context:
+      icon: search
+      input:
+        modifier: "inv-menu__search"
+      form-field:
+        modifier: "inv-menu__search--icon"
+      menu:
+        open: true
+        logo: true
+        search: true
