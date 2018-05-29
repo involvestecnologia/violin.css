@@ -28,6 +28,8 @@ variants:
       icon: search
       formField:
         modifier: "inv-menu__search"
+      input:
+        placeholder: " "
       menu:
         open: false
         logo: true
@@ -37,6 +39,8 @@ variants:
       icon: search
       formField:
         modifier: "inv-menu__search inv-menu__search--open"
+      input:
+        placeholder: "Ctrl+k para buscar"
       menu:
         open: true
         logo: true
