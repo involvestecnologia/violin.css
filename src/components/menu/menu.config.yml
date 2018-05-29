@@ -69,3 +69,19 @@ variants:
         logo: true
         brand-logo: true
         search: true
+  - name: Menu List
+    context:
+      icon: search
+      formField:
+        modifier: "inv-menu__search"
+      input:
+        placeholder: " "
+      label:
+        value: "Ctrl+k"
+        modifier: "inv-menu__search-label"
+      menu:
+        open: false
+        logo: true
+        brand-logo: true
+        search: true
+        list: true

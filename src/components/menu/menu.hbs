@@ -12,6 +12,10 @@
     <div class="inv-menu__list">
       {{#if menu.search}}
         {{> @form-field}}
+        {{> @label}}
+      {{/if}}
+      {{#if menu.list}}
+        <i class="material-icons inv-menu__list-item">wifi</i>
       {{/if}}
     </div>
 
