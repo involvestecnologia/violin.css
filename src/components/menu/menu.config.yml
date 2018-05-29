@@ -16,17 +16,17 @@ variants:
       menu:
         open: false
         logo: true
+        search: false
   - name: logo-full
     context:
       menu:
         open: true
         logo: true
+        search: false
   - name: search
     context:
       icon: search
       formField:
-        modifier: "inv-menu__search"
-      input:
         modifier: "inv-menu__search"
       menu:
         open: false
@@ -35,10 +35,8 @@ variants:
   - name: search-full
     context:
       icon: search
-      input:
-        modifier: "inv-menu__search"
-      form-field:
-        modifier: "inv-menu__search--icon"
+      formField:
+        modifier: "inv-menu__search inv-menu__search--open"
       menu:
         open: true
         logo: true
