@@ -1,4 +1,9 @@
 <div class="inv-menu">
-  <div class="inv-menu__content {{ternary menu.open "inv-menu__content--open" "" }}">
+  <div class="inv-menu__content {{ ternary menu.open "inv-menu__content--open" "" }}">
+      <img
+        class="inv-menu__logo {{ ternary menu.open "inv-menu__logo--open" "" }}"
+        src="{{ ternary menu.open "/assets/images/logo_full.png" "/assets/images/logo.png" }}"
+        alt="Logo"
+      />
   </div>
 </div>
