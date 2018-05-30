@@ -42,7 +42,7 @@
   height: 100%;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
 }
 
 .inv-menu__list--open {
@@ -50,11 +50,19 @@
 }
 
 .inv-menu__list-item {
-  color: var(--color-system--regular);
-  margin-bottom: 20px;
+  display: flex;
+  height: 44px;
+  align-items: center;
+  width: 100%;
+}
+
+.inv-menu__list-item:hover {
+  border-radius: 4px;
+  background-color: rgba(232, 234, 236, 0.2);
 }
 
 .inv-menu__list-item--open {
+  color: var(--color-system--regular);
   padding-left: var(--space-24);
   display: flex;
   align-items: center;
