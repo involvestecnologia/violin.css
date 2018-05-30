@@ -1,12 +1,12 @@
 <div class="inv-menu {{ ternary menu.open "inv-menu--open" "" }}">
   <div class="inv-menu__content">
-
-    {{> @menu-logo}}
+    {{#if menu-logo}}
+      {{> @menu-logo}}
+    {{/if}}
 
     <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
       {{#if menu.search}}
-        {{> @form-field}}
-        {{> @label}}
+        {{> @menu-search}}
       {{/if}}
       {{#each menu.list}}
         <a href="#" class="inv-text-link inv-menu__list-item">
@@ -15,7 +15,9 @@
         </a>
       {{/each}}
     </div>
-
-    {{> @menu-logo-brand}}
+    
+    {{#if menu-logo}}
+      {{> @menu-logo-brand}}
+    {{/if}}
   </div>
 </div>

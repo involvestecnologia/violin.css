@@ -1,0 +1,17 @@
+title: Menu Search
+status: "wip"
+preview: "@preview-menu-search"
+collated: true
+context:
+  icon: search
+  formField:
+    modifier: "inv-menu__search"
+  input:
+    placeholder: " "
+variants:
+  - name: open
+    context:
+      formField:
+          modifier: "inv-menu__search inv-menu__search--open"
+      input:
+        placeholder: "Ctrl+k para buscar"

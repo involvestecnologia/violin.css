@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ path '/assets/css/index.css' }}">
+    <link rel="stylesheet" href="{{ path '/custom-theme/index.css' }}">
+    <title>Oi Violin.css | {{ _target.label }}</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .container {
+        background-color: var(--color-system--dark);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 50%;
+        width: 50%;
+        border-radius: 10px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    {{{ yield }}}
+  </div>
+</body>
+</html>
