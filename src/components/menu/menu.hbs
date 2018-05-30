@@ -4,7 +4,10 @@
     {{#if menu.logo}}
       {{> @menu-logo}}
     {{/if}}
+  </header>
 
+  <div class="inv-menu__content">
+    
     {{#if menu.search}}
       {{#if menu.open}}
         {{render '@menu-search--open'}}
@@ -12,17 +15,15 @@
         {{render '@menu-search'}}
       {{/if}}
     {{/if}}
-  </header>
 
-  <div class="inv-menu__content">
     <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
       {{#each menu.list}}
-        <a href="#" class="inv-text-link inv-menu__list-item">
-          <i class="material-icons">{{ this.item.value }}</i>
-          {{ this.item.title }}
+        <a href="#" class="inv-text-link inv-menu__list-item {{ this.item.modifier }}">
+          <i class="material-icons">{{ this.item.value }}</i>{{ this.item.title }}
         </a>
       {{/each}}
     </div>
+
   </div>
 
   <footer class="inv-menu__footer">

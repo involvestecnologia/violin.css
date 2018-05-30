@@ -1,6 +1,7 @@
 .inv-menu {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   min-width: 72px;
   width: 72px;
   height: 100%;
@@ -26,6 +27,7 @@
 }
 
 .inv-menu__content {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,6 +37,7 @@
 
 .inv-menu__list {
   display: flex;
+  width: 100%;
   height: 100%;
   justify-content: flex-start;
   flex-direction: column;

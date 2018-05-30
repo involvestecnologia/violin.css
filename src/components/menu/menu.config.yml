@@ -94,6 +94,8 @@ variants:
           - item:
               value: wifi
               title: "Oi"
+              modifier: "inv-menu__list-item--open"
           - item:
               value: face
               title: " "
+              modifier: "inv-menu__list-item--open"
