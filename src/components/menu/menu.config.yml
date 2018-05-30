@@ -93,9 +93,49 @@ variants:
         list:
           - item:
               value: wifi
-              title: "Oi"
+              title: "Dashboard"
               modifier: "inv-menu__list-item--open"
           - item:
               value: face
-              title: " "
+              title: "Perfil"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: store
+              title: "Pontos de Venda"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: local_offer
+              title: "Produtos"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: map
+              title: "Roteiros e visitas"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: assignment
+              title: "Pesquisas"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: my_location
+              title: "Metas"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: notifications
+              title: "Alertas"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: track_changes
+              title: "Monitoramento"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: toll
+              title: "Acessos externos"
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: settings
+              title: Avançado
+              modifier: "inv-menu__list-item--open"
+          - item:
+              value: play_circle_outline
+              title: Involves
               modifier: "inv-menu__list-item--open"
