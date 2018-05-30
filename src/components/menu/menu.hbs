@@ -1,24 +1,19 @@
 <div class="inv-menu {{ ternary menu.open "inv-menu--open" "" }}">
   <div class="inv-menu__content">
 
-    {{#if menu.logo}}
-      <img
-        class="inv-menu__logo {{ ternary menu.open "inv-menu__logo--open" "" }}"
-        src="{{ ternary menu.open "/assets/images/logo_full.png" "/assets/images/logo.png" }}"
-        alt="Logo"
-      />
-    {{/if}}
+    {{> @menu-logo}}
 
-    <div class="inv-menu__list">
+    <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
       {{#if menu.search}}
         {{> @form-field}}
         {{> @label}}
       {{/if}}
-      {{#if menu.list}}
-        {{#each menu.list as |icon|}}
-          <i class="material-icons inv-menu__list-item">{{ icon }}</i>
-        {{/each}}
-      {{/if}}
+      {{#each menu.list}}
+        <a href="#" class="inv-text-link inv-menu__list-item">
+          <i class="material-icons">{{ this.item.value }}</i>
+          {{ this.item.title }}
+        </a>
+      {{/each}}
     </div>
 
     {{#if menu.brand-logo}}

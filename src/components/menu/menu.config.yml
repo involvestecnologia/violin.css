@@ -13,12 +13,16 @@ variants:
         open: true
   - name: logo
     context:
+      menu-logo:
+        src: /assets/images/logo.png
       menu:
         open: false
-        logo: true
         search: false
   - name: logo-full
     context:
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
       menu:
         open: true
         logo: true
@@ -85,5 +89,28 @@ variants:
         brand-logo: true
         search: true
         list:
-          - "wifi"
-          - "face"
+          - item:
+              value: wifi
+              title: " "
+          - item:
+              value: face
+              title: " "
+  - name: Menu List Full
+    context:
+      icon: search
+      formField:
+        modifier: "inv-menu__search inv-menu__search--open"
+      input:
+        placeholder: "Ctrl+k para buscar"
+      menu:
+        open: true
+        logo: true
+        brand-logo: true
+        search: true
+        list:
+          - item:
+              value: wifi
+              title: "Oi"
+          - item:
+              value: face
+              title: " "
