@@ -16,12 +16,6 @@
       {{/each}}
     </div>
 
-    {{#if menu.brand-logo}}
-      <img
-        class="inv-menu__brand-logo {{ ternary menu.open "inv-menu__brand-logo--open" "" }}"
-        src="{{ ternary menu.open "/assets/images/brand-logo.png" "/assets/images/brand-logo-small.png" }}"
-        alt="Logo"
-      />
-    {{/if}}
+    {{> @menu-logo-brand}}
   </div>
 </div>

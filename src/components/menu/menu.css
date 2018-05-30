@@ -88,17 +88,3 @@
 .inv-menu__list-item--open {
   padding-left: var(--space-24);
 }
-
-.inv-menu__brand-logo {
-  height: var(--space-16);
-  width: var(--space-48);
-  margin-top: var(--space-16);
-  margin-bottom: var(--space-32);
-}
-
-.inv-menu__brand-logo--open {
-  height: var(--space-32);
-  width: 96px;
-  margin-top: var(--space-16);
-  margin-bottom: var(--space-32);
-}

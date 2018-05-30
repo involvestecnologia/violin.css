@@ -25,57 +25,67 @@ variants:
         modifier: inv-menu-logo--open
       menu:
         open: true
-        logo: true
         search: false
   - name: search
     context:
       icon: search
+      menu-logo:
+        src: /assets/images/logo.png
       formField:
         modifier: "inv-menu__search"
       input:
         placeholder: " "
       menu:
         open: false
-        logo: true
         search: true
   - name: search-full
     context:
       icon: search
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
       formField:
         modifier: "inv-menu__search inv-menu__search--open"
       input:
         placeholder: "Ctrl+k para buscar"
       menu:
         open: true
-        logo: true
         search: true
   - name: brand-logo
     context:
       icon: search
+      menu-logo-brand:
+        src: /assets/images/brand-logo.png
+      menu-logo:
+        src: /assets/images/logo.png
       formField:
         modifier: "inv-menu__search"
       input:
         placeholder: " "
       menu:
         open: false
-        logo: true
-        brand-logo: true
         search: true
   - name: brand-logo-full
     context:
       icon: search
+      menu-logo-brand:
+        src: /assets/images/brand-logo.png
+        modifier: inv-menu-logo-brand--open
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
       formField:
         modifier: "inv-menu__search inv-menu__search--open"
       input:
         placeholder: "Ctrl+k para buscar"
       menu:
         open: true
-        logo: true
-        brand-logo: true
         search: true
   - name: Menu List
     context:
       icon: search
+      menu-logo:
+        src: /assets/images/logo.png
       formField:
         modifier: "inv-menu__search"
       input:
@@ -85,8 +95,6 @@ variants:
         modifier: "inv-menu__search-label"
       menu:
         open: false
-        logo: true
-        brand-logo: true
         search: true
         list:
           - item:
@@ -98,14 +106,15 @@ variants:
   - name: Menu List Full
     context:
       icon: search
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
       formField:
         modifier: "inv-menu__search inv-menu__search--open"
       input:
         placeholder: "Ctrl+k para buscar"
       menu:
         open: true
-        logo: true
-        brand-logo: true
         search: true
         list:
           - item:

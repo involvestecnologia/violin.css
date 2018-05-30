@@ -1,0 +1,11 @@
+.inv-menu-logo-brand {
+  height: var(--space-16);
+  width: var(--space-48);
+  margin-top: var(--space-16);
+  margin-bottom: var(--space-32);
+}
+
+.inv-menu-logo-brand--open {
+  height: var(--space-32);
+  width: 96px;
+}
