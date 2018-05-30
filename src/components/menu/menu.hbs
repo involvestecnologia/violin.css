@@ -15,7 +15,9 @@
         {{> @label}}
       {{/if}}
       {{#if menu.list}}
-        <i class="material-icons inv-menu__list-item">wifi</i>
+        {{#each menu.list as |icon|}}
+          <i class="material-icons inv-menu__list-item">{{ icon }}</i>
+        {{/each}}
       {{/if}}
     </div>
 

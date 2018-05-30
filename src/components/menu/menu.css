@@ -41,6 +41,7 @@
   color: var(--color-system--regular);
   font-size: 10px;
   font-weight: var(--font-section-headers--weight);
+  margin-top: 2px;
   margin-bottom: 12px;
 }
 
@@ -88,6 +89,7 @@
 
 .inv-menu__list-item {
   color: var(--color-system--regular);
+  margin-bottom: 20px;
 }
 
 .inv-menu__brand-logo {

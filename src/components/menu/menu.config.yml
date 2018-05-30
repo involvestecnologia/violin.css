@@ -84,4 +84,6 @@ variants:
         logo: true
         brand-logo: true
         search: true
-        list: true
+        list:
+          - "wifi"
+          - "face"
