@@ -54,6 +54,9 @@ variants:
         search: true
   - name: brand-logo-full
     context:
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
       menu-logo-brand:
         modifier: inv-menu-logo-brand--open
       menu:

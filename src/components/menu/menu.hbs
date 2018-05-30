@@ -1,17 +1,21 @@
 <div class="inv-menu {{ ternary menu.open "inv-menu--open" "" }}">
-  <div class="inv-menu__content">
+
+  <header class="inv-menu__header">
     {{#if menu.logo}}
       {{> @menu-logo}}
     {{/if}}
 
-    <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
-      {{#if menu.search}}
-        {{#if menu.open}}
-          {{render '@menu-search--open'}}
-        {{else}}
-          {{render '@menu-search'}}
-        {{/if}}
+    {{#if menu.search}}
+      {{#if menu.open}}
+        {{render '@menu-search--open'}}
+      {{else}}
+        {{render '@menu-search'}}
       {{/if}}
+    {{/if}}
+  </header>
+
+  <div class="inv-menu__content">
+    <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
       {{#each menu.list}}
         <a href="#" class="inv-text-link inv-menu__list-item">
           <i class="material-icons">{{ this.item.value }}</i>
@@ -19,9 +23,12 @@
         </a>
       {{/each}}
     </div>
-    
+  </div>
+
+  <footer class="inv-menu__footer">
     {{#if menu.brand}}
       {{> @menu-logo-brand}}
     {{/if}}
-  </div>
+  </footer>
+  
 </div>
