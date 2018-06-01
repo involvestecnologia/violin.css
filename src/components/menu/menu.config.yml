@@ -130,7 +130,7 @@ variants:
           - item:
               value: toll
               title: "Acessos externos"
-              modifier: "inv-menu__list-item--open"
+              modifier: "inv-menu__list-item--open inv-menu__list-item--selected"
           - item:
               value: settings
               title: Avançado

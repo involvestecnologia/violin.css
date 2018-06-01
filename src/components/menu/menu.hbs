@@ -18,12 +18,10 @@
 
     <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
       {{#each menu.list}}
-        <div class="inv-menu__list-item">
-          <a href="#" class="inv-text-link {{ this.item.modifier }}">
-            <i class="material-icons">{{ this.item.value }}</i>
-            <span>{{ this.item.title }}</span>
-          </a>
-        </div>
+        <a href="#" class="inv-menu__list-item {{ this.item.modifier }}">
+          <i class="material-icons">{{ this.item.value }}</i>
+          <span>{{ this.item.title }}</span>
+        </a>
       {{/each}}
     </div>
 
@@ -34,5 +32,5 @@
       {{> @menu-logo-brand}}
     {{/if}}
   </footer>
-  
+
 </div>

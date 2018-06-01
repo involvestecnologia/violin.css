@@ -39,11 +39,11 @@
 }
 
 .inv-menu-search--open > .inv-input {
-  width: 164px;
+  width: calc(100% - var(--space-48));
   height: var(--space-40);
   padding-left: var(--space-48);
 }
 
 .inv-menu-search--open > .inv-input-icon {
-  margin-left: 16px;
+  left: var(--space-16);
 }
