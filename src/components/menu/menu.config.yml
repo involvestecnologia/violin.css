@@ -139,3 +139,41 @@ variants:
               value: play_circle_outline
               title: Involves
               modifier: "inv-menu__list-item--open"
+
+  - name: Menu List Categorie
+    context:
+      menu-logo:
+        src: /assets/images/logo_full.png
+        modifier: inv-menu-logo--open
+      menu-logo-brand:
+        modifier: inv-menu-logo-brand--open
+      menu:
+        open: true
+        logo: true
+        brand: true
+        search: true
+        categorie:
+          value: people
+          title: "Colaboradores"
+        list-categories:
+          - item:
+              title: "Colaboradores"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+          - item:
+              title: "Afastamento"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+          - item:
+              title: "Perfil de Acesso"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+          - item:
+              title: "Jornada de Trabalho"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+          - item:
+              title: "Marcações de ponto"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+          - item:
+              title: "Relatórios"
+              subcategorie: true
+          - item:
+              title: "Histórico de Contratação de Colaboradores"
+              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"

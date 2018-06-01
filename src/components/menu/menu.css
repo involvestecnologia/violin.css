@@ -39,30 +39,24 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  align-items: left;
 }
 
 .inv-menu__list--open {
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: left;
 }
 
 .inv-menu__list-item {
-  display: flex;
   height: 44px;
-  align-items: center;
-  width: 100%;
   text-decoration: none;
-}
-
-.inv-menu__list-item:hover {
-  border-radius: 4px;
-  background-color: rgba(232, 234, 236, 0.2);
+  font-weight: 600;
+  color: var(--color-system--white);
 }
 
 .inv-menu__list-item--open {
-  color: var(--color-system--regular);
+  color: var(--color-system--white);
   padding-left: var(--space-16);
   display: flex;
   align-items: center;
@@ -70,13 +64,80 @@
   height: 44px;
 }
 
+.inv-menu__list-item--open:hover {
+  border-radius: 4px;
+  background-color: rgba(232, 234, 236, 0.2);
+}
+
+.inv-menu__list-item--open > i {
+  padding-right: var(--space-16);
+  color: var(--color-system--regular);
+}
+
 .inv-menu__list-item--selected {
   border-radius: 4px;
   background-color: rgba(232, 234, 236, 0.1);
 }
 
-.inv-menu__list-item--open > span {
+.inv-menu-categorie {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 14px;
+  height: 100%;
+}
+
+.inv-menu-categorie__list {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.inv-menu-categorie__title {
   color: var(--color-system--white);
-  padding-left: var(--space-16);
-  font-weight: var(--font-content--weight);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: calc(100% - var(--space-16));
+  height: 44px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.inv-menu-categorie__subtitle {
+  padding-bottom: 10px;
+  padding-top: 12px;
+  color: var(--color-primary--light);
+  font-size: var(--font-content-small--size);
+  font-weight: var(--font-title--weight);
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.inv-menu-categorie__title > i {
+  margin-right: 8px;
+}
+
+.inv-menu-categorie__list-item {
+  width: calc(100% - 8px);
+  padding-left: 8px;
+  display: flex;
+  height: 44px;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.inv-menu-categorie__list-item:hover {
+  border-radius: 4px;
+  background-color: rgba(232, 234, 236, 0.2);
+}
+
+.inv-menu-categorie > a {
+  color: var(--color-system--white);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
