@@ -4,6 +4,16 @@
   flex-direction: column;
 }
 
+.inv-form-field > .inv-label {
+  margin-left: 1px;
+  margin-bottom: 4px;
+}
+
+.inv-form-field > .inv-form-text {
+  margin-top: 4px;
+  margin-left: 1px;
+}
+
 .inv-form-field--icon > .inv-input-icon {
   position: absolute;
   top: 28px;

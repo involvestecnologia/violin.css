@@ -36,13 +36,6 @@
   background-color: var(--color-default--dark);
 }
 
-.inv-btn:disabled {
-  background-color: var(--color-default--white);
-  color: var(--color-default--light);
-  box-shadow: none;
-  cursor: not-allowed;
-}
-
 /*
   COLOR VARIATIONS
 */
@@ -157,4 +150,21 @@
 .inv-btn > i {
   margin-left: var(--space-8);
   margin-right: var(--space-8);
+}
+
+/*
+  DISABLED
+*/
+
+.inv-btn:disabled,
+.inv-btn--primary:disabled,
+.inv-btn--accent:disabled,
+.inv-btn--outline:disabled,
+.inv-btn--outline.inv-btn--primary:disabled,
+.inv-btn--outline.inv-btn--accent:disabled {
+  background-color: var(--color-default--white);
+  color: var(--color-default--light);
+  box-shadow: none;
+  cursor: not-allowed;
+  border: none;
 }

@@ -255,13 +255,6 @@
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-default--dark);
 }
 
-<span class="hljs-selector-class">.inv-btn</span><span class="hljs-selector-pseudo">:disabled</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-default--white);
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--light);
-  <span class="hljs-attribute">box-shadow</span>: none;
-  <span class="hljs-attribute">cursor</span>: not-allowed;
-}
-
 <span class="hljs-comment">/*
   COLOR VARIATIONS
 */</span>
@@ -377,6 +370,23 @@
   <span class="hljs-attribute">margin-left</span>: <span class="hljs-built_in">var</span>(--space-8);
   <span class="hljs-attribute">margin-right</span>: <span class="hljs-built_in">var</span>(--space-8);
 }
+
+<span class="hljs-comment">/*
+  DISABLED
+*/</span>
+
+<span class="hljs-selector-class">.inv-btn</span><span class="hljs-selector-pseudo">:disabled</span>,
+<span class="hljs-selector-class">.inv-btn--primary</span><span class="hljs-selector-pseudo">:disabled</span>,
+<span class="hljs-selector-class">.inv-btn--accent</span><span class="hljs-selector-pseudo">:disabled</span>,
+<span class="hljs-selector-class">.inv-btn--outline</span><span class="hljs-selector-pseudo">:disabled</span>,
+<span class="hljs-selector-class">.inv-btn--outline</span><span class="hljs-selector-class">.inv-btn--primary</span><span class="hljs-selector-pseudo">:disabled</span>,
+<span class="hljs-selector-class">.inv-btn--outline</span><span class="hljs-selector-class">.inv-btn--accent</span><span class="hljs-selector-pseudo">:disabled</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-default--white);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--light);
+  <span class="hljs-attribute">box-shadow</span>: none;
+  <span class="hljs-attribute">cursor</span>: not-allowed;
+  <span class="hljs-attribute">border</span>: none;
+}
 </pre>
                             </code>
                             
@@ -393,7 +403,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.8 KB</span>
+                    <span class="Meta-value">4 KB</span>
                 </li>
             </ul>
         </div>
