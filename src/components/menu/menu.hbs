@@ -13,6 +13,7 @@
         {{render '@menu-search--open'}}
       {{else}}
         {{render '@menu-search'}}
+        <label>Ctrl+k</label>
       {{/if}}
     {{/if}}
 
@@ -37,6 +38,7 @@
             {{/if}}
           {{/each}}
         </div>
+
       </div>
     {{else}}
       <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">

@@ -31,8 +31,19 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding-left: 8px;
   padding-right: 8px;
+  align-items: center;
+}
+
+.inv-menu__content > label {
+  display: flex;
+  color: var(--color-system--regular);
+  font-size: 10px;
+  justify-content: center;
+  line-height: 14px;
+  padding-bottom: 12px;
 }
 
 .inv-menu__list {
@@ -44,7 +55,6 @@
 }
 
 .inv-menu__list--open {
-  /* align-items: flex-start; */
   align-items: left;
 }
 
@@ -62,6 +72,7 @@
   align-items: center;
   width: calc(100% - var(--space-16));
   height: 44px;
+  font-size: 14px;
 }
 
 .inv-menu__list-item--open:hover {
@@ -87,36 +98,18 @@
   height: 100%;
 }
 
+.inv-menu-categorie > a {
+  color: var(--color-system--white);
+  height: 44px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .inv-menu-categorie__list {
   display: flex;
   width: 100%;
   flex-direction: column;
-}
-
-.inv-menu-categorie__title {
-  color: var(--color-system--white);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  width: calc(100% - var(--space-16));
-  height: 44px;
-  font-weight: 600;
-  padding-left: 8px;
-}
-
-.inv-menu-categorie__subtitle {
-  padding-bottom: 10px;
-  padding-top: 12px;
-  color: var(--color-primary--light);
-  font-size: var(--font-content-small--size);
-  font-weight: var(--font-title--weight);
-  padding-left: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.inv-menu-categorie__title > i {
-  margin-right: 8px;
 }
 
 .inv-menu-categorie__list-item {
@@ -134,10 +127,28 @@
   background-color: rgba(232, 234, 236, 0.2);
 }
 
-.inv-menu-categorie > a {
+.inv-menu-categorie__title {
   color: var(--color-system--white);
-  height: 44px;
+  text-decoration: none;
   display: flex;
   align-items: center;
-  text-decoration: none;
+  width: calc(100% - var(--space-16));
+  height: 44px;
+  font-weight: 600;
+  padding-left: 8px;
+}
+
+.inv-menu-categorie__title > i {
+  margin-right: 8px;
+}
+
+.inv-menu-categorie__subtitle {
+  padding-bottom: 10px;
+  padding-top: 12px;
+  color: var(--color-primary--light);
+  font-size: var(--font-content-small--size);
+  font-weight: var(--font-title--weight);
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
 }
