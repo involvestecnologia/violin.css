@@ -64,7 +64,7 @@ variants:
         logo: true
         brand: true
         search: true
-  - name: Menu List
+  - name: List
     context:
       menu:
         open: false
@@ -78,7 +78,37 @@ variants:
           - item:
               value: face
               title: " "
-  - name: Menu List Full
+          - item:
+              value: store
+              title: " "
+          - item:
+              value: local_offer
+              title: " "
+          - item:
+              value: map
+              title: " "
+          - item:
+              value: assignment
+              title: " "
+          - item:
+              value: my_location
+              title: " "
+          - item:
+              value: notifications
+              title: " "
+          - item:
+              value: track_changes
+              title: " "
+          - item:
+              value: toll
+              title: " "
+          - item:
+              value: settings
+              title: " "
+          - item:
+              value: play_circle_outline
+              title: " "
+  - name: List Full
     context:
       menu-logo:
         src: /assets/images/logo_full.png
@@ -139,8 +169,7 @@ variants:
               value: play_circle_outline
               title: Involves
               modifier: "inv-menu__list-item--open"
-
-  - name: Menu List Categorie
+  - name: List Categorie
     context:
       menu-logo:
         src: /assets/images/logo_full.png
