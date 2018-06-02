@@ -51,10 +51,10 @@ violin.css/
 ├── src/ # ambiente de desenvolvimento
 │   ├── components/
 │   │   ├── _partials
-│   │   ├── button/ # módulo do componente
-│   │   │   ├── button.config.yml # arquivo de configuração do módulo
-│   │   │   ├── button.css # css do módulo
-│   │   │   ├── button.hbs # markup do módulo
+│   │   ├── example/ # módulo do componente
+│   │   │   ├── example.config.yml # arquivo de configuração do módulo
+│   │   │   ├── example.css # css do módulo
+│   │   │   ├── example.hbs # markup do módulo
 │   │   │   └── README.md # documentação do módulo
 │   ├── css/
 │   │   ├── base/
@@ -80,8 +80,8 @@ Temos as seguintes npm tasks:
 - **build:css:doc** - builda o css utilizado na documentação
 - **build:css:support** - builda a aplicação aplicando cssnext para suporte a navegadores antigos
 - **build:fractal** - cria uma documentação estática do projeto
-- **test** - executa os testes de regressão visual
-- **test:approve** - aprova os testes de regreção visual
+- **test:visual** - executa os testes de regressão visual
+- **test:visual:approve** - cria os snapshots de aprovação para os testes de regressão visual
 - **analyse** - mostra estatísticas referente ao css do projeto
 
 ### Ambiente de desenvolvimento
@@ -121,7 +121,7 @@ Para criar um novo teste, edite o arquivo `backstop.json`, e insira um novo cen�
 Executando os testes
 
 ```bash
-npm test
+npm test:visual
 ```
 
 ### Versionamento

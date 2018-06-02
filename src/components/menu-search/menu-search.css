@@ -3,6 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  min-height: 40px;
 }
 
 .inv-menu-search-label {
@@ -19,23 +21,13 @@
 }
 
 .inv-menu-search > .inv-input {
-  position: relative;
-  width: var(--space-56);
+  width: var(--space-24);
   height: var(--space-40);
   border: none;
   border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  padding-right: 0;
   background-color: rgba(255, 255, 255, 0.1);
   color: rgb(232, 234, 236, 0.4);
   font-weight: var(--font-section-headers--weight);
-}
-
-.inv-menu-search--open {
-  align-items: flex-start;
-  margin-bottom: 29px;
 }
 
 .inv-menu-search--open > .inv-input {
@@ -46,4 +38,5 @@
 
 .inv-menu-search--open > .inv-input-icon {
   margin-left: 16px;
+  left: 0;
 }

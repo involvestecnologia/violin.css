@@ -1,13 +1,13 @@
-title: Menu Logo Brand
+title: Menu Brand Logo
 status: "wip"
 collated: true
 context:
-  menu-logo-brand:
+  menu-brand-logo:
     src: /assets/images/brand-logo.png
-    alt: Menu Logo Brand
+    alt: Menu Brand Logo
 variants:
   - name: default
   - name: open
     context:
-      menu-logo-brand:
-        modifier: inv-menu-logo-brand--open
+      menu-brand-logo:
+        modifier: inv-menu-brand-logo--open
