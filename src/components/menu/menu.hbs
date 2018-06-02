@@ -13,20 +13,42 @@
         {{render '@menu-search--open'}}
       {{else}}
         {{render '@menu-search'}}
+        <label>Ctrl+k</label>
       {{/if}}
     {{/if}}
 
-    <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
-      {{#each menu.list}}
-        <div class="inv-menu__list-item {{ this.item.modifier }}">
-          <a href="#" class="inv-text-link {{ this.item.modifier }}">
-            <i class="material-icons">{{ this.item.value }}</i>
-            <span>{{ this.item.title }}</span>
-          </a>
-        </div>
-      {{/each}}
-    </div>
 
+    {{#if menu.categorie}}
+      <div class="inv-menu-categorie">
+
+        <a href="#">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+
+        <div class="inv-menu-categorie__list">
+          <span class="inv-menu-categorie__title">
+            <i class="material-icons">{{ menu.categorie.value }}</i>{{ menu.categorie.title }}
+          </span>
+          {{#each menu.list-categories}}
+            {{#if this.item.subcategorie}}
+              <span class="inv-menu-categorie__subtitle">{{ this.item.title }}</span>
+            {{else}}
+              <a href="#" class="inv-menu-categorie__list-item {{ this.item.modifier }}">
+                {{ this.item.title }}
+              </a>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    {{else}}
+      <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
+        {{#each menu.list}}
+          <a href="#" class="inv-menu__list-item {{ this.item.modifier }}">
+            <i class="material-icons">{{ this.item.value }}</i>{{ this.item.title }}
+          </a>
+        {{/each}}
+      </div>
+    {{/if}}
   </div>
 
   <footer class="inv-menu__footer">
@@ -34,5 +56,5 @@
       {{> @menu-brand-logo}}
     {{/if}}
   </footer>
-  
+
 </div>

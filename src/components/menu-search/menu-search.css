@@ -31,7 +31,7 @@
 }
 
 .inv-menu-search--open > .inv-input {
-  width: 164px;
+  width: calc(100% - var(--space-48));
   height: var(--space-40);
   padding-left: var(--space-48);
 }
@@ -40,3 +40,4 @@
   margin-left: 16px;
   left: 0;
 }
+

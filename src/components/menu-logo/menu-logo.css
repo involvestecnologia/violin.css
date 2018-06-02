@@ -2,7 +2,6 @@
   height: var(--space-32);
   width: var(--space-40);
   margin-top: var(--space-16);
-  margin-bottom: var(--space-32);
 }
 
 .inv-menu-logo--open {
