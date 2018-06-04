@@ -229,11 +229,11 @@
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
-    },    
+    },
     {
       "label": "MenuList",
       "readySelector": "body",
-      "url": "http://localhost:3000/components/preview/menu--menu-list",
+      "url": "http://localhost:3000/components/preview/menu--list",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
@@ -241,7 +241,7 @@
     {
       "label": "MenuListFull",
       "readySelector": "body",
-      "url": "http://localhost:3000/components/preview/menu--menu-list-full",
+      "url": "http://localhost:3000/components/preview/menu--list-full",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
