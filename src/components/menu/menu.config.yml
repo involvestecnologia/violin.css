@@ -120,7 +120,7 @@ variants:
         logo: true
         brand: true
         search: true
-        list:          
+        list:
           - item:
               value: wifi
               title: "Dashboard"
