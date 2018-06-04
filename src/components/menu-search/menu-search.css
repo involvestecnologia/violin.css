@@ -8,6 +8,10 @@
   min-height: 40px;
 }
 
+.inv-menu-search--open {
+  margin-bottom: 12px;
+}
+
 .inv-menu-search-label {
   color: var(--color-system--regular);
   font-size: 10px;
