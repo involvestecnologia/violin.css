@@ -173,6 +173,78 @@
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
+    },
+    {
+      "label": "MenuExpandButton",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu-expand-button",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuDefault",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--default",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuOpen",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--open",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuLogoFull",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--logo-full",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuLogo",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--logo",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuSearch",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu-search",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuBrandLogo",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu-brand-logo",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuList",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--list",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuListFull",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/menu--list-full",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
     }
   ],
   "paths": {
