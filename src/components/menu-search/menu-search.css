@@ -36,9 +36,9 @@
 }
 
 .inv-menu-search--open > .inv-input {
-  width: calc(100% - var(--space-48));
+  width: 148px;
   height: var(--space-40);
-  padding-left: var(--space-48);
+  padding-left: 56px;
 }
 
 .inv-menu-search--open > .inv-input-icon {
