@@ -59,7 +59,8 @@
 }
 
 .inv-menu__list::-webkit-scrollbar-thumb {
-  background-color: #c1c1c1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
 }
 
 .inv-menu__list--open {
@@ -132,7 +133,8 @@
 }
 
 .inv-menu-categorie__list::-webkit-scrollbar-thumb {
-  background-color: #c1c1c1;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
 }
 
 .inv-menu-categorie__list-item {
