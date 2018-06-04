@@ -51,7 +51,7 @@
   width: 100%;
   height: 100%;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .inv-menu__list--open {
