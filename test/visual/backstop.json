@@ -199,17 +199,17 @@
       "requireSameDimensions": true
     },
     {
-      "label": "MenuLogo",
+      "label": "MenuLogoFull",
       "readySelector": "body",
-      "url": "http://localhost:3000/components/preview/menu--logo",
+      "url": "http://localhost:3000/components/preview/menu--logo-full",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "label": "MenuLogoFull",
+      "label": "MenuLogo",
       "readySelector": "body",
-      "url": "http://localhost:3000/components/preview/menu--logo-full",
+      "url": "http://localhost:3000/components/preview/menu--logo",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
