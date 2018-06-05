@@ -176,15 +176,23 @@
     },
     {
       "label": "MenuExpandButton",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu-expand-button",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
+      "label": "MenuCollapseButton",
+      "readySelector": ["body", ".container"],
+      "url": "http://localhost:3000/components/preview/menu-collapse-button",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "MenuDefault",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--default",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -192,7 +200,7 @@
     },
     {
       "label": "MenuOpen",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--open",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -200,7 +208,7 @@
     },
     {
       "label": "MenuLogoFull",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--logo-full",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -208,7 +216,7 @@
     },
     {
       "label": "MenuLogo",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--logo",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -216,7 +224,7 @@
     },
     {
       "label": "MenuSearch",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu-search",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -224,7 +232,7 @@
     },
     {
       "label": "MenuBrandLogo",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu-brand-logo",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -232,7 +240,7 @@
     },
     {
       "label": "MenuList",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--list",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
@@ -240,7 +248,7 @@
     },
     {
       "label": "MenuListFull",
-      "readySelector": "body",
+      "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--list-full",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
