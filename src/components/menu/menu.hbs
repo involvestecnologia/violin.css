@@ -1,13 +1,15 @@
 <div class="inv-menu {{ ternary menu.open "inv-menu--open" "" }}">
 
-  <header class="inv-menu__header">
+  <header class="inv-menu__header {{ ternary menu.open "inv-menu__header--open" "" }}">
+    {{#if menu.open}}
+      {{> @menu-collapse-button}}
+    {{/if}}
     {{#if menu.logo}}
       {{> @menu-logo}}
     {{/if}}
   </header>
 
   <div class="inv-menu__content">
-
     {{#if menu.search}}
       {{#if menu.open}}
         {{render '@menu-search--open'}}
