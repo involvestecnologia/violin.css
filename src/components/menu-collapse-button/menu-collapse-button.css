@@ -16,6 +16,10 @@
   font-size: 40px;
 }
 
+.inv-menu-collapse-button--visible {
+  display: flex;
+}
+
 @media (max-width: 499px) {
   .inv-menu-collapse-button {
     display: flex;
