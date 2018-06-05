@@ -1,4 +1,5 @@
 .inv-menu {
+  font-size: 1px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,8 +8,6 @@
   height: 100%;
   background-color: var(--color-system--dark);
   border-radius: 0 10px 10px 0;
-  border: solid;
-  box-sizing: border-box;
   border-color: var(--color-system--dark);
 }
 
