@@ -31,7 +31,6 @@
   border: none;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: var(--color-system--white);
   font-weight: var(--font-section-headers--weight);
 }
 
@@ -41,8 +40,12 @@
   padding-left: 56px;
 }
 
+.inv-menu-search > .inv-input:focus {
+  background-color: var(--color-system--white);
+  box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
+}
+
 .inv-menu-search--open > .inv-input-icon {
   margin-left: 16px;
   left: 0;
 }
-
