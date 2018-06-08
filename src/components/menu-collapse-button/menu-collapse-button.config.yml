@@ -1,4 +1,4 @@
 title: Menu Collapse Button
 status: "wip"
-context:
-  modifier: "inv-menu-collapse-button--visible"
+preview: "@preview-menu-search"
+

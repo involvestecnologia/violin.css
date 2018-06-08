@@ -5,8 +5,14 @@ collated: false
 context:
   menu-logo:
     src: /assets/images/logo.png
-  menu-brand-logo:
-    src: /assets/images/brand-logo.png
+    alt: Menu Logo
+  menu-logo-open:
+    src: /assets/images/logo-full.png
+    alt: Menu Logo
+  menu-brand:
+    src: /assets/images/brand.png
+  menu-brand-open:
+    src: /assets/images/brand-full.png
 variants:
   - name: default
   - name: open

@@ -3,9 +3,17 @@
   <header class="inv-menu__header {{ ternary menu.open "inv-menu__header--open" "" }}">
     {{#if menu.open}}
       {{> @menu-collapse-button}}
-    {{/if}}
-    {{#if menu.logo}}
-      {{> @menu-logo}}
+      <img
+        class="inv-menu__header-logo"
+        src="{{ menu-logo-open.src }}"
+        alt="{{ menu-logo-open.alt }}"
+      />
+    {{else}}
+      <img
+        class="inv-menu__header-logo"
+        src="{{ menu-logo.src }}"
+        alt="{{ menu-logo.alt }}"
+      />
     {{/if}}
   </header>
 
@@ -54,8 +62,18 @@
   </div>
 
   <footer class="inv-menu__footer">
-    {{#if menu.brand}}
-      {{> @menu-brand-logo}}
+    {{#if menu.open}}
+      <img
+        class="inv-menu__footer-brand"
+        src="{{ menu-brand-open.src }}"
+        alt="{{ menu-brand-open.alt }}"
+      />
+    {{else}}
+      <img
+        class="inv-menu__footer-brand"
+        src="{{ menu-brand.src }}"
+        alt="{{ menu-brand.alt }}"
+      />
     {{/if}}
   </footer>
 

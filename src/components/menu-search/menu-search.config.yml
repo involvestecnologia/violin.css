@@ -6,6 +6,7 @@ context:
   icon: search
   input:
     placeholder: " "
+    for: "my-input-search"
 variants:
   - name: open
     context:

@@ -1,51 +1,36 @@
 
 .inv-menu-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  min-height: 40px;
 }
 
-.inv-menu-search--open {
-  margin-bottom: 12px;
-}
-
-.inv-menu-search-label {
-  color: var(--color-system--regular);
-  font-size: 10px;
-  font-weight: var(--font-section-headers--weight);
-  margin-top: 2px;
-  margin-bottom: 12px;
-}
-
-.inv-menu-search > .inv-input-icon {
+.inv-menu-search__label {
   position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  left: 16px;
+  height: 100%;
+}
+
+.inv-menu-search__label > i {
   color: var(--color-primary--light);
 }
 
 .inv-menu-search > .inv-input {
-  width: var(--space-24);
-  height: var(--space-40);
-  border: none;
+  width: 24px;
   border-radius: 10px;
+  color: var(--color-system--light);
   background-color: rgba(255, 255, 255, 0.1);
-  font-weight: var(--font-section-headers--weight);
+  font-weight: 600;
 }
 
 .inv-menu-search--open > .inv-input {
-  width: 148px;
-  height: var(--space-40);
-  padding-left: 56px;
+  width: auto;
+  padding-left: 54px;
 }
 
 .inv-menu-search > .inv-input:focus {
+  color: var(--color-system--dark);
   background-color: var(--color-system--white);
   box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
-}
-
-.inv-menu-search--open > .inv-input-icon {
-  margin-left: 16px;
-  left: 0;
 }

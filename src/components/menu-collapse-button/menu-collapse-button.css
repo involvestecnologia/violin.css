@@ -1,27 +1,23 @@
 .inv-menu-collapse-button {
-  background-color: var(--color-system--dark);
+  background-color: transparent;
   border: none;
-  color: var(--color-system--white);
   cursor: pointer;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  min-width: 72px;
-  min-height: 72px;
-  padding-left: 20px;
   outline: 0;
+  width: 40px;
+  height: 40px;
+  padding-left: 20px;
 }
 
 .inv-menu-collapse-button > i {
   font-size: 40px;
+  color: var(--color-system--white);
+  transition: color 0.1s;
 }
 
-.inv-menu-collapse-button--visible {
-  display: flex;
+.inv-menu-collapse-button:hover > i {
+  color: var(--color-default--regular);
 }
 
-@media (max-width: 499px) {
-  .inv-menu-collapse-button {
-    display: flex;
-  }
+.inv-menu-collapse-button:active > i {
+  color: var(--color-default--dark);
 }

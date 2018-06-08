@@ -2,16 +2,22 @@
   background-color: var(--color-system--dark);
   border: none;
   border-radius: 0 0 6px 0;
-  color: var(--color-system--white);
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 72px;
-  min-height: 72px;
+  width: 72px;
+  height: 72px;
   outline: 0;
 }
 
-.inv-menu-expand-button__icon {
+.inv-menu-expand-button > i {
   font-size: 40px;
+  color: var(--color-system--white);
+  transition: color 0.1s;
+}
+
+.inv-menu-expand-button:hover > i {
+  color: var(--color-default--regular);
+}
+
+.inv-menu-expand-button:active > i {
+  color: var(--color-default--dark);
 }
