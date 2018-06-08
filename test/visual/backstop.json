@@ -3,8 +3,8 @@
   "viewports": [
     {
       "label": "desktop",
-      "width": 1280,
-      "height": 1024
+      "width": 1366,
+      "height": 768
     }
   ],
   "scenarios": [
