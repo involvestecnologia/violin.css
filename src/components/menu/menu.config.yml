@@ -1,8 +1,11 @@
 title: Menu
 status: "wip"
 preview: "@preview-menu"
-collated: false
 context:
+  preview:
+    styles: "
+      height: 100%;
+    "
   menu-logo:
     src: /assets/images/logo.png
     alt: Menu Logo

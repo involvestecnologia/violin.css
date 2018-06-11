@@ -1,14 +1,10 @@
 <div class="inv-menu-list {{ menu-list.modifier }}">
-  <a href="#" class="inv-menu-list_item">
-    <i class="material-icons">wifi</i>
-  </a>
-  <a href="#" class="inv-menu-list_item">
-    <i class="material-icons">face</i>
-  </a>
-  <a href="#" class="inv-menu-list_item">
-    <i class="material-icons">search</i>
-  </a>
-  <a href="#" class="inv-menu-list_item">
-    <i class="material-icons">people</i>
-  </a>
+  {{#each menu-list.list}}
+    <a href="#" class="inv-menu-list_item">
+      <i class="material-icons">{{this.item.icon}}</i>
+      {{#if ../menu-list.modifier}}
+        <span>{{this.item.text}}</span>
+      {{/if}}
+    </a>
+  {{/each}}
 </div>

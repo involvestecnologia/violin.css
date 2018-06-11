@@ -1,14 +1,17 @@
 .inv-menu-list {
-  background-color: var(--color-system--dark);
+  display: flex;
+  flex-direction: column;
 }
 
 .inv-menu-list_item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 44px;
+  width: 100%;
   border-radius: 4px;
   text-decoration: none;
+  transition: background-color 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .inv-menu-list_item:hover {
@@ -19,10 +22,20 @@
   background-color: rgba(232, 234, 236, 0.1);
 }
 
-.inv-menu-list_item--open {
+.inv-menu-list--open > .inv-menu-list_item {
+  justify-content: flex-start;
+  padding-left: var(--space-16);
+  padding-right: var(--space-16);
 }
 
 .inv-menu-list_item > i {
   font-size: 24px;
   color: var(--color-system--regular);
+}
+
+.inv-menu-list_item > span {
+  color: var(--color-system--white);
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: var(--space-16);
 }

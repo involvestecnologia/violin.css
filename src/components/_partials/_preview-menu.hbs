@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="{{ path '/assets/css/index.css' }}">
@@ -10,14 +9,16 @@
     <title>Violin.css | {{ _target.label }}</title>
     <style>
       html,
-      body,
-      .container {
+      body {
         height: 100%;
       }
     </style>
 </head>
 <body>
-  <div class="container">
+  <div
+    style="{{
+      ternary _target.context.preview.styles _target.context.preview.styles ""
+    }}">
     {{{ yield }}}
   </div>
 </body>

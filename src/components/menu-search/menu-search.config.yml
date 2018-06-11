@@ -1,8 +1,18 @@
 title: Menu Search
 status: "wip"
-preview: "@preview-menu-search"
-collated: true
+preview: "@preview-menu"
 context:
+  preview:
+    styles: "
+      background-color: var(--color-system--dark);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 50%;
+      width: 50%;
+      border-radius: 10px;
+    "
   icon: search
   input:
     placeholder: " "
