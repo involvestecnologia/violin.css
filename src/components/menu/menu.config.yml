@@ -16,202 +16,29 @@ context:
     src: /assets/images/brand.png
   menu-brand-open:
     src: /assets/images/brand-full.png
+  icon: search
+  input:
+    placeholder: "Ctrl+k para buscar"
+  menu-search:
+    modifier: "inv-menu-search--open"
+  menu-list:
+    modifier: inv-menu-list--open
+    list:
+      - item:
+          icon: wifi
+          text: Profile
+      - item:
+          icon: face
+          text: Pontos de Venda
+      - item:
+          icon: search
+          text: Métricas
+      - item:
+          icon: people
+          text: Acessos Externos
 variants:
   - name: default
-  - name: open
+  - name: visible
     context:
       menu:
-        open: true
-        logo: false
-        search: false
-  - name: logo
-    context:
-      menu:
-        open: false
-        logo: true
-        search: false
-  - name: logo-full
-    context:
-      menu-logo:
-        src: /assets/images/logo_full.png
-        modifier: inv-menu-logo--open
-      menu:
-        open: true
-        logo: true
-        search: false
-  - name: search
-    context:
-      menu:
-        open: false
-        logo: true
-        search: true
-  - name: search-full
-    context:
-      menu-logo:
-        src: /assets/images/logo_full.png
-        modifier: inv-menu-logo--open
-      menu:
-        open: true
-        logo: true
-        search: true
-  - name: brand-logo
-    context:
-      menu:
-        open: false
-        logo: true
-        brand: true
-        search: true
-  - name: brand-logo-full
-    context:
-      menu-logo:
-        src: /assets/images/logo_full.png
-        modifier: inv-menu-logo--open
-      menu-brand-logo:
-        modifier: inv-menu-brand-logo--open
-      menu:
-        open: true
-        logo: true
-        brand: true
-        search: true
-  - name: List
-    context:
-      menu:
-        open: false
-        logo: true
-        brand: true
-        search: true
-        list:
-          - item:
-              value: wifi
-              title: " "
-          - item:
-              value: face
-              title: " "
-          - item:
-              value: store
-              title: " "
-          - item:
-              value: local_offer
-              title: " "
-          - item:
-              value: map
-              title: " "
-          - item:
-              value: assignment
-              title: " "
-          - item:
-              value: my_location
-              title: " "
-          - item:
-              value: notifications
-              title: " "
-          - item:
-              value: track_changes
-              title: " "
-          - item:
-              value: toll
-              title: " "
-          - item:
-              value: settings
-              title: " "
-          - item:
-              value: play_circle_outline
-              title: " "
-  - name: List Full
-    context:
-      menu-logo:
-        src: /assets/images/logo_full.png
-        modifier: inv-menu-logo--open
-      menu-brand-logo:
-        modifier: inv-menu-brand-logo--open
-      menu:
-        open: true
-        logo: true
-        brand: true
-        search: true
-        list:
-          - item:
-              value: wifi
-              title: "Dashboard"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: face
-              title: "Perfil"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: store
-              title: "Pontos de Venda"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: local_offer
-              title: "Produtos"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: map
-              title: "Roteiros e visitas"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: assignment
-              title: "Pesquisas"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: my_location
-              title: "Metas"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: notifications
-              title: "Alertas"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: track_changes
-              title: "Monitoramento"
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: toll
-              title: "Acessos externos"
-              modifier: "inv-menu__list-item--open inv-menu__list-item--selected"
-          - item:
-              value: settings
-              title: Avançado
-              modifier: "inv-menu__list-item--open"
-          - item:
-              value: play_circle_outline
-              title: Involves
-              modifier: "inv-menu__list-item--open"
-  - name: List Categorie
-    context:
-      menu-logo:
-        src: /assets/images/logo_full.png
-        modifier: inv-menu-logo--open
-      menu-brand-logo:
-        modifier: inv-menu-brand-logo--open
-      menu:
-        open: true
-        logo: true
-        brand: true
-        search: true
-        categorie:
-          value: people
-          title: "Colaboradores"
-        list-categories:
-          - item:
-              title: "Colaboradores"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
-          - item:
-              title: "Afastamento"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
-          - item:
-              title: "Perfil de Acesso"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
-          - item:
-              title: "Jornada de Trabalho"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
-          - item:
-              title: "Marcações de ponto"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
-          - item:
-              title: "Relatórios"
-              subcategorie: true
-          - item:
-              title: "Histórico de Contratação de Colaboradores"
-              modifier: "inv-menu__list-item--open inv-menu-categorie__list-item"
+        modifier: inv-menu--visible

@@ -1,12 +1,10 @@
 .inv-menu-list {
   display: flex;
   flex-direction: column;
-  padding-left: var(--space-8);
-  padding-right: var(--space-8);
 }
 
 .inv-menu-list_item {
-  height: 44px;
+  min-height: 44px;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.1s;

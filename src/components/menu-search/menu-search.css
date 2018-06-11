@@ -25,8 +25,9 @@
 }
 
 .inv-menu-search--open > .inv-input {
-  width: auto;
   padding-left: 54px;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .inv-menu-search > .inv-input:focus {

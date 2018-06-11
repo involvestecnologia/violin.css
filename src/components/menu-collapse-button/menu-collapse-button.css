@@ -9,7 +9,7 @@
 }
 
 .inv-menu-collapse-button > i {
-  font-size: 40px;
+  font-size: 20px;
   color: var(--color-system--white);
   transition: color 0.1s;
 }

@@ -1,80 +1,18 @@
-<div class="inv-menu {{ ternary menu.open "inv-menu--open" "" }}">
-
-  <header class="inv-menu__header {{ ternary menu.open "inv-menu__header--open" "" }}">
-    {{#if menu.open}}
+<div class="inv-menu {{ menu.modifier }} {{ ternary menu.open "inv-menu--open" "" }}">
+  {{> @menu-expand-button}}
+  <div class="inv-menu__container">
+    <div class="inv-menu-header">
       {{> @menu-collapse-button}}
-      <img
-        class="inv-menu__header-logo"
-        src="{{ menu-logo-open.src }}"
-        alt="{{ menu-logo-open.alt }}"
-      />
-    {{else}}
-      <img
-        class="inv-menu__header-logo"
-        src="{{ menu-logo.src }}"
-        alt="{{ menu-logo.alt }}"
-      />
-    {{/if}}
-  </header>
-
-  <div class="inv-menu__content">
-    {{#if menu.search}}
-      {{#if menu.open}}
-        {{render '@menu-search--open'}}
-      {{else}}
-        {{render '@menu-search'}}
-        <label>Ctrl+k</label>
-      {{/if}}
-    {{/if}}
-
-
-    {{#if menu.categorie}}
-      <div class="inv-menu-categorie">
-
-        <a href="#">
-          <i class="material-icons">keyboard_arrow_left</i>
-        </a>
-
-        <div class="inv-menu-categorie__list">
-          <span class="inv-menu-categorie__title">
-            <i class="material-icons">{{ menu.categorie.value }}</i>{{ menu.categorie.title }}
-          </span>
-          {{#each menu.list-categories}}
-            {{#if this.item.subcategorie}}
-              <span class="inv-menu-categorie__subtitle">{{ this.item.title }}</span>
-            {{else}}
-              <a href="#" class="inv-menu-categorie__list-item {{ this.item.modifier }}">
-                {{ this.item.title }}
-              </a>
-            {{/if}}
-          {{/each}}
-        </div>
-      </div>
-    {{else}}
-      <div class="inv-menu__list {{ ternary menu.open "inv-menu__list--open" "" }}">
-        {{#each menu.list}}
-          <a href="#" class="inv-menu__list-item {{ this.item.modifier }}">
-            <i class="material-icons">{{ this.item.value }}</i>{{ this.item.title }}
-          </a>
-        {{/each}}
-      </div>
-    {{/if}}
+      <a href="#" class="inv-menu-header__logo">
+        <img src="{{ menu-logo-open.src }}" alt="{{ menu-logo-open.alt }}" />
+      </a>
+    </div>
+    {{> @menu-search--default }}
+    {{> @menu-list--open }}
+    <img
+      class="inv-menu__container-brand"
+      src="{{ menu-brand-open.src }}"
+      alt="{{ menu-brand-open.alt }}"
+    />
   </div>
-
-  <footer class="inv-menu__footer">
-    {{#if menu.open}}
-      <img
-        class="inv-menu__footer-brand"
-        src="{{ menu-brand-open.src }}"
-        alt="{{ menu-brand-open.alt }}"
-      />
-    {{else}}
-      <img
-        class="inv-menu__footer-brand"
-        src="{{ menu-brand.src }}"
-        alt="{{ menu-brand.alt }}"
-      />
-    {{/if}}
-  </footer>
-
 </div>
