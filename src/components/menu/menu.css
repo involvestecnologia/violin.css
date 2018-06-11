@@ -34,6 +34,10 @@
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.inv-menu-header__logo {
+  justify-self: center;
+}
+
 .inv-menu__container-brand {
   align-self: center;
 }
