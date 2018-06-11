@@ -1,0 +1,9 @@
+title: Menu List
+status: "wip"
+variants:
+  - name: default
+  - name: open
+    context:
+      menu-list:
+        modifier: inv-menu-list_item--open
+

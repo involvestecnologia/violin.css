@@ -1,0 +1,28 @@
+.inv-menu-list {
+  background-color: var(--color-system--dark);
+}
+
+.inv-menu-list_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.inv-menu-list_item:hover {
+  background-color: rgba(232, 234, 236, 0.2);
+}
+
+.inv-menu-list_item:active {
+  background-color: rgba(232, 234, 236, 0.1);
+}
+
+.inv-menu-list_item--open {
+}
+
+.inv-menu-list_item > i {
+  font-size: 24px;
+  color: var(--color-system--regular);
+}
