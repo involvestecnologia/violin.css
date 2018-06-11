@@ -36,9 +36,29 @@ context:
       - item:
           icon: people
           text: Acessos Externos
+  menu-list-categorie:
+    list:
+      - item:
+          icon: people
+          text: Colaboradores
+      - item:
+          text: Afastamento
+      - item:
+          text: Perfil de Acesso
+      - item:
+          text: Jornada de Trabalho
+      - item:
+          title: Relatórios
+      - item:
+          text: Histórico de Contratação de Colaboradores
 variants:
   - name: default
   - name: visible
     context:
       menu:
         modifier: inv-menu--visible
+  - name: categorie
+    context:
+      menu:
+        modifier: inv-menu--visible
+        categorie: true

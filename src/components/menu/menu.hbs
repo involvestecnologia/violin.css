@@ -8,7 +8,13 @@
       </a>
     </div>
     {{> @menu-search--default }}
-    {{> @menu-list--open }}
+    <div class="inv-menu__container-list">
+      {{#if menu.categorie}}
+        {{> @menu-list-categorie }}
+      {{else}}
+        {{> @menu-list--open }}
+      {{/if}}
+    </div>
     <img
       class="inv-menu__container-brand"
       src="{{ menu-brand-open.src }}"
