@@ -1,0 +1,19 @@
+<div class="inv-menu-list-categorie-container">
+  <a href="#" class="inv-menu-list-categorie-container__back-button">
+    <i class="material-icons">arrow_back_ios</i>
+  </a>
+  <div class="inv-menu-list-categorie">
+    {{#each menu-list-categorie.list}}
+      {{#if this.item.title}}
+        <div class="inv-menu-list-categorie__separator">{{ this.item.title }}</div>
+      {{else}}
+        <a href="#" class="inv-menu-list-categorie__item">
+          {{#if this.item.icon}}
+            <i class="material-icons">{{ this.item.icon }}</i>
+          {{/if}}
+          <span>{{ this.item.text }}</span>
+        </a>
+      {{/if}}
+    {{/each}}
+  </div>
+</div>
