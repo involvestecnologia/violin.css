@@ -4,7 +4,8 @@ const path = require('path');
 const fractal = module.exports = require('@frctl/fractal').create();
 const hbs = require('@frctl/handlebars')({
   helpers: {
-    ternary: (test, yes, no) => test ? yes : no
+    ternary: (test, yes, no) => test ? yes : no,
+    json: (object) => JSON.stringify(object, null, 2)
   }
 });
 
