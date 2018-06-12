@@ -2,9 +2,7 @@
   {{#each menu-list.list}}
     <a href="#" class="inv-menu-list_item">
       <i class="material-icons">{{this.item.icon}}</i>
-      {{#if ../menu-list.modifier}}
-        <span>{{this.item.text}}</span>
-      {{/if}}
+      <span>{{this.item.text}}</span>
     </a>
   {{/each}}
 </div>
