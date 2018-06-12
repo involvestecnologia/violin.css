@@ -24,10 +24,18 @@
   font-weight: 600;
 }
 
+.inv-menu-search > .inv-input::placeholder {
+  color: transparent;
+}
+
 .inv-menu-search--open > .inv-input {
   padding-left: 54px;
   box-sizing: border-box;
   width: 100%;
+}
+
+.inv-menu-search--open > .inv-input::placeholder {
+  color: var(--color-system--regular);
 }
 
 .inv-menu-search > .inv-input:focus {

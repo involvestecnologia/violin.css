@@ -7,14 +7,9 @@ context:
       height: 100%;
     "
   menu-logo:
-    src: /assets/images/logo.png
-    alt: Menu Logo
-  menu-logo-open:
     src: /assets/images/logo-full.png
     alt: Menu Logo
   menu-brand:
-    src: /assets/images/brand.png
-  menu-brand-open:
     src: /assets/images/brand-full.png
   icon: search
   input:
@@ -53,12 +48,23 @@ context:
           text: Histórico de Contratação de Colaboradores
 variants:
   - name: default
-  - name: visible
+  - name: mobile
     context:
       menu:
         modifier: inv-menu--visible
-  - name: categorie
+  - name: mobile - categorie
     context:
       menu:
         modifier: inv-menu--visible
         categorie: true
+  - name: closed
+    context:
+      menu-logo:
+        src: /assets/images/logo.png
+        alt: Menu Logo
+      menu-brand:
+        src: /assets/images/brand.png
+      menu-search:
+        modifier: ""
+      menu-list:
+        modifier: ""

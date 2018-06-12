@@ -4,11 +4,16 @@
     <div class="inv-menu-header">
       {{> @menu-collapse-button}}
       <a href="#" class="inv-menu-header__logo">
-        <img src="{{ menu-logo-open.src }}" alt="{{ menu-logo-open.alt }}" />
+        <img src="{{ menu-logo.src }}" alt="{{ menu-logo.alt }}" />
       </a>
     </div>
-    {{> @menu-search--default }}
-    <div class="inv-menu__container-list">
+
+    <div class="inv-menu__search">
+      {{> @menu-search--default }}
+      <div class="inv-menu__search-tip">Ctrl+k</div>
+    </div>
+
+    <div class="inv-menu__list">
       {{#if menu.categorie}}
         {{> @menu-list-categorie }}
       {{else}}
@@ -16,9 +21,9 @@
       {{/if}}
     </div>
     <img
-      class="inv-menu__container-brand"
-      src="{{ menu-brand-open.src }}"
-      alt="{{ menu-brand-open.alt }}"
+      class="inv-menu__brand"
+      src="{{ menu-brand.src }}"
+      alt="{{ menu-brand.alt }}"
     />
   </div>
 </div>
