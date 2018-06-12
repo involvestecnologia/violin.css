@@ -69,6 +69,10 @@
     min-height: 100%;
   }
 
+  .inv-menu--open > .inv-menu__container {
+    max-width: 236px;
+  }
+
   .inv-menu-header {
     display: flex;
     justify-content: center;
@@ -87,7 +91,7 @@
     display: block;
   }
 
-  .inv-menu__brand {
+  .inv-menu__brand > img {
     max-width: 48px;
   }
 }

@@ -54,14 +54,17 @@ variants:
       menu:
         modifier: inv-menu--visible
         categorie: true
-  - name: closed
+  - name: open
     context:
+      menu:
+        open: true
+        modifier: "inv-menu--open"
       menu-logo:
         src: /assets/images/logo.png
         alt: Menu Logo
       menu-brand:
         src: /assets/images/brand.png
       menu-search:
-        modifier: ""
+        modifier: "inv-menu-search--open"
       menu-list:
-        modifier: ""
+        modifier: "inv-menu-list--open"

@@ -13,7 +13,9 @@
 
     <div class="inv-menu__search">
       {{> @menu-search--default }}
-      <div class="inv-menu__search-tip">Ctrl+k</div>
+      {{#unless menu.open}}
+        <div class="inv-menu__search-tip">Ctrl+k</div>
+      {{/unless}}
     </div>
 
     <div class="inv-menu__list">
@@ -23,10 +25,9 @@
         {{> @menu-list--open }}
       {{/if}}
     </div>
-    <img
-      class="inv-menu__brand"
-      src="{{ menu-brand.src }}"
-      alt="{{ menu-brand.alt }}"
-    />
+    <picture class="inv-menu__brand">
+      <source media="(min-width: 500px)" srcset="/assets/images/brand.png">
+      <img src="/assets/images/brand-full.png" alt="{{ menu-logo.alt }}" />
+    </picture>
   </div>
 </div>
