@@ -65,11 +65,14 @@
     max-width: 72px;
     border-radius: 0 10px 10px 0;
     padding-bottom: var(--space-32);
+    height: auto;
+    min-height: 100%;
   }
 
   .inv-menu-header {
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
   }
 
   .inv-menu-header > .inv-menu-collapse-button {
