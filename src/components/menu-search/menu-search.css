@@ -20,6 +20,7 @@
 .inv-menu-search--open > .inv-input {
   padding-left: 54px;
   border-radius: 10px;
+  width: 100%;
   box-sizing: border-box;
   color: var(--color-system--light);
   background-color: rgba(255, 255, 255, 0.1);

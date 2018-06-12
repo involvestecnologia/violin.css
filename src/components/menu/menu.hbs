@@ -4,7 +4,10 @@
     <div class="inv-menu-header">
       {{> @menu-collapse-button}}
       <a href="#" class="inv-menu-header__logo">
-        <img src="{{ menu-logo.src }}" alt="{{ menu-logo.alt }}" />
+        <picture>
+          <source media="(min-width: 500px)" srcset="/assets/images/logo.png">
+          <img src="/assets/images/logo-full.png" alt="{{ menu-logo.alt }}" />
+        </picture>
       </a>
     </div>
 

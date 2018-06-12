@@ -14,10 +14,7 @@ context:
   icon: search
   input:
     placeholder: "Ctrl+k para buscar"
-  menu-search:
-    modifier: "inv-menu-search--open"
   menu-list:
-    modifier: inv-menu-list--open
     list:
       - item:
           icon: wifi

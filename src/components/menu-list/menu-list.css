@@ -43,4 +43,12 @@
   .inv-menu-list_item > span {
     display: none;
   }
+
+  .inv-menu-list--open > .inv-menu-list_item {
+    justify-content: flex-start;
+  }
+
+  .inv-menu-list--open > .inv-menu-list_item > span {
+    display: block;
+  }
 }
