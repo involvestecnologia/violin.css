@@ -7,11 +7,11 @@ context:
       padding: 0;
       background-color: #1d2e44;
       border-radius: 0;
+      height: 100%;
     "
   menu-list-categorie:
     list:
       - item:
-          icon: people
           text: Colaboradores
       - item:
           text: Afastamento
