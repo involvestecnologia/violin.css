@@ -1,6 +1,17 @@
 .inv-menu-list {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+
+.inv-menu-list::-webkit-scrollbar {
+  width: 16px;
+}
+
+.inv-menu-list::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .inv-menu-list_item,
@@ -38,6 +49,10 @@
 @media (min-width: 500px) {
   .inv-menu-list_item {
     justify-content: center;
+  }
+
+  .inv-menu-list::-webkit-scrollbar {
+    width: 8px;
   }
 
   .inv-menu-list_item > span {
