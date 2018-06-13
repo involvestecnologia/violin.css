@@ -16,11 +16,11 @@
 }
 
 .inv-menu-list_item:hover {
-  background-color: rgba(232, 234, 236, 0.1);
+  background-color: rgba(232, 234, 236, 0.2);
 }
 
 .inv-menu-list_item:active {
-  background-color: rgba(232, 234, 236, 0.2);
+  background-color: rgba(232, 234, 236, 0.1);
 }
 
 .inv-menu-list_item > i {
