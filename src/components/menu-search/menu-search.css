@@ -38,6 +38,10 @@
   box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
 }
 
+.inv-menu-search > .inv-input:focus + .inv-menu-search__label > i {
+  color: var(--color-primary--regular);
+}
+
 @media (min-width: 500px) {
   .inv-menu-search > .inv-input {
     width: 56px;
@@ -49,7 +53,7 @@
   }
 
   .inv-menu-search--open > .inv-input {
-    width: 100%;
+    min-width: 220px;
     padding-left: 54px;
   }
 
