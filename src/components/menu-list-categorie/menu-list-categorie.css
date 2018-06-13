@@ -69,9 +69,10 @@
   font-weight: bold;
   color: var(--color-primary--light);
   padding-left: var(--space-8);
-  min-height: 44px;
   display: flex;
   align-items: center;
+  padding-top: 12px;
+  padding-bottom: 10px;
 }
 
 .inv-menu-list-categorie__title > i {
