@@ -53,7 +53,7 @@ variants:
     context:
       menu:
         open: true
-        modifier: inv-menu--visible inv-menu--open
+        modifier: inv-menu--visible
         categorie: true
       menu-search:
         modifier: "inv-menu-search--open"
@@ -61,7 +61,7 @@ variants:
     context:
       menu:
         open: true
-        modifier: "inv-menu--open"
+        modifier: "inv-menu--visible"
       menu-logo:
         src: /assets/images/logo.png
         alt: Menu Logo

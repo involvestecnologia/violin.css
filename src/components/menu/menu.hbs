@@ -1,14 +1,13 @@
-<div class="inv-menu {{ menu.modifier }} {{ ternary menu.open "inv-menu--open" "" }}">
+<div class="inv-menu {{ menu.modifier }}">
   {{> @menu-expand-button}}
-  <div class="inv-menu__container">
+  <div class="inv-menu__container {{ ternary menu.open "inv-menu__container--open" "" }}">
+
     <div class="inv-menu-header">
       {{> @menu-collapse-button}}
-      <a href="#" class="inv-menu-header__logo">
-        <picture>
-          <source media="(min-width: 500px)" srcset="/assets/images/logo.png">
-          <img src="/assets/images/logo-full.png" alt="{{ menu-logo.alt }}" />
-        </picture>
-      </a>
+      <picture>
+        <source media="(min-width: 500px)" srcset="/assets/images/logo.png">
+        <img src="/assets/images/logo-full.png" alt="{{ menu-logo.alt }}" />
+      </picture>
     </div>
 
     <div class="inv-menu__search">
@@ -25,9 +24,11 @@
         {{> @menu-list--open }}
       {{/if}}
     </div>
+
     <picture class="inv-menu__brand">
       <source media="(min-width: 500px)" srcset="/assets/images/brand.png">
       <img src="/assets/images/brand-full.png" alt="{{ menu-logo.alt }}" />
     </picture>
+
   </div>
 </div>
