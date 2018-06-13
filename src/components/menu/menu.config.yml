@@ -49,11 +49,14 @@ variants:
     context:
       menu:
         modifier: inv-menu--visible
-  - name: mobile - categorie
+  - name: categorie
     context:
       menu:
-        modifier: inv-menu--visible
+        open: true
+        modifier: inv-menu--visible inv-menu--open
         categorie: true
+      menu-search:
+        modifier: "inv-menu-search--open"
   - name: open
     context:
       menu:
