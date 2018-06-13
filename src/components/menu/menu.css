@@ -93,5 +93,12 @@
 
   .inv-menu__brand > img {
     max-width: 48px;
+    max-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  .inv-menu--open > .inv-menu__container > .inv-menu__search {
+    margin-bottom: var(--space-16);
   }
 }
