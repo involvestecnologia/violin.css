@@ -15,7 +15,6 @@
   left: 0;
   width: 100%;
   z-index: var(--z-index-1);
-  overflow-y: auto;
   display: flex;
   padding-bottom: 13px;
 }
@@ -36,6 +35,7 @@
 
 .inv-menu__list {
   flex: 1;
+  overflow: auto;
 }
 
 .inv-menu-header {
@@ -45,6 +45,17 @@
 
 .inv-menu__brand {
   align-self: center;
+}
+
+.inv-menu__brand > img {
+  max-height: 24px;
+  max-width: 80px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.inv-menu__container--open > .inv-menu__brand {
+  max-width: 236px;
 }
 
 @media (min-width: 500px) {
@@ -62,7 +73,7 @@
     border-radius: 0 10px 10px 0;
     padding-bottom: var(--space-32);
     height: auto;
-    min-height: 100%;
+    height: 100%;
   }
 
   .inv-menu__container--open {
