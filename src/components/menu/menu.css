@@ -108,4 +108,13 @@
   .inv-menu__container--open > .inv-menu__search {
     margin-bottom: var(--space-16);
   }
+
+  .inv-menu__container--open > .inv-menu__list {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .inv-menu__container--open > .inv-menu__search > .inv-menu__search-tip {
+    display: none;
+  }
 }

@@ -49,6 +49,8 @@ variants:
     context:
       menu:
         modifier: inv-menu--visible
+      menu-list:
+        modifier: "inv-menu-list--open"
   - name: categorie
     context:
       menu:
