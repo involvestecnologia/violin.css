@@ -1,0 +1,11 @@
+.inv-tip {
+  max-width: 320px;
+  background-color: var(--color-system--dark);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.inv-tip > span {
+  color: var(--color-system--white);
+  font-size: 14px;
+}
