@@ -47,6 +47,14 @@
 }
 
 @media (min-width: 500px) {
+  .inv-menu-list {
+    overflow: hidden;
+  }
+
+  .inv-menu-list--open {
+    overflow: auto;
+  }
+
   .inv-menu-list_item {
     justify-content: center;
   }

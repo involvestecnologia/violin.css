@@ -3,6 +3,7 @@ Menu com as opções de navegação do sistema.
 
 Table of Contents
 - Menu
+  - Default
 - Menu Expand Button
 - Menu Container
 - Menu Header, Menu Collapse Button & Imagem
@@ -23,6 +24,10 @@ Onde todas as seções do menu são adicioadas, representado pela classe `.inv-m
 <div class="inv-menu"><div>
 <div class="inv-menu inv-menu--open"><div>
 ```
+#### Default
+Menu default. Em telas com menos de 500px ele aparece com os itens à mostra, em telas com 500px ou mais ele aparece por default com as descrições dos itens escondidas.
+A versão 500px default não possui scroll quando os itens excedem o espaço do menu pois o mesmo foi projetado para abrir quando o usuário passar o mouse por cima (ou tocar qualquer parte do menu), ou seja, o usuário não irá de fato interagir com o menu 500px default, somente com as versões do menu aberto.
+
 ### Menu Expand Button
 Botão para expandir o menu. Este só aparece em telas até 499px. Telas com ou mais de 500px terão o menu fixo,em sua forma fechada.
 [Confira a documentação completa do Menu Expand Button](https://www.google.com)
