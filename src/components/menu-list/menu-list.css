@@ -51,7 +51,7 @@
     justify-content: center;
   }
 
-  .inv-menu-list--open::-webkit-scrollbar {
+  .inv-menu-list::-webkit-scrollbar {
     width: 8px;
   }
 
