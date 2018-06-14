@@ -17,11 +17,11 @@
   padding-right: var(--space-16);
 }
 
-.inv-menu-list--open::-webkit-scrollbar {
+.inv-menu-list::-webkit-scrollbar {
   width: 16px;
 }
 
-.inv-menu-list--open::-webkit-scrollbar-thumb {
+.inv-menu-list::-webkit-scrollbar-thumb {
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.1);
 }
