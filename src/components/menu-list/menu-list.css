@@ -8,14 +8,17 @@
 
 .inv-menu-list_item,
 .inv-menu-list--open > .inv-menu-list_item {
-  min-height: 44px;
+  min-height: 22px;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.1s;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   padding-left: var(--space-16);
   padding-right: var(--space-16);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .inv-menu-list::-webkit-scrollbar {

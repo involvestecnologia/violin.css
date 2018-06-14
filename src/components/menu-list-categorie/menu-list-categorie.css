@@ -42,18 +42,19 @@
 }
 
 .inv-menu-list-categorie__item {
-  min-height: 44px;
+  min-height: 20px;
   width: 100%;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.1s;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-shrink: 0;
   color: var(--color-system--white);
   font-weight: 600;
   font-size: 14px;
   padding-left: var(--space-8);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 .inv-menu-list-categorie__item:hover {
