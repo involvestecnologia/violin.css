@@ -199,6 +199,30 @@
       "requireSameDimensions": true
     },
     {
+      "label": "MenuDefault",
+      "readySelector": ["body", ".container"],
+      "url": "http://localhost:3000/components/preview/menu--default",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuMobile",
+      "readySelector": ["body", ".container"],
+      "url": "http://localhost:3000/components/preview/menu--mobile",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "MenuListCategorie",
+      "readySelector": ["body", ".container"],
+      "url": "http://localhost:3000/components/preview/menu-list-categorie",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "MenuOpen",
       "readySelector": ["body", ".container"],
       "url": "http://localhost:3000/components/preview/menu--open",
@@ -207,49 +231,33 @@
       "requireSameDimensions": true
     },
     {
-      "label": "MenuLogoFull",
+      "label": "MenuSearchDefault",
       "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu--logo-full",
+      "url": "http://localhost:3000/components/preview/menu-search--default",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "label": "MenuLogo",
+      "label": "MenuSearchOpen",
       "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu--logo",
+      "url": "http://localhost:3000/components/preview/menu-search--open",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "label": "MenuSearch",
+      "label": "MenuListDefault",
       "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu-search",
+      "url": "http://localhost:3000/components/preview/menu-list--default",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
     },
     {
-      "label": "MenuBrandLogo",
+      "label": "MenuListOpen",
       "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu-brand-logo",
-      "selectorExpansion": true,
-      "misMatchThreshold" : 0,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "MenuList",
-      "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu--list",
-      "selectorExpansion": true,
-      "misMatchThreshold" : 0,
-      "requireSameDimensions": true
-    },
-    {
-      "label": "MenuListFull",
-      "readySelector": ["body", ".container"],
-      "url": "http://localhost:3000/components/preview/menu--list-full",
+      "url": "http://localhost:3000/components/preview/menu-list--open",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
