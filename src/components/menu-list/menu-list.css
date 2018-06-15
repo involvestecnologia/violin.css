@@ -3,6 +3,8 @@
   flex-direction: column;
   height: 100%;
   overflow: auto;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
 }
 
 .inv-menu-list_item,

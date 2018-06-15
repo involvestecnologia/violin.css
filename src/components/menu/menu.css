@@ -4,8 +4,6 @@
   flex-direction: column;
   height: 100%;
   padding-top: var(--space-16);
-  padding-left: var(--space-8);
-  padding-right: var(--space-8);
   box-sizing: border-box;
 }
 
@@ -22,6 +20,8 @@
 .inv-menu__search {
   margin-top: var(--space-32);
   margin-bottom: 12px;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
 }
 
 .inv-menu__search-tip {
@@ -43,6 +43,8 @@
 .inv-menu-header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
 }
 
 .inv-menu__brand {
