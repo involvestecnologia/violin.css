@@ -5,15 +5,6 @@
   overflow: auto;
 }
 
-.inv-menu-list-categorie-container::-webkit-scrollbar {
-  width: 16px;
-}
-
-.inv-menu-list-categorie-container::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 .inv-menu-list-categorie-container__back-button {
   text-decoration: none;
 }
