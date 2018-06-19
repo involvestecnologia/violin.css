@@ -507,12 +507,6 @@ body {
   box-shadow: var(--shadow-3) var(--color-default--shadow);
   background-color: var(--color-default--dark);
 }
-.inv-btn:disabled {
-  background-color: var(--color-default--white);
-  color: var(--color-default--light);
-  box-shadow: none;
-  cursor: not-allowed;
-}
 /*
   COLOR VARIATIONS
 */
@@ -605,6 +599,21 @@ body {
 .inv-btn > i {
   margin-left: var(--space-8);
   margin-right: var(--space-8);
+}
+/*
+  DISABLED
+*/
+.inv-btn:disabled,
+.inv-btn--primary:disabled,
+.inv-btn--accent:disabled,
+.inv-btn--outline:disabled,
+.inv-btn--outline.inv-btn--primary:disabled,
+.inv-btn--outline.inv-btn--accent:disabled {
+  background-color: var(--color-default--white);
+  color: var(--color-default--light);
+  box-shadow: none;
+  cursor: not-allowed;
+  border: none;
 }
 .inv-label {
   color: var(--color-system--dark);
@@ -869,6 +878,14 @@ body {
   display: flex;
   flex-direction: column;
 }
+.inv-form-field > .inv-label {
+  margin-left: 1px;
+  margin-bottom: 4px;
+}
+.inv-form-field > .inv-form-text {
+  margin-top: 4px;
+  margin-left: 1px;
+}
 .inv-form-field--icon > .inv-input-icon {
   position: absolute;
   top: 28px;
@@ -1071,6 +1088,16 @@ body {
 }
 .inv-text-link:active {
   color: var(--color-primary--dark);
+}
+.inv-tip {
+  max-width: 320px;
+  background-color: var(--color-system--dark);
+  padding: 16px;
+  border-radius: 12px;
+}
+.inv-tip > span {
+  color: var(--color-system--white);
+  font-size: 14px;
 }
 .inv-warning {
   text-align: center;
