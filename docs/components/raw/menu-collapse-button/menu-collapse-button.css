@@ -1,0 +1,22 @@
+.inv-menu-collapse-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.inv-menu-collapse-button > i {
+  font-size: 40px;
+  color: var(--color-system--white);
+  transition: color 0.1s;
+}
+
+.inv-menu-collapse-button:hover > i {
+  color: var(--color-default--regular);
+}
+
+.inv-menu-collapse-button:active > i {
+  color: var(--color-default--dark);
+}
