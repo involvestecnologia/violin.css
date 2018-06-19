@@ -168,8 +168,8 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>keyboard_arrow_left<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"/assets/images/logo.png"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/logo-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Menu Logo"</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Menu Logo"</span> /&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -206,7 +206,7 @@
 
         <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__brand"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"/assets/images/brand.png"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/brand-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Menu Logo"</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Menu Logo"</span> /&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -225,8 +225,14 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-header"</span>&gt;</span>
       </span><span class="hljs-template-variable">{{&gt; <a href="menu-collapse-button.html">@menu-collapse-button</a>}}</span><span class="xml">
       <span class="hljs-tag">&lt;<span class="hljs-name">picture</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"/assets/images/logo.png"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/logo-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ menu-logo.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">source</span>
+          <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span>
+          <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"</span>
+        &gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+          <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"</span>
+          <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ menu-logo.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>
+        /&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
@@ -245,7 +251,10 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__brand"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"/assets/images/brand.png"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"/assets/images/brand-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ menu-logo.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+        <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand-full.png"</span>
+        <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ menu-logo.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>
+      /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -356,13 +365,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-9616a8cfba21c0ba2fc3ade82253359d">menu.css</option>
+                <option value="file-f4d3f0482d26fd92e8b03882bea191df">menu.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-9616a8cfba21c0ba2fc3ade82253359d" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-f4d3f0482d26fd92e8b03882bea191df" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
