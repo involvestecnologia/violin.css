@@ -44,7 +44,7 @@
 }
 
 .inv-dropdown__content--open > .inv-dropdown__box {
-  z-index: var(--z-index-2);
+  z-index: var(--z-index-3);
   visibility: visible;
   opacity: 1;
   transform: translateY(0%);
