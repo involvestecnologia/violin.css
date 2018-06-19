@@ -54,8 +54,8 @@
 .inv-menu__brand > img {
   max-height: 24px;
   max-width: 80px;
-  padding-top: 16px;
-  padding-bottom: 24px;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-24);
 }
 
 .inv-menu__container--open > .inv-menu__brand {
