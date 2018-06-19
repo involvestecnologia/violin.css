@@ -75,9 +75,3 @@
 .inv-menu-list-categorie__title > span {
   padding-left: var(--space-8);
 }
-
-@media (min-width: 500px) {
-  .inv-menu-list-categorie-container::-webkit-scrollbar {
-    width: 8px;
-  }
-}

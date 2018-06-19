@@ -55,10 +55,6 @@
     justify-content: center;
   }
 
-  .inv-menu-list::-webkit-scrollbar {
-    width: 8px;
-  }
-
   .inv-menu-list_item > span {
     display: none;
   }
