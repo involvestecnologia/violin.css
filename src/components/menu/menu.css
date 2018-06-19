@@ -1,0 +1,124 @@
+.inv-menu__container {
+  display: none;
+  background: var(--color-system--dark) linear-gradient(170.25deg, var(--color-system--dark) 0%, #0c101c 99.94%);
+  flex-direction: column;
+  height: 100%;
+  padding-top: var(--space-16);
+  box-sizing: border-box;
+}
+
+.inv-menu--visible > .inv-menu__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: var(--z-index-1);
+  display: flex;
+  padding-bottom: 13px;
+}
+
+.inv-menu__search {
+  margin-top: var(--space-32);
+  margin-bottom: 12px;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
+.inv-menu__search-tip {
+  display: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 10px;
+  color: var(--color-system--regular);
+  line-height: 14px;
+  outline: 0;
+  user-select: none;
+}
+
+.inv-menu__list {
+  flex: 1;
+  overflow: auto;
+}
+
+.inv-menu-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+}
+
+.inv-menu__brand {
+  align-self: center;
+}
+
+.inv-menu__brand > img {
+  max-height: 24px;
+  max-width: 80px;
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-24);
+}
+
+.inv-menu__container--open > .inv-menu__brand {
+  max-width: 236px;
+}
+
+@media (min-width: 500px) {
+  .inv-menu {
+    height: 100%;
+  }
+
+  .inv-menu > .inv-menu-expand-button {
+    display: none;
+  }
+
+  .inv-menu__container {
+    display: flex;
+    max-width: 72px;
+    border-radius: 0 10px 10px 0;
+    padding-bottom: var(--space-32);
+    height: auto;
+    height: 100%;
+  }
+
+  .inv-menu__container--open {
+    max-width: 236px;
+  }
+
+  .inv-menu-header {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .inv-menu-header > .inv-menu-collapse-button {
+    display: none;
+  }
+
+  .inv-menu__search {
+    align-self: center;
+  }
+
+  .inv-menu__search-tip {
+    display: block;
+  }
+
+  .inv-menu__brand > img {
+    max-width: 48px;
+    max-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  .inv-menu__container--open > .inv-menu__search {
+    margin-bottom: var(--space-16);
+  }
+
+  .inv-menu__container--open > .inv-menu__list {
+    flex: 1;
+    overflow: auto;
+  }
+
+  .inv-menu__container--open > .inv-menu__search > .inv-menu__search-tip {
+    display: none;
+  }
+}

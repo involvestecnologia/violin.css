@@ -1,0 +1,16 @@
+title: Menu Collapse Button
+status: "wip"
+preview: "@preview-menu"
+context:
+  preview:
+    styles: "
+      background-color: var(--color-system--dark);
+      border: none;
+      border-radius: 0 0 6px 0;
+      cursor: pointer;
+      width: 72px;
+      height: 72px;
+      outline: 0;
+      display: flex;
+      align-items: center;
+    "

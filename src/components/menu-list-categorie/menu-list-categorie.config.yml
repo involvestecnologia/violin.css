@@ -1,0 +1,25 @@
+name: Menu List Categorie
+status: "wip"
+preview: "@preview-menu"
+context:
+  preview:
+    styles: "
+      padding: 0;
+      background-color: #1d2e44;
+      border-radius: 0;
+      height: 100%;
+    "
+  menu-list-categorie:
+    list:
+      - item:
+          text: Colaboradores
+      - item:
+          text: Afastamento
+      - item:
+          text: Perfil de Acesso
+      - item:
+          text: Jornada de Trabalho
+      - item:
+          title: Relatórios
+      - item:
+          text: Histórico de Contratação de Colaboradores

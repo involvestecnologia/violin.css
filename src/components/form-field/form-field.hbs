@@ -1,5 +1,7 @@
 <div class="inv-form-field {{ formField.modifier }}">
-  {{> @label}}
+  {{#if label.show}}
+    {{> @label}}
+  {{/if}}
 
   {{#if icon}}
     {{> @input-icon}}

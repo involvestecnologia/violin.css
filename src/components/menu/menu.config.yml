@@ -1,0 +1,73 @@
+title: Menu
+status: "wip"
+preview: "@preview-menu"
+context:
+  preview:
+    styles: "
+      height: 100%;
+    "
+  menu-logo:
+    src: /assets/images/logo-full.png
+    alt: Menu Logo
+  menu-brand:
+    src: /assets/images/brand-full.png
+  icon: search
+  input:
+    placeholder: "Ctrl+k para buscar"
+  menu-list:
+    list:
+      - item:
+          icon: wifi
+          text: Profile
+      - item:
+          icon: face
+          text: Pontos de Venda
+      - item:
+          icon: search
+          text: Métricas
+      - item:
+          icon: people
+          text: Acessos Externos
+  menu-list-categorie:
+    list:
+      - item:
+          icon: people
+          text: Colaboradores
+      - item:
+          text: Afastamento
+      - item:
+          text: Perfil de Acesso
+      - item:
+          text: Jornada de Trabalho
+      - item:
+          title: Relatórios
+      - item:
+          text: Histórico de Contratação de Colaboradores
+variants:
+  - name: default
+  - name: mobile
+    context:
+      menu:
+        modifier: inv-menu--visible
+  - name: categorie
+    context:
+      menu:
+        open: true
+        modifier: inv-menu--visible
+        categorie: true
+      menu-search:
+        modifier: "inv-menu-search--open"
+  - name: open
+    context:
+      menu:
+        open: true
+        modifier: "inv-menu--visible"
+      menu-logo:
+        src: /assets/images/logo.png
+        alt: Menu Logo
+      menu-brand:
+        src: /assets/images/brand.png
+      menu-search:
+        modifier: "inv-menu-search--open"
+      menu-list:
+        modifier: "inv-menu-list--open"

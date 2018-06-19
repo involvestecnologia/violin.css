@@ -4,6 +4,7 @@ collated: true
 context:
   label:
     value: "Input label"
+    show: true
 variants:
   - name: default
     context:
