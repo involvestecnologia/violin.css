@@ -13376,8 +13376,7 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              label,
-              ' '
+              label
             ),
             _react2.default.createElement(
               Label,
@@ -13387,8 +13386,7 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              selector,
-              ' '
+              selector
             )
           ),
           _react2.default.createElement(
@@ -13402,8 +13400,7 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              fileName,
-              ' '
+              fileName
             )
           ),
           _react2.default.createElement(
@@ -27231,7 +27228,6 @@ var tests = function tests() {
           })
         });
       }
-      return state;
 
     default:
       return state;
@@ -27433,9 +27429,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
-// ESLint
-/* eslint-disable no-unused-vars */
-
 
 var Wrapper = _styledComponents2.default.section(_templateObject);
 
@@ -31180,8 +31173,7 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.misMatchPercentage,
-          ' '
+          diff.misMatchPercentage
         ),
         _react2.default.createElement(
           Label,
@@ -31191,8 +31183,7 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.dimensionDifference.width,
-          ' '
+          diff.dimensionDifference.width
         ),
         _react2.default.createElement(
           Label,
@@ -31202,8 +31193,7 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.dimensionDifference.height,
-          ' '
+          diff.dimensionDifference.height
         )
       );
     }
@@ -31291,12 +31281,12 @@ var DiffDetails = function (_React$Component) {
           _react2.default.createElement(
             Link,
             { href: url, target: '_blank' },
-            'test'
+            'TEST'
           ),
           referenceUrl && _react2.default.createElement(
             Link,
             { withSeperator: true, href: referenceUrl, target: '_blank' },
-            'reference'
+            'REFERENCE'
           )
         )
       );
