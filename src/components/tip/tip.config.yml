@@ -3,3 +3,10 @@ status: "wip"
 collated: true
 variants:
   - name: default
+    context:
+      tip:
+        modifier: inv-tip-triangle-right
+  - name: left
+    context:
+      tip:
+        modifier: inv-tip-triangle-left

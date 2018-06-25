@@ -11,14 +11,27 @@
   font-size: 14px;
 }
 
-.inv-tip::after {
+.inv-tip.inv-tip-triangle-right::after {
   content: ' ';
   position: absolute;
   width: 16px;
-  height: 16px;
+  height: 24px;
   top: -8px;
-  right: 18px;
+  right: 24px;
   left: auto;
+  bottom: auto;
+  background: var(--color-system--dark);
+  transform: rotate(45deg);
+}
+
+.inv-tip.inv-tip-triangle-left::before {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: -8px;
+  right: auto;
+  left: 24px;
   bottom: auto;
   background: var(--color-system--dark);
   transform: rotate(45deg);
