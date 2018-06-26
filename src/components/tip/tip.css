@@ -1,5 +1,6 @@
 .inv-tip {
   position: relative;
+  color: var(--color-primary--regular);
 }
 
 i.material-icons.inv-tip::before {
@@ -13,7 +14,7 @@ i.material-icons.inv-tip::before {
   color: var(--color-system--white);
   background-color: var(--color-system--dark);
   border-radius: 12px;
-  box-shadow: var(--shadow-16) black;
+  box-shadow: var(--shadow-16);
   max-width: 320px;
   padding: 16px;
   top: 35px;
@@ -28,73 +29,17 @@ i.material-icons.inv-tip::after {
   border-right: solid 12px transparent;
   border-top: solid 12px transparent;
   border-bottom: solid 12px var(--color-system--dark);
-  top: 11px;
+  top: 12px;
   left: 0;
 }
 
-/*
-.inv-tip__content {
+i.material-icons.inv-tip--right::after {
+  content: '';
   position: absolute;
-  top: 32px;
-  right: 9px;
-  left: auto;
-  bottom: auto;
-  color: var(--color-system--white);
-  font-size: 14px;
-  max-width: 320px;
-  background-color: var(--color-system--dark);
-  padding: 16px;
-  border-radius: 12px;
+  border-left: solid 12px transparent;
+  border-right: solid 12px transparent;
+  border-top: solid 12px transparent;
+  border-bottom: solid 12px var(--color-system--dark);
+  top: 12px;
+  left: 281px;
 }
-
-.inv-tip__content.inv-tip-triangle-right::after {
-  content: ' ';
-  position: absolute;
-  width: 16px;
-  height: 24px;
-  top: -9px;
-  right: 24px;
-  left: auto;
-  bottom: auto;
-  background: var(--color-system--dark);
-  transform: rotate(45deg);
-}
-
-.inv-tip__content.inv-tip-triangle-left::before {
-  content: ' ';
-  position: absolute;
-  width: 16px;
-  height: 24px;
-  top: -9px;
-  right: auto;
-  left: 24px;
-  bottom: auto;
-  background: var(--color-system--dark);
-  transform: rotate(45deg);
-} */
-
-/* .inv-tip__content.inv-tip-triangle-right::after {
-  content: ' ';
-  position: absolute;
-  width: 16px;
-  height: 24px;
-  top: -9px;
-  right: 24px;
-  left: auto;
-  bottom: auto;
-  background: var(--color-system--dark);
-  transform: rotate(45deg);
-}
-
-.inv-tip__content.inv-tip-triangle-left::before {
-  content: ' ';
-  position: absolute;
-  width: 16px;
-  height: 24px;
-  top: -9px;
-  right: auto;
-  left: 24px;
-  bottom: auto;
-  background: var(--color-system--dark);
-  transform: rotate(45deg);
-} */
