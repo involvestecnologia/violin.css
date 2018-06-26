@@ -1,22 +1,58 @@
 .inv-tip {
   position: relative;
+}
+
+i.material-icons.inv-tip::before {
+  display: block;
+  position: absolute;
+  content: attr(data-tooltip);
+  font-family: var(--font-family);
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 19px;
+  color: var(--color-system--white);
+  background-color: var(--color-system--dark);
+  border-radius: 12px;
+  box-shadow: var(--shadow-16) black;
+  max-width: 320px;
+  padding: 16px;
+  top: 35px;
+  left: -24px;
+  z-index: var(--z-index-2);
+}
+
+i.material-icons.inv-tip::after {
+  content: '';
+  position: absolute;
+  border-left: solid 12px transparent;
+  border-right: solid 12px transparent;
+  border-top: solid 12px transparent;
+  border-bottom: solid 12px var(--color-system--dark);
+  top: 11px;
+  left: 0;
+}
+
+/*
+.inv-tip__content {
+  position: absolute;
+  top: 32px;
+  right: 9px;
+  left: auto;
+  bottom: auto;
+  color: var(--color-system--white);
+  font-size: 14px;
   max-width: 320px;
   background-color: var(--color-system--dark);
   padding: 16px;
   border-radius: 12px;
 }
 
-.inv-tip > span {
-  color: var(--color-system--white);
-  font-size: 14px;
-}
-
-.inv-tip.inv-tip-triangle-right::after {
+.inv-tip__content.inv-tip-triangle-right::after {
   content: ' ';
   position: absolute;
   width: 16px;
   height: 24px;
-  top: -8px;
+  top: -9px;
   right: 24px;
   left: auto;
   bottom: auto;
@@ -24,15 +60,41 @@
   transform: rotate(45deg);
 }
 
-.inv-tip.inv-tip-triangle-left::before {
+.inv-tip__content.inv-tip-triangle-left::before {
   content: ' ';
   position: absolute;
   width: 16px;
   height: 24px;
-  top: -8px;
+  top: -9px;
   right: auto;
   left: 24px;
   bottom: auto;
   background: var(--color-system--dark);
   transform: rotate(45deg);
+} */
+
+/* .inv-tip__content.inv-tip-triangle-right::after {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: -9px;
+  right: 24px;
+  left: auto;
+  bottom: auto;
+  background: var(--color-system--dark);
+  transform: rotate(45deg);
 }
+
+.inv-tip__content.inv-tip-triangle-left::before {
+  content: ' ';
+  position: absolute;
+  width: 16px;
+  height: 24px;
+  top: -9px;
+  right: auto;
+  left: 24px;
+  bottom: auto;
+  background: var(--color-system--dark);
+  transform: rotate(45deg);
+} */
