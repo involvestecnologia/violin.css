@@ -1,0 +1,10 @@
+title: Title
+status: "wip"
+collated: true
+preview: "@preview"
+variants:
+  - name: default
+  - name: title-section
+    context:
+      typhography:
+        modifier: inv-title-section
