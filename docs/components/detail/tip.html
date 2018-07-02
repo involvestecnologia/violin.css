@@ -157,11 +157,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-3013bc7ceda5f7ad27419b5fb21850b6-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-tip"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
-    Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip "</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo."</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -169,11 +167,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3013bc7ceda5f7ad27419b5fb21850b6-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-tip"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
-    Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.
-  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip </span></span></span><span class="hljs-template-variable">{{ tip.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ tip.text }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -182,7 +178,11 @@
     <code class="Code Code--lang-json">
         
             
-            <pre><span class="hljs-comment">/* No context defined for this component. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">"tip"</span>: {
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo."</span>
+  }
+}</pre>
             
         
     </code>
@@ -214,16 +214,40 @@
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.inv-tip</span> {
-  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">320px</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--dark);
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-primary--regular);
 }
 
-<span class="hljs-selector-class">.inv-tip</span> &gt; <span class="hljs-selector-tag">span</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+<span class="hljs-selector-tag">i</span><span class="hljs-selector-class">.material-icons</span><span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">content</span>: <span class="hljs-built_in">attr</span>(data-tooltip);
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-built_in">var</span>(--font-family);
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-}</pre>
+  <span class="hljs-attribute">white-space</span>: pre-wrap;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">19px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--dark);
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-16) <span class="hljs-built_in">var</span>(--color-default--shadow);
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">320px</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">35px</span>;
+  <span class="hljs-attribute">left</span>: -<span class="hljs-number">24px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-built_in">var</span>(--z-index-2);
+}
+
+<span class="hljs-selector-tag">i</span><span class="hljs-selector-class">.material-icons</span><span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">border-left</span>: solid <span class="hljs-number">12px</span> transparent;
+  <span class="hljs-attribute">border-right</span>: solid <span class="hljs-number">12px</span> transparent;
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-number">12px</span> transparent;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-number">12px</span> <span class="hljs-built_in">var</span>(--color-system--dark);
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+}
+</pre>
                             </code>
                             
                         </div>
@@ -239,7 +263,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">196 Bytes</span>
+                    <span class="Meta-value">816 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1137,6 +1161,30 @@
         <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a class="Tree-entityLink" href="" data-pjax>
                 <span>Tip</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typhography.html" data-pjax>
+                <span>Typhography</span>
                 
 
 <div class="Status Status--unlabelled">
