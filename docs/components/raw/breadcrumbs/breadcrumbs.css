@@ -1,7 +1,6 @@
 .inv-breadcrumbs {
   white-space: nowrap;
   font-size: var(--font-title--size);
-  font-weight: 600;
 }
 
 .inv-breadcrumbs ul {
@@ -21,12 +20,11 @@
   color: var(--color-default--dark);
   display: flex;
   justify-content: center;
-  padding: 5px;
   text-decoration: none;
 }
 
 .inv-breadcrumbs--active a {
-  color: var(--color-purple--dark);
+  color: var(--color-primary--dark);
   cursor: default;
   pointer-events: none;
 }
@@ -38,5 +36,7 @@
 .inv-breadcrumbs li + li::before {
   color: var(--color-default--dark);
   content: "\0002f";
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
