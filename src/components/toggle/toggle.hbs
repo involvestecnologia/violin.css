@@ -1,6 +1,4 @@
-<div class="inv-toggle">
-  <label>
-    <input checked="" type="checkbox">
-    <span class="inv-toggle__lever"></span>
-  </label>
-</div>
+<label class="inv-toggle">
+  <input type="checkbox" {{ toggle.checked }} {{ toggle.disabled }}>
+  <span class="inv-toggle__slider"></span>
+</label>

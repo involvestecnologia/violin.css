@@ -2,5 +2,22 @@ title: Toggle
 status: "wip"
 collated: true
 preview: "@preview"
+context:
+  toggle:
+    checked: ''
+    disabled: ''
 variants:
   - name: default
+  - name: checked
+    context:
+      toggle:
+        checked: checked
+  - name: disabled
+    context:
+      toggle:
+        disabled: disabled
+  - name: checked-disabled
+    context:
+      toggle:
+        checked: checked
+        disabled: disabled
