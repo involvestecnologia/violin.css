@@ -8,6 +8,7 @@
 @import './base/base.css';
 
 /* MODULES */
+@import '../components/breadcrumbs/breadcrumbs.css';
 @import '../components/button/button.css';
 @import '../components/label/label.css';
 @import '../components/input/input.css';
