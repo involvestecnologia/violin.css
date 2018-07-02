@@ -1,0 +1,81 @@
+.inv-toggle {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 12px;
+  margin-left: var(--space-8);
+  margin-right: var(--space-8);
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+
+.inv-toggle input {
+  display: none;
+}
+
+.inv-toggle__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-system--light);
+  transition: 0.1s;
+  border-radius: 16px;
+}
+
+.inv-toggle__slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  top: -2px;
+  left: -4px;
+  bottom: 4px;
+  background-color: var(--color-default--regular);
+  box-shadow: var(--shadow-8) var(--color-default--shadow);
+  transition: 0.1s;
+  border-radius: 50%;
+}
+
+.inv-toggle__slider:hover::before {
+  background-color: var(--color-default--regular);
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
+}
+
+.inv-toggle__slider:active::before {
+  background-color: var(--color-default--dark);
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
+}
+
+input:checked + .inv-toggle__slider::before {
+  transform: translateX(26px);
+  background-color: var(--color-primary--regular);
+  box-shadow: 4 var(--color-primary--shadow);
+}
+
+input:disabled + .inv-toggle__slider::before {
+  background-color: var(--color-system--light);
+  box-shadow: var(--shadow-4) var(--color-primary--shadow);
+}
+
+input:checked + .inv-toggle__slider:hover::before {
+  box-shadow: var(--shadow-3) var(--color-primary--shadow);
+}
+
+input:checked + .inv-toggle__slider:active::before {
+  background-color: var(--color-primary--dark);
+  box-shadow: var(--shadow-3) var(--color-primary--shadow);
+}
+
+input:disabled + .inv-toggle__slider:active::before {
+  background-color: var(--color-system--light);
+  box-shadow: var(--shadow-4) var(--color-primary--shadow);
+}
+
+input:disabled + .inv-toggle__slider:hover::before {
+  background-color: var(--color-system--light);
+  box-shadow: var(--shadow-4) var(--color-primary--shadow);
+}
+
