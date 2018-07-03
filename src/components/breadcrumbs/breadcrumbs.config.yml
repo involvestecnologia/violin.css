@@ -1,6 +1,6 @@
 title: Breadcrumbs
-status: "wip"
-collated: true
+status: "ready"
+collated: truewip
 preview: "@preview"
 variants:
   - name: default
