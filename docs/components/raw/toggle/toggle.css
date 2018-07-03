@@ -52,7 +52,7 @@
 input:checked + .inv-toggle__slider::before {
   transform: translateX(26px);
   background-color: var(--color-primary--regular);
-  box-shadow: 4 var(--color-primary--shadow);
+  box-shadow: var(--shadow-4) var(--color-primary--shadow);
 }
 
 input:disabled + .inv-toggle__slider::before {
