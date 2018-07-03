@@ -1,3 +1,13 @@
+<a name="0.0.15"></a>
+## [0.0.15](https://github.com/involvestecnologia/violin.css/compare/v0.0.14...v0.0.15) (2018-07-03)
+
+
+### Bug Fixes
+
+* **fixing toggle component shadow:** fixing toggle component shadow ([f5a5050](https://github.com/involvestecnologia/violin.css/commit/f5a5050))
+
+
+
 <a name="0.0.14"></a>
 ## [0.0.14](https://github.com/involvestecnologia/violin.css/compare/v0.0.13...v0.0.14) (2018-07-03)
 
