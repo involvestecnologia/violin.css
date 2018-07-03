@@ -34,7 +34,7 @@
   left: -4px;
   bottom: 4px;
   background-color: var(--color-default--regular);
-  box-shadow: var(--shadow-8) var(--color-default--shadow);
+  box-shadow: var(--shadow-4) var(--color-default--shadow);
   transition: 0.1s;
   border-radius: 50%;
 }
