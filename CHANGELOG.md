@@ -1,3 +1,13 @@
+<a name="0.0.16"></a>
+## [0.0.16](https://github.com/involvestecnologia/violin.css/compare/v0.0.15...v0.0.16) (2018-07-03)
+
+
+### Bug Fixes
+
+* **toggle:** fixing toggle default state shadow ([9108a4f](https://github.com/involvestecnologia/violin.css/commit/9108a4f))
+
+
+
 <a name="0.0.15"></a>
 ## [0.0.15](https://github.com/involvestecnologia/violin.css/compare/v0.0.14...v0.0.15) (2018-07-03)
 
