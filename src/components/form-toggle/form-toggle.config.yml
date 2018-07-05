@@ -1,0 +1,44 @@
+title: Form Toggle
+status: "wip"
+collated: true
+preview: "@preview"
+variants:
+  - name: default
+    context:
+      form-toggle:
+        message: Inativo
+  - name: default-checked
+    context:
+      form-toggle:
+        message: Ativo
+      toggle:
+        checked: checked
+  - name: disabled
+    context:
+      form-toggle:
+        modifier: inv-form-toggle__container--disabled
+        message: Inativo
+      toggle:
+        disabled: disabled
+  - name: disabled-checked
+    context:
+      form-toggle:
+        modifier: inv-form-toggle__container--disabled
+        message: Ativo
+      toggle:
+        disabled: disabled
+        checked: checked
+  - name: error
+    context:
+      form-toggle:
+        modifier: inv-form-toggle__container--error
+        message: Inativo
+        error-message: Cara, não pode ser assim
+  - name: error
+    context:
+      form-toggle:
+        modifier: inv-form-toggle__container--error
+        message: Ativo
+        error-message: Cara, não pode ser assim
+      toggle:
+          checked: checked

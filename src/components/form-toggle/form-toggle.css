@@ -1,0 +1,42 @@
+.inv-form-toggle::after {
+  content: attr(data-error-message);
+  font-size: 12px;
+  color: var(--color-accent--dark);
+}
+
+.inv-form-toggle__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  max-width: 239px;
+  background-color: var(--color-system--white);
+  outline: 1px;
+  outline-color: var(--color-system--light);
+  border: solid;
+  border-color: var(--color-system--light);
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-width: 1px;
+  padding-left: var(--space-16);
+  padding-right: var(--space-8);
+  font-weight: 600;
+  color: var(--color-system--regular);
+}
+
+.inv-form-toggle__container::before {
+  content: attr(data-status-message);
+}
+
+.inv-form-toggle__container--disabled {
+  background-color: var(--color-default--light);
+  border: none;
+  color: var(--color-default--regular);
+}
+
+.inv-form-toggle__container--error {
+  background-color: var(--color-error--white);
+  border-color: var(--color-error--regular);
+  border-width: 2px;
+}
+

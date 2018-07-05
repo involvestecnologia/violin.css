@@ -19,6 +19,7 @@
 @import '../components/clear-input/clear-input.css';
 @import '../components/list/list.css';
 @import '../components/form-field/form-field.css';
+@import '../components/form-toggle/form-toggle.css';
 @import '../components/input-addon/input-addon.css';
 @import '../components/dropdown/dropdown.css';
 @import '../components/dropdown/dropdown-action.css';
