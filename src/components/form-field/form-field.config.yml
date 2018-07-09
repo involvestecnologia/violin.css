@@ -14,7 +14,8 @@ variants:
         for: "default"
   - name: icon
     context:
-      icon: "visibility"
+      input-icon:
+        icon: "visibility"
       formField:
         modifier: "inv-form-field--icon"
       label:
@@ -23,7 +24,8 @@ variants:
         for: "icon"
   - name: progress
     context:
-      icon: "visibility"
+      input-icon:
+        icon: "visibility"
       formField:
         modifier: "inv-form-field--icon inv-form-field--progress"
       label:

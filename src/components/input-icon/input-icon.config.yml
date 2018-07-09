@@ -4,13 +4,16 @@ collated: true
 variants:
   - name: default
     context:
-      icon: "event"
+      input-icon:
+        icon: "event"
   - name: active
     context:
-      icon: "visibility"
-      modifier: "inv-input-icon--active"
+      input-icon:
+        icon: "visibility"
+        modifier: "inv-input-icon--active"
   - name: disable
     context:
-      icon: "visibility"
-      disabled: true
-      modifier: "inv-input-icon--disabled"
+      input-icon:
+        icon: "visibility"
+        disabled: true
+        modifier: "inv-input-icon--disabled"

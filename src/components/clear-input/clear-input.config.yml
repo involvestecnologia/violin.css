@@ -5,4 +5,5 @@ variants:
   - name: default
   - name: disabled
     context:
-      disabled: true
+      clear-input:
+        disabled: true

@@ -1,0 +1,15 @@
+<div class="inv-input-file__container">
+  {{> @label}}
+  <div class="inv-input-file">
+    <button class="inv-input-file__btn {{input-file.modifier}}">
+      {{input-file.button-text}}
+      {{> @input-icon}}
+    </button>
+    <input type="file"
+      {{ternary input-file.disabled "disabled" "" }}
+    />
+    {{> @clear-input}}
+  </div>
+  {{> @form-text}}
+</div>
+

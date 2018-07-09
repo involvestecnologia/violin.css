@@ -6,8 +6,11 @@ variants:
   - name: disabled
     context:
       disabled: true
+      clear-input:
+        disabled: true
   - name: icon
     context:
-      icon: "visibility"
+      input-icon:
+        icon: "visibility"
       inputAddon:
         modifier: "inv-input-addon__input--icon"
