@@ -4,7 +4,7 @@ node_js:
 addons:
   chrome: stable
 install:
-  - npm install
+  - npm ci
 stages:
   - test
   - name: browser

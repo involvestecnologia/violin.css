@@ -4830,6 +4830,13 @@ var showScrubberRefImage = exports.showScrubberRefImage = function showScrubberR
   };
 };
 
+var showScrubberDiffImage = exports.showScrubberDiffImage = function showScrubberDiffImage(value) {
+  return {
+    type: 'SHOW_SCRUBBER_DIFF_IMAGE',
+    value: value
+  };
+};
+
 var showScrubber = exports.showScrubber = function showScrubber(value) {
   return {
     type: 'SHOW_SCRUBBER',
@@ -13376,7 +13383,8 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              label
+              label,
+              ' '
             ),
             _react2.default.createElement(
               Label,
@@ -13386,7 +13394,8 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              selector
+              selector,
+              ' '
             )
           ),
           _react2.default.createElement(
@@ -13400,7 +13409,8 @@ var TextDetails = function (_React$Component) {
             _react2.default.createElement(
               Value,
               null,
-              fileName
+              fileName,
+              ' '
             )
           ),
           _react2.default.createElement(
@@ -27228,6 +27238,7 @@ var tests = function tests() {
           })
         });
       }
+      return state;
 
     default:
       return state;
@@ -27333,6 +27344,8 @@ function getPosFromImgId(imgId) {
       return 100;
     case 'testImage':
       return 0;
+    case 'diffImage':
+      return -1;
     default:
       return 50;
   }
@@ -27369,6 +27382,11 @@ var scrubber = function scrubber() {
     case 'SHOW_SCRUBBER_REF_IMAGE':
       return Object.assign({}, state, {
         position: getPosFromImgId('refImage')
+      });
+
+    case 'SHOW_SCRUBBER_DIFF_IMAGE':
+      return Object.assign({}, state, {
+        position: getPosFromImgId('diffImage')
       });
 
     case 'SHOW_SCRUBBER':
@@ -27429,6 +27447,9 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+// ESLint
+/* eslint-disable no-unused-vars */
+
 
 var Wrapper = _styledComponents2.default.section(_templateObject);
 
@@ -29952,7 +29973,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  padding: 10px 30px;\n  background: ', ';\n  height: 70px;\n  display: flex;\n  box-sizing: border-box;\n'], ['\n  width: 100%;\n  padding: 10px 30px;\n  background: ', ';\n  height: 70px;\n  display: flex;\n  box-sizing: border-box;\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  width: 100%;\n  padding: 10px 30px;\n  background: ', ';\n  height: 70px;\n  display: flex;\n  box-sizing: border-box;\n  \n  @media print {\n    display: none;\n  }\n'], ['\n  width: 100%;\n  padding: 10px 30px;\n  background: ', ';\n  height: 70px;\n  display: flex;\n  box-sizing: border-box;\n  \n  @media print {\n    display: none;\n  }\n']);
 
 var _react = __webpack_require__(3);
 
@@ -30918,7 +30939,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  margin: 5px auto;\n  padding: 10px 30px;\n  background-color: ', ';\n  box-shadow: ', ';\n  min-height: 40px;\n  break-inside: avoid;\n\n  &:before {\n    content: \'\';\n    display: block;\n    width: 8px;\n    height: 100%;\n    background-color: ', ';\n    position: absolute;\n    top: 0;\n    left: 0;\n  }\n'], ['\n  position: relative;\n  margin: 5px auto;\n  padding: 10px 30px;\n  background-color: ', ';\n  box-shadow: ', ';\n  min-height: 40px;\n  break-inside: avoid;\n\n  &:before {\n    content: \'\';\n    display: block;\n    width: 8px;\n    height: 100%;\n    background-color: ', ';\n    position: absolute;\n    top: 0;\n    left: 0;\n  }\n']);
+var _templateObject = _taggedTemplateLiteral(['\n  position: relative;\n  margin: 5px auto;\n  padding: 10px 30px;\n  background-color: ', ';\n  box-shadow: ', ';\n  min-height: 40px;\n  break-inside: avoid;\n\n  &:before {\n    content: \'\';\n    display: block;\n    width: 8px;\n    height: 100%;\n    background-color: ', ';\n    position: absolute;\n    top: 0;\n    left: 0;\n  }\n  @media print {\n    box-shadow: none;\n  }\n'], ['\n  position: relative;\n  margin: 5px auto;\n  padding: 10px 30px;\n  background-color: ', ';\n  box-shadow: ', ';\n  min-height: 40px;\n  break-inside: avoid;\n\n  &:before {\n    content: \'\';\n    display: block;\n    width: 8px;\n    height: 100%;\n    background-color: ', ';\n    position: absolute;\n    top: 0;\n    left: 0;\n  }\n  @media print {\n    box-shadow: none;\n  }\n']);
 
 var _react = __webpack_require__(3);
 
@@ -31173,7 +31194,8 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.misMatchPercentage
+          diff.misMatchPercentage,
+          ' '
         ),
         _react2.default.createElement(
           Label,
@@ -31183,7 +31205,8 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.dimensionDifference.width
+          diff.dimensionDifference.width,
+          ' '
         ),
         _react2.default.createElement(
           Label,
@@ -31193,7 +31216,8 @@ var DiffDetails = function (_React$Component) {
         _react2.default.createElement(
           Value,
           null,
-          diff.dimensionDifference.height
+          diff.dimensionDifference.height,
+          ' '
         )
       );
     }
@@ -31281,12 +31305,12 @@ var DiffDetails = function (_React$Component) {
           _react2.default.createElement(
             Link,
             { href: url, target: '_blank' },
-            'TEST'
+            'test'
           ),
           referenceUrl && _react2.default.createElement(
             Link,
             { withSeperator: true, href: referenceUrl, target: '_blank' },
-            'REFERENCE'
+            'reference'
           )
         )
       );
@@ -31847,7 +31871,7 @@ Object.defineProperty(exports, "__esModule", {
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n  display: block;\n'], ['\n  display: block;\n']),
-    _templateObject2 = _taggedTemplateLiteral(['\n  position: absolute;\n  top: 15px;\n  right: ', ';\n  padding: 10px 20px;\n  background-color: ', ';\n  color: ', ';\n  border-radius: 3px;\n  text-transform: uppercase;\n  font-family: ', ';\n  text-align: center;\n  font-size: 12px;\n  border: none;\n\n  &:focus {\n    outline: none;\n  }\n\n  &:hover {\n    cursor: pointer;\n  }\n'], ['\n  position: absolute;\n  top: 15px;\n  right: ', ';\n  padding: 10px 20px;\n  background-color: ', ';\n  color: ', ';\n  border-radius: 3px;\n  text-transform: uppercase;\n  font-family: ', ';\n  text-align: center;\n  font-size: 12px;\n  border: none;\n\n  &:focus {\n    outline: none;\n  }\n\n  &:hover {\n    cursor: pointer;\n  }\n']);
+    _templateObject2 = _taggedTemplateLiteral(['\n  position: absolute;\n  top: 15px;\n  right: ', ';\n  padding: 10px 20px;\n  background-color: ', ';\n  color: ', ';\n  border-radius: 3px;\n  text-transform: uppercase;\n  font-family: ', ';\n  text-align: center;\n  font-size: 12px;\n  border: none;\n\n  &:focus {\n    outline: none;\n  }\n\n  &:hover {\n    cursor: pointer;\n  }\n  \n  @media print {\n    display: none;\n  }\n'], ['\n  position: absolute;\n  top: 15px;\n  right: ', ';\n  padding: 10px 20px;\n  background-color: ', ';\n  color: ', ';\n  border-radius: 3px;\n  text-transform: uppercase;\n  font-family: ', ';\n  text-align: center;\n  font-size: 12px;\n  border: none;\n\n  &:focus {\n    outline: none;\n  }\n\n  &:hover {\n    cursor: pointer;\n  }\n  \n  @media print {\n    display: none;\n  }\n']);
 
 var _react = __webpack_require__(3);
 
@@ -32047,6 +32071,7 @@ var ScrubberModal = function (_React$Component) {
           closeModal = _props.closeModal,
           showScrubberTestImage = _props.showScrubberTestImage,
           showScrubberRefImage = _props.showScrubberRefImage,
+          showScrubberDiffImage = _props.showScrubberDiffImage,
           showScrubber = _props.showScrubber;
 
 
@@ -32071,10 +32096,12 @@ var ScrubberModal = function (_React$Component) {
           _react2.default.createElement(_ImageScrubber2.default, {
             testImage: testImage,
             refImage: refImage,
+            diffImage: diffImage,
             position: position,
             showButtons: diffImage && diffImage.length > 0,
             showScrubberTestImage: showScrubberTestImage,
             showScrubberRefImage: showScrubberRefImage,
+            showScrubberDiffImage: showScrubberDiffImage,
             showScrubber: showScrubber
           })
         )
@@ -32101,6 +32128,9 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
     },
     showScrubberRefImage: function showScrubberRefImage(val) {
       dispatch((0, _actions.showScrubberRefImage)(val));
+    },
+    showScrubberDiffImage: function showScrubberDiffImage(val) {
+      dispatch((0, _actions.showScrubberDiffImage)(val));
     },
     showScrubber: function showScrubber(val) {
       dispatch((0, _actions.showScrubber)(val));
@@ -33219,9 +33249,11 @@ var ImageScrubber = function (_React$Component) {
           position = _props.position,
           refImage = _props.refImage,
           testImage = _props.testImage,
+          diffImage = _props.diffImage,
           showButtons = _props.showButtons,
           showScrubberTestImage = _props.showScrubberTestImage,
           showScrubberRefImage = _props.showScrubberRefImage,
+          showScrubberDiffImage = _props.showScrubberDiffImage,
           showScrubber = _props.showScrubber;
 
 
@@ -33259,7 +33291,17 @@ var ImageScrubber = function (_React$Component) {
             _react2.default.createElement(
               ScrubberViewBtn,
               {
-                selected: position !== 100 && position !== 0,
+                selected: position === -1,
+                onClick: function onClick() {
+                  showScrubberDiffImage();
+                }
+              },
+              'DIFF'
+            ),
+            _react2.default.createElement(
+              ScrubberViewBtn,
+              {
+                selected: position !== 100 && position !== 0 && position !== -1,
                 onClick: function onClick() {
                   showScrubber();
                 }
@@ -33271,6 +33313,14 @@ var ImageScrubber = function (_React$Component) {
         _react2.default.createElement('img', {
           className: 'testImage',
           src: testImage,
+          style: {
+            margin: 'auto',
+            display: dontUseScrubberView ? 'block' : 'none'
+          }
+        }),
+        _react2.default.createElement('img', {
+          className: 'diffImage',
+          src: diffImage,
           style: {
             margin: 'auto',
             display: dontUseScrubberView ? 'block' : 'none'
@@ -33297,7 +33347,7 @@ var ImageScrubber = function (_React$Component) {
               src: refImage,
               onError: this.handleLoadingError
             }),
-            _react2.default.createElement('img', { className: 'testImage', src: testImage }),
+            _react2.default.createElement('img', { className: 'testImage', src: position === -1 ? diffImage : testImage }),
             _react2.default.createElement(SliderBar, { className: 'slider' })
           )
         )
