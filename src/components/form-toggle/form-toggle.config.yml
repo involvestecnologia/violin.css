@@ -7,6 +7,12 @@ variants:
     context:
       form-toggle:
         message: Inativo
+  - name: default-accent
+    context:
+      form-toggle:
+          message: Inativo
+      toggle:
+        modifier: inv-toggle__slider--accent
   - name: default-checked
     context:
       form-toggle:
