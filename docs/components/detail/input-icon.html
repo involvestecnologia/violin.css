@@ -186,8 +186,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-abd4e7ee2bad4d3ca942b7c36e8098c8-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon </span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
-  </span><span class="hljs-template-variable">{{ icon }}</span><span class="xml">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon </span></span></span><span class="hljs-template-variable">{{ input-icon.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  </span><span class="hljs-template-variable">{{ input-icon.icon }}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -200,7 +200,9 @@
             <pre>
 <span class="hljs-comment">/* Default */</span>
 {
-  <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"event"</span>
+  <span class="hljs-attr">"input-icon"</span>: {
+    <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"event"</span>
+  }
 }
 
 </pre>
@@ -208,8 +210,10 @@
             <pre>
 <span class="hljs-comment">/* Active */</span>
 {
-  <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>,
-  <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-input-icon--active"</span>
+  <span class="hljs-attr">"input-icon"</span>: {
+    <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>,
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-input-icon--active"</span>
+  }
 }
 
 </pre>
@@ -217,9 +221,11 @@
             <pre>
 <span class="hljs-comment">/* Disable */</span>
 {
-  <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>,
-  <span class="hljs-attr">"disabled"</span>: <span class="hljs-literal">true</span>,
-  <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-input-icon--disabled"</span>
+  <span class="hljs-attr">"input-icon"</span>: {
+    <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"visibility"</span>,
+    <span class="hljs-attr">"disabled"</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-input-icon--disabled"</span>
+  }
 }
 
 </pre>
@@ -349,7 +355,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Referenced by <em class="Meta-count">(14)</em>:</strong>
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(19)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="dropdown.html">@<span>dropdown</span></a>, 
@@ -378,7 +384,17 @@
             
                 <a href="input-addon--disabled.html">@<span>input-addon--disabled</span></a>, 
             
-                <a href="input-addon--icon.html">@<span>input-addon--icon</span></a>
+                <a href="input-addon--icon.html">@<span>input-addon--icon</span></a>, 
+            
+                <a href="input-file.html">@<span>input-file</span></a>, 
+            
+                <a href="input-file--file-selected.html">@<span>input-file--file-selected</span></a>, 
+            
+                <a href="input-file--input-file-disabled.html">@<span>input-file--input-file-disabled</span></a>, 
+            
+                <a href="input-file--input-file-required.html">@<span>input-file--input-file-required</span></a>, 
+            
+                <a href="input-file--input-file-error.html">@<span>input-file--input-file-error</span></a>
             
             </span>
         </li>
@@ -783,6 +799,30 @@ Também para realizar ações, ex: ver senha.</p>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-toggle.html" data-pjax>
+                <span>Form Toggle</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="input.html" data-pjax>
                 <span>Input</span>
                 
@@ -817,6 +857,30 @@ Também para realizar ações, ex: ver senha.</p>
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-file.html" data-pjax>
+                <span>Input File</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
