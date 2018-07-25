@@ -170,6 +170,18 @@
 
 </pre>
         
+            <pre><span class="hljs-comment">&lt;!-- Default Accent --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-toggle"</span> <span class="hljs-attr">data-error-message</span>=<span class="hljs-string">""</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-toggle__container "</span> <span class="hljs-attr">data-status-message</span>=<span class="hljs-string">"Inativo"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-toggle"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span>  &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-toggle__slider inv-toggle__slider--accent"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+</pre>
+        
             <pre><span class="hljs-comment">&lt;!-- Default Checked --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-toggle"</span> <span class="hljs-attr">data-error-message</span>=<span class="hljs-string">""</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-form-toggle__container "</span> <span class="hljs-attr">data-status-message</span>=<span class="hljs-string">"Ativo"</span>&gt;</span>
@@ -260,6 +272,19 @@
 {
   <span class="hljs-attr">"form-toggle"</span>: {
     <span class="hljs-attr">"message"</span>: <span class="hljs-string">"Inativo"</span>
+  }
+}
+
+</pre>
+        
+            <pre>
+<span class="hljs-comment">/* Default Accent */</span>
+{
+  <span class="hljs-attr">"form-toggle"</span>: {
+    <span class="hljs-attr">"message"</span>: <span class="hljs-string">"Inativo"</span>
+  },
+  <span class="hljs-attr">"toggle"</span>: {
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-toggle__slider--accent"</span>
   }
 }
 
@@ -444,11 +469,15 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(6)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(7)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="form-toggle--default.html">
                     <span>Default</span>
+                </a>, 
+            
+                <a href="form-toggle--default-accent.html">
+                    <span>Default Accent</span>
                 </a>, 
             
                 <a href="form-toggle--default-checked.html">
