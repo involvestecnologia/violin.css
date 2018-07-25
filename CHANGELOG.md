@@ -1,3 +1,19 @@
+<a name="0.0.18"></a>
+## [0.0.18](https://github.com/involvestecnologia/violin.css/compare/v0.0.17...v0.0.18) (2018-07-25)
+
+
+### Bug Fixes
+
+* **component:** fixing form toggle component ([c16632a](https://github.com/involvestecnologia/violin.css/commit/c16632a))
+
+
+### Features
+
+* **component:** WIP input file component ([a5db8ce](https://github.com/involvestecnologia/violin.css/commit/a5db8ce))
+* **component:** WIP: form toggle component ([934833c](https://github.com/involvestecnologia/violin.css/commit/934833c))
+
+
+
 <a name="0.0.17"></a>
 ## [0.0.17](https://github.com/involvestecnologia/violin.css/compare/v0.0.16...v0.0.17) (2018-07-03)
 
