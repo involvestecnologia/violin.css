@@ -39,13 +39,28 @@
   border-radius: 50%;
 }
 
+.inv-toggle__slider--accent::before {
+  background-color: var(--color-accent--regular);
+  box-shadow: var(--shadow-4) var(--color-accent--shadow);
+}
+
 .inv-toggle__slider:hover::before {
   background-color: var(--color-default--regular);
   box-shadow: var(--shadow-3) var(--color-default--shadow);
 }
 
+.inv-toggle__slider--accent:hover::before {
+  background-color: var(--color-accent--regular);
+  box-shadow: var(--shadow-3) var(--color-accent--shadow);
+}
+
 .inv-toggle__slider:active::before {
   background-color: var(--color-default--dark);
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
+}
+
+.inv-toggle__slider--accent:active::before {
+  background-color: var(--color-accent--dark);
   box-shadow: var(--shadow-3) var(--color-default--shadow);
 }
 
