@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
   max-width: 239px;
   background-color: var(--color-system--white);
   outline: 1px;
@@ -29,7 +29,7 @@
 }
 
 .inv-form-toggle__container--disabled {
-  background-color: var(--color-default--light);
+  background-color: var(--color-default--white);
   border: none;
   color: var(--color-default--regular);
 }
