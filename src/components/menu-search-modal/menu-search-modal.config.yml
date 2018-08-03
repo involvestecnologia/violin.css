@@ -2,5 +2,12 @@ title: Radial Select
 status: "wip"
 preview: "@preview-menu-modal-search"
 collated: true
-
-
+context:
+  label:
+    show: true
+    value: Pesquisar
+  menu-search-modal:
+    list:
+      - item: ['PDV', 'Listagem']
+      - item: ['PDV', 'Novo']
+      - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']

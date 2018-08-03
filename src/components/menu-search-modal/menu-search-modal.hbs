@@ -4,31 +4,16 @@
     <a href="#">
       <i class="material-icons">keyboard_arrow_left</i>
     </a>
-    <div class="inv-form-field">
-      <label for="default" class="inv-label">Pesquisar</label>
-      <input id="default" name="default" type="text" class="inv-input " placeholder="Ex: Agilito Silva" />
-    </div>
+    {{> @form-field}}
   </div>
 
   <div class="inv-menu-search-modal__content">
-    <a href="#">
-      <div class="inv-menu-search-modal__item">
-        <span>Colaboradores</span>
-        <span>Afastamentos</span>
-      </div>
-    </a>
-    <a href="#">
-      <div class="inv-menu-search-modal__item">
-        <span>Colaboradores</span>
-        <span>Afastamentos</span>
-        <span>Novo afastamento</span>
-      </div>
-    </a>
-    <a href="#">
-      <div class="inv-menu-search-modal__item">
-        <span>Colaboradores</span>
-        <span>Afastamentos</span>
-      </div>
-    </a>
+    {{#each menu-search-modal.list}}
+      <a href="#">
+        <div class="inv-menu-search-modal__item">
+          {{#each this.item}} <span>{{this}}</span> {{/each}}
+        </div>
+      </a>
+    {{/each}}
   </div>
 </div>
