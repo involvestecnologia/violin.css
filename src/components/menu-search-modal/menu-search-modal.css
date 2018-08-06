@@ -82,6 +82,10 @@
   right: 8px;
 }
 
+.inv-menu-search-modal__search > .inv-form-field > .inv-input {
+  padding-right: 40px;
+}
+
 @media (min-width: 600px) {
   .inv-menu-search-modal {
     display: flex;
