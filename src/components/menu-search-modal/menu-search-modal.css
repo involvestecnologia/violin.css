@@ -76,6 +76,12 @@
   display: none;
 }
 
+.inv-menu-search-modal__search > .inv-form-field > .inv-input-icon {
+  position: absolute;
+  top: 32px;
+  right: 8px;
+}
+
 @media (min-width: 600px) {
   .inv-menu-search-modal {
     display: flex;

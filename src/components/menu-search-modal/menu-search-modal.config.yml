@@ -6,6 +6,8 @@ context:
   label:
     show: true
     value: Pesquisar
+  input-icon:
+      icon: "search"
   menu-search-modal:
     list:
       - item: ['PDV', 'Listagem']
