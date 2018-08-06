@@ -68,7 +68,15 @@
   content: '';
 }
 
-@media (min-width: 100px) {
+.inv-divider {
+  display: none;
+}
+
+.inv-menu-search-modal__footer {
+  display: none;
+}
+
+@media (min-width: 600px) {
   .inv-menu-search-modal {
     display: flex;
     flex-direction: column;
