@@ -103,6 +103,14 @@
     padding-left: 0;
     padding-bottom: 0;
   }
+  
+  .inv-menu-search-modal__item:hover {
+    background-color: var(--color-default--white);
+  }
+
+  .inv-menu-search-modal__item:active {
+    background-color: var(--color-system--light);
+  }
 
   .inv-menu-search-modal__footer {
     display: flex;
