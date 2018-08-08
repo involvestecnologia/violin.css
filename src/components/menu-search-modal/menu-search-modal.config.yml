@@ -1,15 +1,47 @@
-title: Radial Select
+title: Menu Search Modal
 status: "wip"
 preview: "@preview-menu-modal-search"
-collated: true
+collated: false
 context:
+  menu-search-modal:
+    message: Use o campo acima para pesquisar, os resultados aparecerão aqui.
   label:
     show: true
     value: Pesquisar
   input-icon:
-      icon: "search"
-  menu-search-modal:
-    list:
-      - item: ['PDV', 'Listagem']
-      - item: ['PDV', 'Novo']
-      - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+    icon: "search"
+variants:
+  - name: default
+  - name: with-results
+    context:
+      input:
+        value: 'tela de pontos de venda'
+      menu-search-modal:
+        message: ''
+        list:
+        - item: ['PDV', 'Listagem']
+        - item: ['PDV', 'Novo']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+  - name: without-result
+    context:
+      menu-search-modal:
+        message: Nenhum resultado encontrado para “tela de vendas”, tente novamente.
+      input:
+        value: 'tela de vendas'
+  - name: scroll
+    context:
+      menu-search-modal:
+        message: ''
+        list:
+        - item: ['PDV', 'Listagem']
+        - item: ['PDV', 'Novo']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+
