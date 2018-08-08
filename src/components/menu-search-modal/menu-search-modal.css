@@ -28,6 +28,22 @@
   color: var(--color-default--regular);
 }
 
+.inv-menu-search-modal__message {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.inv-menu-search-modal__message > span {
+  max-width: 252px;
+  text-align: center;
+  color: var(--color-system--regular);
+  font-size: 14px;
+}
+
 .inv-menu-search-modal__item span {
   color: var(--color-system--regular);
   text-decoration: none;
