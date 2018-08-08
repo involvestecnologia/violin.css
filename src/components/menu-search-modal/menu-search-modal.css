@@ -16,7 +16,6 @@
 .inv-menu-search-modal__search {
   padding-top: 16px;
   padding-left: 32px;
-  padding-bottom: 24px;
   position: relative;
 }
 
@@ -35,10 +34,11 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 8px;
+  margin-top: 80px;
 }
 
 .inv-menu-search-modal__message > span {
-  max-width: 252px;
+  max-width: 208px;
   text-align: center;
   color: var(--color-system--regular);
   font-size: 14px;
@@ -61,6 +61,7 @@
 
 .inv-menu-search-modal__content {
   overflow-y: auto;
+  margin-top: 24px;
 }
 
 .inv-menu-search-modal__item {
@@ -164,6 +165,7 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8px;
+    margin-top: 0;
   }
 
   .inv-menu-search-modal__message > span {
@@ -171,6 +173,10 @@
     text-align: center;
     color: var(--color-system--regular);
     font-size: 14px;
+  }
+
+  .inv-menu-search-modal__content {
+    margin-top: 8px;
   }
 
   .inv-menu-search-modal__item:hover {
