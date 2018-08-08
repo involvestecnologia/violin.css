@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Button_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Button_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Button_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Button_0_document_0_desktop.png",
         "label": "Button",
@@ -27,7 +27,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Checkbox_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Checkbox_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Checkbox_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Checkbox_0_document_0_desktop.png",
         "label": "Checkbox",
@@ -50,7 +50,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Content_Placeholder_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Content_Placeholder_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Content_Placeholder_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Content_Placeholder_0_document_0_desktop.png",
         "label": "Content Placeholder",
@@ -66,7 +66,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 63
+          "analysisTime": 127
         }
       },
       "status": "pass"
@@ -74,7 +74,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Form_Text_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Form_Text_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Form_Text_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Form_Text_0_document_0_desktop.png",
         "label": "Form Text",
@@ -97,7 +97,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input__0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input__0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Input__0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input__0_document_0_desktop.png",
         "label": "Input ",
@@ -120,7 +120,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input_Icon_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input_Icon_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Input_Icon_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input_Icon_0_document_0_desktop.png",
         "label": "Input Icon",
@@ -135,7 +135,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 155
         }
       },
       "status": "pass"
@@ -143,7 +144,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Label_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Label_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Label_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Label_0_document_0_desktop.png",
         "label": "Label",
@@ -166,7 +167,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_List_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_List_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_List_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_List_0_document_0_desktop.png",
         "label": "List",
@@ -189,7 +190,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Form_Field_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Form_Field_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Form_Field_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Form_Field_0_document_0_desktop.png",
         "label": "Form Field",
@@ -212,7 +213,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input_addon_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input_addon_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Input_addon_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input_addon_0_document_0_desktop.png",
         "label": "Input addon",
@@ -235,7 +236,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_default_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_default_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_default_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_default_0_body_0_desktop.png",
         "label": "Dropdown - default",
@@ -251,7 +252,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 150
+          "analysisTime": 354
         }
       },
       "status": "pass"
@@ -259,7 +260,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_open_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_open_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_open_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_open_0_body_0_desktop.png",
         "label": "Dropdown - open",
@@ -275,7 +276,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 77
+          "analysisTime": 363
         }
       },
       "status": "pass"
@@ -283,7 +284,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_action_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_action_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_action_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_action_0_body_0_desktop.png",
         "label": "Dropdown - action",
@@ -299,7 +300,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 129
+          "analysisTime": 314
         }
       },
       "status": "pass"
@@ -307,7 +308,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_counter_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_counter_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_counter_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_counter_0_body_0_desktop.png",
         "label": "Dropdown - counter",
@@ -323,7 +324,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 154
+          "analysisTime": 300
         }
       },
       "status": "pass"
@@ -331,7 +332,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_select_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_select_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_select_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_select_0_body_0_desktop.png",
         "label": "Dropdown - select",
@@ -347,7 +348,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 77
+          "analysisTime": 263
         }
       },
       "status": "pass"
@@ -355,7 +356,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_multiselect_0_body_0_desktop.png",
         "label": "Dropdown - multiselect",
@@ -371,7 +372,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 89
+          "analysisTime": 299
         }
       },
       "status": "pass"
@@ -379,7 +380,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Radial_Select_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Radial_Select_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Radial_Select_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Radial_Select_0_document_0_desktop.png",
         "label": "Radial Select",
@@ -402,7 +403,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Text_Link_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Text_Link_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Text_Link_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Text_Link_0_document_0_desktop.png",
         "label": "Text Link",
@@ -425,7 +426,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Warning_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Warning_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_Warning_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Warning_0_document_0_desktop.png",
         "label": "Warning",
@@ -448,7 +449,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_InputProgress_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_InputProgress_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_InputProgress_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_InputProgress_0_document_0_desktop.png",
         "label": "InputProgress",
@@ -471,7 +472,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuExpandButton_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuExpandButton_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuExpandButton_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuExpandButton_0_document_0_desktop.png",
         "label": "MenuExpandButton",
@@ -494,7 +495,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuCollapseButton_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuCollapseButton_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuCollapseButton_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuCollapseButton_0_document_0_desktop.png",
         "label": "MenuCollapseButton",
@@ -517,7 +518,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuDefault_0_document_0_desktop.png",
         "label": "MenuDefault",
@@ -532,7 +533,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 658
         }
       },
       "status": "pass"
@@ -540,7 +542,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuDefault_0_document_0_desktop.png",
         "label": "MenuDefault",
@@ -555,7 +557,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 416
         }
       },
       "status": "pass"
@@ -563,7 +566,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuMobile_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuMobile_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuMobile_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuMobile_0_document_0_desktop.png",
         "label": "MenuMobile",
@@ -578,7 +581,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 516
         }
       },
       "status": "pass"
@@ -586,7 +590,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuListCategorie_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListCategorie_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuListCategorie_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuListCategorie_0_document_0_desktop.png",
         "label": "MenuListCategorie",
@@ -609,7 +613,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuOpen_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuOpen_0_document_0_desktop.png",
         "label": "MenuOpen",
@@ -624,7 +628,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 527
         }
       },
       "status": "pass"
@@ -632,7 +637,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuSearchDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuSearchDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuSearchDefault_0_document_0_desktop.png",
         "label": "MenuSearchDefault",
@@ -647,7 +652,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 436
         }
       },
       "status": "pass"
@@ -655,7 +661,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuSearchOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuSearchOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchOpen_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuSearchOpen_0_document_0_desktop.png",
         "label": "MenuSearchOpen",
@@ -670,7 +676,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 343
         }
       },
       "status": "pass"
@@ -678,13 +685,61 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuListDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuListDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuListDefault_0_document_0_desktop.png",
         "label": "MenuListDefault",
         "requireSameDimensions": true,
         "misMatchThreshold": 0,
         "url": "http://localhost:3000/components/preview/menu-list--default",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 232
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuListOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuListOpen_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuListOpen_0_document_0_desktop.png",
+        "label": "MenuListOpen",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-list--open",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00",
+          "analysisTime": 244
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "label": "MenuSearchModalDefault",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--default",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
@@ -700,14 +755,60 @@ report({
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/violin_MenuListOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListOpen_0_document_0_desktop.png",
+        "reference": "../bitmaps_reference/violin_MenuSearchModalWithResults_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalWithResults_0_document_0_desktop.png",
         "selector": "document",
-        "fileName": "violin_MenuListOpen_0_document_0_desktop.png",
-        "label": "MenuListOpen",
+        "fileName": "violin_MenuSearchModalWithResults_0_document_0_desktop.png",
+        "label": "MenuSearchModalWithResults",
         "requireSameDimensions": true,
         "misMatchThreshold": 0,
-        "url": "http://localhost:3000/components/preview/menu-list--open",
+        "url": "http://localhost:3000/components/preview/menu-search-modal--with-results",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "label": "MenuSearchModalWithOutResults",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--without-result",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "label": "MenuSearchModalScroll",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--scroll",
         "expect": 0,
         "viewportLabel": "desktop",
         "diff": {
