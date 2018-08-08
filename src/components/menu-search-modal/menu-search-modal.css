@@ -1,9 +1,13 @@
 .inv-menu-search-modal {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: var(--color-system--white);
   height: 100vh;
   width: 100vw;
+}
+
+.inv-menu-search-modal--open {
+  display: flex;
 }
 
 .inv-menu-search-modal__container {
@@ -113,7 +117,7 @@
 
 @media (min-width: 600px) {
   .inv-menu-search-modal {
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: var(--color-system--white);
     width: 508px;
@@ -123,7 +127,7 @@
     position: relative;
   }
 
-  .inv-menu-search-modal--active {
+  .inv-menu-search-modal--open {
     display: flex;
   }
 
