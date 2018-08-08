@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Button_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Button_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Button_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Button_0_document_0_desktop.png",
         "label": "Button",
@@ -27,7 +27,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Checkbox_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Checkbox_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Checkbox_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Checkbox_0_document_0_desktop.png",
         "label": "Checkbox",
@@ -50,7 +50,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Content_Placeholder_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Content_Placeholder_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Content_Placeholder_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Content_Placeholder_0_document_0_desktop.png",
         "label": "Content Placeholder",
@@ -66,7 +66,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 63
+          "analysisTime": 127
         }
       },
       "status": "pass"
@@ -74,7 +74,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Form_Text_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Form_Text_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Form_Text_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Form_Text_0_document_0_desktop.png",
         "label": "Form Text",
@@ -97,7 +97,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input__0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input__0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Input__0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input__0_document_0_desktop.png",
         "label": "Input ",
@@ -112,7 +112,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 149
         }
       },
       "status": "pass"
@@ -120,7 +121,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input_Icon_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input_Icon_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Input_Icon_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input_Icon_0_document_0_desktop.png",
         "label": "Input Icon",
@@ -135,7 +136,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 143
         }
       },
       "status": "pass"
@@ -143,7 +145,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Label_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Label_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Label_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Label_0_document_0_desktop.png",
         "label": "Label",
@@ -158,7 +160,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 168
         }
       },
       "status": "pass"
@@ -166,7 +169,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_List_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_List_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_List_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_List_0_document_0_desktop.png",
         "label": "List",
@@ -181,7 +184,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 255
         }
       },
       "status": "pass"
@@ -189,7 +193,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Form_Field_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Form_Field_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Form_Field_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Form_Field_0_document_0_desktop.png",
         "label": "Form Field",
@@ -204,7 +208,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 283
         }
       },
       "status": "pass"
@@ -212,7 +217,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Input_addon_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Input_addon_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Input_addon_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Input_addon_0_document_0_desktop.png",
         "label": "Input addon",
@@ -227,7 +232,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 260
         }
       },
       "status": "pass"
@@ -235,7 +241,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_default_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_default_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_default_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_default_0_body_0_desktop.png",
         "label": "Dropdown - default",
@@ -251,7 +257,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 150
+          "analysisTime": 367
         }
       },
       "status": "pass"
@@ -259,7 +265,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_open_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_open_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_open_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_open_0_body_0_desktop.png",
         "label": "Dropdown - open",
@@ -275,7 +281,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 77
+          "analysisTime": 308
         }
       },
       "status": "pass"
@@ -283,7 +289,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_action_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_action_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_action_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_action_0_body_0_desktop.png",
         "label": "Dropdown - action",
@@ -299,7 +305,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 129
+          "analysisTime": 348
         }
       },
       "status": "pass"
@@ -307,7 +313,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_counter_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_counter_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_counter_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_counter_0_body_0_desktop.png",
         "label": "Dropdown - counter",
@@ -323,7 +329,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 154
+          "analysisTime": 361
         }
       },
       "status": "pass"
@@ -331,7 +337,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_select_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_select_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_select_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_select_0_body_0_desktop.png",
         "label": "Dropdown - select",
@@ -347,7 +353,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 77
+          "analysisTime": 349
         }
       },
       "status": "pass"
@@ -355,7 +361,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Dropdown_-_multiselect_0_body_0_desktop.png",
         "selector": "body",
         "fileName": "violin_Dropdown_-_multiselect_0_body_0_desktop.png",
         "label": "Dropdown - multiselect",
@@ -371,7 +377,7 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 89
+          "analysisTime": 381
         }
       },
       "status": "pass"
@@ -379,7 +385,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Radial_Select_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Radial_Select_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Radial_Select_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Radial_Select_0_document_0_desktop.png",
         "label": "Radial Select",
@@ -394,7 +400,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 237
         }
       },
       "status": "pass"
@@ -402,7 +409,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Text_Link_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Text_Link_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Text_Link_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Text_Link_0_document_0_desktop.png",
         "label": "Text Link",
@@ -425,7 +432,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Warning_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_Warning_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_Warning_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Warning_0_document_0_desktop.png",
         "label": "Warning",
@@ -448,7 +455,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_InputProgress_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_InputProgress_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_InputProgress_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_InputProgress_0_document_0_desktop.png",
         "label": "InputProgress",
@@ -463,7 +470,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 363
         }
       },
       "status": "pass"
@@ -471,7 +479,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuExpandButton_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuExpandButton_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuExpandButton_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuExpandButton_0_document_0_desktop.png",
         "label": "MenuExpandButton",
@@ -486,7 +494,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 217
         }
       },
       "status": "pass"
@@ -494,7 +503,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuCollapseButton_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuCollapseButton_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuCollapseButton_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuCollapseButton_0_document_0_desktop.png",
         "label": "MenuCollapseButton",
@@ -509,7 +518,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 290
         }
       },
       "status": "pass"
@@ -517,7 +527,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuDefault_0_document_0_desktop.png",
         "label": "MenuDefault",
@@ -532,7 +542,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 320
         }
       },
       "status": "pass"
@@ -540,7 +551,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuDefault_0_document_0_desktop.png",
         "label": "MenuDefault",
@@ -555,7 +566,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 267
         }
       },
       "status": "pass"
@@ -563,7 +575,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuMobile_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuMobile_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuMobile_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuMobile_0_document_0_desktop.png",
         "label": "MenuMobile",
@@ -578,7 +590,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 295
         }
       },
       "status": "pass"
@@ -586,7 +599,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuListCategorie_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListCategorie_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuListCategorie_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuListCategorie_0_document_0_desktop.png",
         "label": "MenuListCategorie",
@@ -609,7 +622,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuOpen_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuOpen_0_document_0_desktop.png",
         "label": "MenuOpen",
@@ -624,7 +637,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 162
         }
       },
       "status": "pass"
@@ -632,7 +646,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuSearchDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuSearchDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuSearchDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuSearchDefault_0_document_0_desktop.png",
         "label": "MenuSearchDefault",
@@ -647,7 +661,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 169
         }
       },
       "status": "pass"
@@ -655,7 +670,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuSearchOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuSearchOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuSearchOpen_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuSearchOpen_0_document_0_desktop.png",
         "label": "MenuSearchOpen",
@@ -670,7 +685,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 185
         }
       },
       "status": "pass"
@@ -678,7 +694,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuListDefault_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuListDefault_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuListDefault_0_document_0_desktop.png",
         "label": "MenuListDefault",
@@ -693,7 +709,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 103
         }
       },
       "status": "pass"
@@ -701,7 +718,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_MenuListOpen_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180710-140909/violin_MenuListOpen_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-202040/violin_MenuListOpen_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_MenuListOpen_0_document_0_desktop.png",
         "label": "MenuListOpen",
@@ -716,7 +733,8 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00"
+          "misMatchPercentage": "0.00",
+          "analysisTime": 126
         }
       },
       "status": "pass"
