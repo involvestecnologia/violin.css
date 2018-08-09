@@ -3,8 +3,8 @@
   padding-left: var(--space-16);
   padding-top: var(--space-16);
   padding-bottom: var(--space-16);
-  width: var(262px);
-  max-width: var(262px);
+  width: 262px;
+  max-width: 262px;
   word-wrap: break-word;
   font-style: italic;
   font-size: var(--font-content-small--size);
