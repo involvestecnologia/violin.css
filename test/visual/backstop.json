@@ -9,6 +9,14 @@
   ],
   "scenarios": [
     {
+      "label": "Breadcrumbs",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/breadcrumbs",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Button",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/button",
@@ -33,6 +41,14 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Helper",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/helper",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Form Text",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/form-text",
@@ -41,9 +57,25 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Form Toggle",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/form-toggle",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Input ",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/input",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Input File",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/input-file",
       "selectorExpansion": true,
       "misMatchThreshold" : 0,
       "requireSameDimensions": true
@@ -159,6 +191,30 @@
       "requireSameDimensions": true
     },
     {
+      "label": "Tip",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/tip",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Toggle",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/toggle",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Typhography",
+      "readySelector": "body",
+      "url": "http://localhost:3000/components/preview/typhography",
+      "selectorExpansion": true,
+      "misMatchThreshold" : 0,
+      "requireSameDimensions": true
+    },
+    {
       "label": "Warning",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/warning",
@@ -167,7 +223,7 @@
       "requireSameDimensions": true
     },
     {
-      "label": "InputProgress",
+      "label": "Input Progress",
       "readySelector": "body",
       "url": "http://localhost:3000/components/preview/input-progress",
       "selectorExpansion": true,
