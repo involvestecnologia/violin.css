@@ -4,3 +4,4 @@ node_modules
 *.log
 .changelog
 public/.tmp
+.npmignore

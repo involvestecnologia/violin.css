@@ -1,3 +1,14 @@
+<a name="0.0.20"></a>
+## [0.0.20](https://github.com/involvestecnologia/violin.css/compare/v0.0.18...v0.0.20) (2018-08-08)
+
+
+### Features
+
+* **toggle component:** New color added in toggle component ([3067963](https://github.com/involvestecnologia/violin.css/commit/3067963))
+* **toggle component:** Red toggle added to toggle form field component ([22f9bbb](https://github.com/involvestecnologia/violin.css/commit/22f9bbb))
+
+
+
 <a name="0.0.18"></a>
 ## [0.0.18](https://github.com/involvestecnologia/violin.css/compare/v0.0.17...v0.0.18) (2018-07-25)
 

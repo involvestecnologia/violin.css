@@ -28,6 +28,8 @@
 .inv-input:focus,
 .inv-input--focused {
   background-color: var(--color-system--white);
+  -webkit-appearance: none;
+  -webkit-box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
   box-shadow: var(--shadow-border-2) var(--color-primary--regular) inset;
 }
 
@@ -36,5 +38,7 @@
 }
 
 .inv-input--error:focus {
+  -webkit-appearance: none;
+  -webkit-box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
   box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }
