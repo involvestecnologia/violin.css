@@ -1,0 +1,19 @@
+.inv-helper {
+  --inv-helper-width: 262px;
+
+  border-left: 1px solid var(--color-system--light);
+  padding-left: var(--space-16);
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-16);
+  width: var(--inv-helper-width);
+  max-width: var(--inv-helper-width);
+  word-wrap: break-word;
+  font-style: italic;
+  font-size: var(--font-content-small--size);
+  color: var(--color-system--regular);
+  line-height: 16px;
+}
+
+.inv-helper > b {
+  color: var(--color-primary--regular);
+}
