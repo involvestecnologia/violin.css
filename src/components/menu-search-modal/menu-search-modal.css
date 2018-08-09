@@ -64,6 +64,11 @@
   color: var(--color-default--dark);
 }
 
+.inv-menu-search-modal__search > a:hover {
+  color: var(--color-default--regular);
+  text-shadow: 0 0 1px var(--color-system--shadow);
+}
+
 .inv-menu-search-modal__content {
   overflow-y: auto;
   margin-top: var(--space-24);
