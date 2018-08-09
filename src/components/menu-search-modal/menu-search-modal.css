@@ -38,8 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--space-8);
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .inv-menu-search-modal__message > span {
