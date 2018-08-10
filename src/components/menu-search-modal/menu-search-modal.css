@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 0 var(--space-16) 0;
+    padding: 0 var(--space-16) var(--space-8);
   }
 
   .inv-menu-search-modal__search {
@@ -158,8 +158,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: var(--space-8);
     margin-top: 0;
+    padding-top: unset;
+    padding-bottom: var(--space-8);
   }
 
   .inv-menu-search-modal__message > span {
