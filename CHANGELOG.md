@@ -1,5 +1,25 @@
+<a name="0.0.21"></a>
+## [0.0.21](https://github.com/involvestecnologia/violin.css/compare/v0.0.20...v0.0.21) (2018-08-13)
+
+
+### Bug Fixes
+
+* **Component:** Fix width for helper component ([874e117](https://github.com/involvestecnologia/violin.css/commit/874e117))
+
+
+### Features
+
+* **component:** Add new Helper component ([7b8b75f](https://github.com/involvestecnologia/violin.css/commit/7b8b75f))
+
+
+
 <a name="0.0.20"></a>
-## [0.0.20](https://github.com/involvestecnologia/violin.css/compare/v0.0.18...v0.0.20) (2018-08-08)
+## [0.0.20](https://github.com/involvestecnologia/violin.css/compare/v0.0.19...v0.0.20) (2018-08-08)
+
+
+
+<a name="0.0.19"></a>
+## [0.0.19](https://github.com/involvestecnologia/violin.css/compare/v0.0.18...v0.0.19) (2018-08-02)
 
 
 ### Features
@@ -66,17 +86,7 @@
 
 
 <a name="0.0.11"></a>
-## [0.0.11](https://github.com/involvestecnologia/violin.css/compare/v0.0.10...v0.0.11) (2018-07-02)
-
-
-
-<a name="0.0.10"></a>
-## [0.0.10](https://github.com/involvestecnologia/violin.css/compare/v0.0.9...v0.0.10) (2018-06-19)
-
-
-
-<a name="0.0.9"></a>
-## [0.0.9](https://github.com/involvestecnologia/violin.css/compare/v0.0.2...v0.0.9) (2018-06-19)
+## [0.0.11](https://github.com/involvestecnologia/violin.css/compare/v0.0.2...v0.0.11) (2018-07-02)
 
 
 ### Features
