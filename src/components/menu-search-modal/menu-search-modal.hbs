@@ -15,10 +15,8 @@
 
     <div class="inv-menu-search-modal__content">
       {{#each menu-search-modal.list}}
-        <a href="#">
-          <div class="inv-menu-search-modal__item">
-            {{#each this.item}} <span>{{this}}</span> {{/each}}
-          </div>
+        <a class="inv-menu-search-modal__item" href="#">
+          {{#each this.item}} <span>{{this}}</span> {{/each}}
         </a>
       {{/each}}
     </div>

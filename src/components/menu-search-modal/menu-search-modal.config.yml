@@ -19,9 +19,9 @@ variants:
       menu-search-modal:
         message: ''
         list:
-        - item: ['PDV', 'Listagem']
-        - item: ['PDV', 'Novo']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['PDV / ', 'Listagem']
+        - item: ['PDV / ', 'Novo']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
   - name: without-result
     context:
       menu-search-modal:
@@ -33,15 +33,15 @@ variants:
       menu-search-modal:
         message: ''
         list:
-        - item: ['PDV', 'Listagem']
-        - item: ['PDV', 'Novo']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
-        - item: ['Colaboradores', 'Afastamentos', 'Novo afastamento']
+        - item: ['PDV / ', 'Listagem']
+        - item: ['PDV / ', 'Novo']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
 
