@@ -1,36 +1,40 @@
-<div class="inv-menu-search-modal inv-menu-search-modal--open">
-  <div class="inv-menu-search-modal__container">
-    <div class="inv-menu-search-modal__search">
-      <a href="#">
-        <i class="material-icons">keyboard_arrow_left</i>
-      </a>
-      {{> @form-field}}
-    </div>
-
-    {{#if menu-search-modal.message}}
-    <div class="inv-menu-search-modal__message">
-      <span>{{menu-search-modal.message}}</span>
-    </div>
-    {{/if}}
-
-    <div class="inv-menu-search-modal__content">
-      {{#each menu-search-modal.list}}
-        <a class="inv-menu-search-modal__item" href="#">
-          {{#each this.item}} <span>{{this}}</span> {{/each}}
+<div class="inv-menu-search-modal-overlay">
+  <div class="inv-menu-search-modal inv-menu-search-modal--open">
+    <div class="inv-menu-search-modal__container">
+      <div class="inv-menu-search-modal__search">
+        <a href="#">
+          <i class="material-icons">keyboard_arrow_left</i>
         </a>
-      {{/each}}
-    </div>
-  </div>
+        {{> @form-field}}
+      </div>
 
-  <div class="inv-menu-search-modal__footer">
-    <div>
-      <b>tab</b>&nbsp;ou&nbsp;<i class="material-icons">swap_vert</i> para navegar
+      {{#if menu-search-modal.message}}
+      <div class="inv-menu-search-modal__message">
+        <span>{{menu-search-modal.message}}</span>
+      </div>
+      {{/if}}
+
+      <div class="inv-menu-search-modal__content">
+        {{#each menu-search-modal.list}}
+        <a class="inv-menu-search-modal__item" href="#">
+          {{#each this.item}}
+          <span>{{this}}</span> {{/each}}
+        </a>
+        {{/each}}
+      </div>
     </div>
-    <div>
-      <i class="material-icons inv-menu-search-modal-icon--rotate">call_missed</i>&nbsp;para selecionar
-    </div>
-    <div>
-      <b>esc</b>&nbsp;para sair
+
+    <div class="inv-menu-search-modal__footer">
+      <div>
+        <b>tab</b>&nbsp;ou&nbsp;
+        <i class="material-icons">swap_vert</i> para navegar
+      </div>
+      <div>
+        <i class="material-icons inv-menu-search-modal-icon--rotate">call_missed</i>&nbsp;para selecionar
+      </div>
+      <div>
+        <b>esc</b>&nbsp;para sair
+      </div>
     </div>
   </div>
 </div>

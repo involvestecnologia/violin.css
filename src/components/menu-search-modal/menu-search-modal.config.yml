@@ -1,6 +1,6 @@
 title: Menu Search Modal
-status: "wip"
-preview: "@preview-menu-modal-search"
+status: "ready"
+preview: "@preview-viewport"
 collated: false
 context:
   menu-search-modal:
