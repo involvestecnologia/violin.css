@@ -48,17 +48,6 @@
   font-size: var(--font-content--size);
 }
 
-.inv-menu-search-modal__item span {
-  color: var(--color-system--regular);
-  text-decoration: none;
-}
-
-.inv-menu-search-modal__content > a {
-  text-decoration: none;
-  outline: none;
-  font-size: var(--font-content--size);
-}
-
 .inv-menu-search-modal__search > a:active {
   color: var(--color-default--dark);
 }
@@ -69,6 +58,8 @@
 }
 
 .inv-menu-search-modal__content {
+  display: flex;
+  flex-direction: column;
   overflow-y: auto;
   margin-top: var(--space-24);
 }
@@ -76,7 +67,14 @@
 .inv-menu-search-modal__item {
   transition: background-color 0.1s;
   padding: var(--space-8) 0 var(--space-8) var(--space-8);
+  text-decoration: none;
   outline: none;
+  font-size: var(--font-content--size);
+  color: var(--color-system--regular);
+}
+
+.inv-menu-search-modal__item:hover {
+  background-color: var(--color-default--white);
 }
 
 .inv-menu-search-modal__item:active {
@@ -85,18 +83,6 @@
 
 .inv-menu-search-modal__item > span:last-child {
   color: var(--color-system--dark);
-  cursor: default;
-  pointer-events: none;
-}
-
-.inv-menu-search-modal__item > span::after {
-  color: var(--color-default--dark);
-  content: "\0002f";
-  margin-left: 6px;
-}
-
-.inv-menu-search-modal__item > span:last-child::after {
-  content: '';
 }
 
 .inv-menu-search-modal__footer {

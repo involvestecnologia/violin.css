@@ -225,10 +225,8 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__content"</span>&gt;</span>
       </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> menu-search-modal.list}}</span><span class="xml">
-        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__item"</span>&gt;</span>
-            </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> this.item}}</span><span class="xml"> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{this}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
-          <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__item"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+          </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> this.item}}</span><span class="xml"> <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{this}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span> </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
       </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -349,17 +347,6 @@
   <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-content--size);
 }
 
-<span class="hljs-selector-class">.inv-menu-search-modal__item</span> <span class="hljs-selector-tag">span</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--regular);
-  <span class="hljs-attribute">text-decoration</span>: none;
-}
-
-<span class="hljs-selector-class">.inv-menu-search-modal__content</span> &gt; <span class="hljs-selector-tag">a</span> {
-  <span class="hljs-attribute">text-decoration</span>: none;
-  <span class="hljs-attribute">outline</span>: none;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-content--size);
-}
-
 <span class="hljs-selector-class">.inv-menu-search-modal__search</span> &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--dark);
 }
@@ -370,6 +357,8 @@
 }
 
 <span class="hljs-selector-class">.inv-menu-search-modal__content</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">overflow-y</span>: auto;
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-built_in">var</span>(--space-24);
 }
@@ -377,7 +366,14 @@
 <span class="hljs-selector-class">.inv-menu-search-modal__item</span> {
   <span class="hljs-attribute">transition</span>: background-color <span class="hljs-number">0.1s</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-built_in">var</span>(--space-8) <span class="hljs-number">0</span> <span class="hljs-built_in">var</span>(--space-8) <span class="hljs-built_in">var</span>(--space-8);
+  <span class="hljs-attribute">text-decoration</span>: none;
   <span class="hljs-attribute">outline</span>: none;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--font-content--size);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--regular);
+}
+
+<span class="hljs-selector-class">.inv-menu-search-modal__item</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-default--white);
 }
 
 <span class="hljs-selector-class">.inv-menu-search-modal__item</span><span class="hljs-selector-pseudo">:active</span> {
@@ -386,18 +382,6 @@
 
 <span class="hljs-selector-class">.inv-menu-search-modal__item</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:last-child</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--dark);
-  <span class="hljs-attribute">cursor</span>: default;
-  <span class="hljs-attribute">pointer-events</span>: none;
-}
-
-<span class="hljs-selector-class">.inv-menu-search-modal__item</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">::after</span> {
-  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--dark);
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">"\0002f"</span>;
-  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">6px</span>;
-}
-
-<span class="hljs-selector-class">.inv-menu-search-modal__item</span> &gt; <span class="hljs-selector-tag">span</span><span class="hljs-selector-pseudo">:last-child</span><span class="hljs-selector-pseudo">::after</span> {
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
 }
 
 <span class="hljs-selector-class">.inv-menu-search-modal__footer</span> {
@@ -543,7 +527,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.9 KB</span>
+                    <span class="Meta-value">4.6 KB</span>
                 </li>
             </ul>
         </div>
