@@ -28,6 +28,7 @@
   top: 46px;
   left: 0;
   text-decoration: none;
+  user-select: none;
   color: var(--color-default--regular);
 }
 
@@ -101,6 +102,10 @@
 
 .inv-menu-search-modal__search > .inv-form-field > .inv-input {
   padding-right: var(--space-40);
+}
+
+.inv-menu-search-modal__search > .inv-form-field > .inv-label {
+  user-select: none;
 }
 
 @media (min-width: 600px) {
