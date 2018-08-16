@@ -1,10 +1,11 @@
-<div class="inv-menu-search-modal-overlay inv-menu-search-modal--open">
-  <div class="inv-menu-search-modal">
-    <div class="inv-menu-search-modal__container">
+<div class="inv-menu-search-modal inv-menu-search-modal--open">
+
+  <div class="inv-menu-search-modal__background"></div>
+
+  <div class="inv-menu-search-modal__content">
+    <div class="inv-menu-search-modal-content__container">
       <div class="inv-menu-search-modal__search">
-        <a href="#">
-          <i class="material-icons">keyboard_arrow_left</i>
-        </a>
+        <a href="#" class="inv-menu-search-modal-close-btn"></a>
         {{> @form-field}}
       </div>
 
@@ -14,9 +15,9 @@
       </div>
       {{/if}}
 
-      <div class="inv-menu-search-modal__content">
+      <div class="inv-menu-search-modal__list">
         {{#each menu-search-modal.list}}
-        <a class="inv-menu-search-modal__item" href="#">
+        <a class="inv-menu-search-modal-list__item" href="#">
           {{#each this.item}}
           <span>{{this}}</span> {{/each}}
         </a>
