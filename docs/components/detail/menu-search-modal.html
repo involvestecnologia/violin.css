@@ -157,8 +157,9 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1a0d924cbf4db1600354e894c7e8b614-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal-overlay"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal inv-menu-search-modal--open"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Oi<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal-overlay inv-menu-search-modal--open"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__container"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__search"</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
@@ -211,8 +212,9 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1a0d924cbf4db1600354e894c7e8b614-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal-overlay"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal inv-menu-search-modal--open"</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Oi<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal-overlay inv-menu-search-modal--open"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__container"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-search-modal__search"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
@@ -301,8 +303,23 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
-                                <pre><span class="hljs-selector-class">.inv-menu-search-modal</span> {
+                                <pre><span class="hljs-selector-class">.inv-menu-search-modal-overlay</span> {
   <span class="hljs-attribute">display</span>: none;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-built_in">var</span>(--z-index-1);
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">overflow</span>: hidden;
+}
+
+<span class="hljs-selector-class">.inv-menu-search-modal</span> {
+  <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">height</span>: <span class="hljs-number">100vh</span>;
@@ -331,6 +348,7 @@
   <span class="hljs-attribute">top</span>: <span class="hljs-number">46px</span>;
   <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">user-select</span>: none;
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--regular);
 }
 
@@ -406,9 +424,13 @@
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">var</span>(--space-40);
 }
 
+<span class="hljs-selector-class">.inv-menu-search-modal__search</span> &gt; <span class="hljs-selector-class">.inv-form-field</span> &gt; <span class="hljs-selector-class">.inv-label</span> {
+  <span class="hljs-attribute">user-select</span>: none;
+}
+
 @<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">600px</span>) {
   <span class="hljs-selector-class">.inv-menu-search-modal-overlay</span> {
-    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">display</span>: none;
     <span class="hljs-attribute">justify-content</span>: center;
     <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">position</span>: fixed;
@@ -425,7 +447,7 @@
   }
 
   <span class="hljs-selector-class">.inv-menu-search-modal</span> {
-    <span class="hljs-attribute">display</span>: none;
+    <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: column;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
     <span class="hljs-attribute">width</span>: <span class="hljs-number">508px</span>;
@@ -547,7 +569,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.9 KB</span>
+                    <span class="Meta-value">5.3 KB</span>
                 </li>
             </ul>
         </div>
