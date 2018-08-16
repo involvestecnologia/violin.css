@@ -1,3 +1,13 @@
+<a name="0.0.24"></a>
+## [0.0.24](https://github.com/involvestecnologia/violin.css/compare/v0.0.23...v0.0.24) (2018-08-16)
+
+
+### Bug Fixes
+
+* Add user-select: none to label and icon in menu search modal ([85acd42](https://github.com/involvestecnologia/violin.css/commit/85acd42))
+
+
+
 <a name="0.0.23"></a>
 ## [0.0.23](https://github.com/involvestecnologia/violin.css/compare/v0.0.22...v0.0.23) (2018-08-14)
 
