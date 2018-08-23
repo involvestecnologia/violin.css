@@ -90,6 +90,10 @@
     flex-shrink: 0;
   }
 
+  .inv-menu-header > picture {
+    text-align: center;
+  }
+
   .inv-menu-header > .inv-menu-collapse-button {
     display: none;
   }
