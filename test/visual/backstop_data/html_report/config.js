@@ -27,7 +27,7 @@ report({
     {
       "pair": {
         "reference": "../bitmaps_reference/violin_Button_0_document_0_desktop.png",
-        "test": "../bitmaps_test/20180809-130202/violin_Button_0_document_0_desktop.png",
+ "test": "../bitmaps_test/20180809-130202/violin_Button_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "violin_Button_0_document_0_desktop.png",
         "label": "Button",
@@ -895,7 +895,99 @@ report({
             "height": 0
           },
           "misMatchPercentage": "0.00",
-          "analysisTime": 106
+          "analysisTime": 244
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalDefault_0_document_0_desktop.png",
+        "label": "MenuSearchModalDefault",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--default",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalWithResults_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalWithResults_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalWithResults_0_document_0_desktop.png",
+        "label": "MenuSearchModalWithResults",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--with-results",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalWithOutResults_0_document_0_desktop.png",
+        "label": "MenuSearchModalWithOutResults",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--without-result",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "test": "../bitmaps_test/20180808-191934/violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "violin_MenuSearchModalScroll_0_document_0_desktop.png",
+        "label": "MenuSearchModalScroll",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0,
+        "url": "http://localhost:3000/components/preview/menu-search-modal--scroll",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
         }
       },
       "status": "pass"

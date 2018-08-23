@@ -3,6 +3,7 @@
   name="{{input.for}}"
   type="text"
   class="inv-input {{ input.modifier }}"
+  value="{{ input.value }}"
   placeholder="{{ ternary input.placeholder input.placeholder "Ex: 000-00-000" }}"
   {{ternary disabled "disabled" "" }}
 />

@@ -1,5 +1,55 @@
+<a name="0.0.26"></a>
+## [0.0.26](https://github.com/involvestecnologia/violin.css/compare/v0.0.25...v0.0.26) (2018-08-16)
+
+
+
+<a name="0.0.25"></a>
+## [0.0.25](https://github.com/involvestecnologia/violin.css/compare/v0.0.24...v0.0.25) (2018-08-16)
+
+
+
+<a name="0.0.24"></a>
+## [0.0.24](https://github.com/involvestecnologia/violin.css/compare/v0.0.23...v0.0.24) (2018-08-16)
+
+
+### Bug Fixes
+
+* Add user-select: none to label and icon in menu search modal ([85acd42](https://github.com/involvestecnologia/violin.css/commit/85acd42))
+
+
+
+<a name="0.0.23"></a>
+## [0.0.23](https://github.com/involvestecnologia/violin.css/compare/v0.0.22...v0.0.23) (2018-08-14)
+
+
+
+<a name="0.0.22"></a>
+## [0.0.22](https://github.com/involvestecnologia/violin.css/compare/v0.0.21...v0.0.22) (2018-08-14)
+
+
+
+<a name="0.0.21"></a>
+## [0.0.21](https://github.com/involvestecnologia/violin.css/compare/v0.0.20...v0.0.21) (2018-08-13)
+
+
+### Bug Fixes
+
+* **Component:** Fix width for helper component ([874e117](https://github.com/involvestecnologia/violin.css/commit/874e117))
+
+
+### Features
+
+* **component:** Add new Helper component ([7b8b75f](https://github.com/involvestecnologia/violin.css/commit/7b8b75f))
+
+
+
 <a name="0.0.20"></a>
-## [0.0.20](https://github.com/involvestecnologia/violin.css/compare/v0.0.18...v0.0.20) (2018-08-08)
+## [0.0.20](https://github.com/involvestecnologia/violin.css/compare/v0.0.19...v0.0.20) (2018-08-08)
+
+
+
+<a name="0.0.19"></a>
+## [0.0.19](https://github.com/involvestecnologia/violin.css/compare/v0.0.18...v0.0.19) (2018-08-02)
 
 
 ### Features
@@ -66,17 +116,7 @@
 
 
 <a name="0.0.11"></a>
-## [0.0.11](https://github.com/involvestecnologia/violin.css/compare/v0.0.10...v0.0.11) (2018-07-02)
-
-
-
-<a name="0.0.10"></a>
-## [0.0.10](https://github.com/involvestecnologia/violin.css/compare/v0.0.9...v0.0.10) (2018-06-19)
-
-
-
-<a name="0.0.9"></a>
-## [0.0.9](https://github.com/involvestecnologia/violin.css/compare/v0.0.2...v0.0.9) (2018-06-19)
+## [0.0.11](https://github.com/involvestecnologia/violin.css/compare/v0.0.2...v0.0.11) (2018-07-02)
 
 
 ### Features
