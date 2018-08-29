@@ -109,6 +109,10 @@
   color: var(--color-system--dark);
 }
 
+.inv-menu-search-modal-list__item--selected {
+  background-color: var(--color-default--white);
+}
+
 .inv-menu-search-modal__footer {
   height: 32px;
   left: 0;

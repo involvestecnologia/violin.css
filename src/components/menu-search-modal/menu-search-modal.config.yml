@@ -28,6 +28,23 @@ variants:
         message: Nenhum resultado encontrado para “tela de vendas”, tente novamente.
       input:
         value: 'tela de vendas'
+  - name: with-selected-item
+    context:
+      menu-search-modal:
+        message: ''
+        list:
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: inv-menu-search-modal-list__item--selected
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
   - name: scroll
     context:
       menu-search-modal:
