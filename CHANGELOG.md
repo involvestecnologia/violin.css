@@ -1,3 +1,13 @@
+<a name="0.0.27"></a>
+## [0.0.27](https://github.com/involvestecnologia/violin.css/compare/v0.0.26...v0.0.27) (2018-08-29)
+
+
+### Bug Fixes
+
+* **Centralize logo menu:** Centralize logo menu ([ae988ab](https://github.com/involvestecnologia/violin.css/commit/ae988ab))
+
+
+
 <a name="0.0.26"></a>
 ## [0.0.26](https://github.com/involvestecnologia/violin.css/compare/v0.0.25...v0.0.26) (2018-08-16)
 
