@@ -84,6 +84,7 @@
   flex-direction: column;
   overflow-y: auto;
   margin-top: var(--space-24);
+  outline: none;
 }
 
 .inv-menu-search-modal-list__item {
@@ -218,6 +219,7 @@
 
   .inv-menu-search-modal__list {
     margin-top: var(--space-8);
+    max-height: 160px;
   }
 
   .inv-menu-search-modal-list__item {
