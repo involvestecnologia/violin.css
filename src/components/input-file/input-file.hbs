@@ -1,10 +1,10 @@
-<div class="inv-input-file__container">
-  {{> @label}}
-  <div class="inv-input-file">
-    <button class="inv-input-file__btn {{input-file.modifier}}">
-      {{input-file.button-text}} {{> @input-icon}}
-    </button>
-    <input type="file" {{ternary input-file.disabled "disabled" "" }} /> {{> @clear-input}}
-  </div>
-  {{> @form-text}}
+<div class="inv-input-file {{ input-file.modifier }}">
+  <label for="input-file" class="inv-input-file__text {{ input-file.text.modifier }}">
+    <span>{{ input-file.button-text }}</span>
+    <i class="material-icons inv-input-file-icon">file_upload</i>
+  </label>
+  <input id="input-file" type="file" value=""/>
+  <button class="inv-clear-input" {{ternary clear-input.disabled "disabled" "" }}>
+    <i class="material-icons">clear</i>
+  </button>
 </div>

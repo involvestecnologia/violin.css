@@ -9,35 +9,46 @@ context:
     for: "error"
   input-file:
     button-text: Enviar arquivo
-  input-icon:
-    icon: "file_upload"
+  clear-input:
+    disabled: true
 variants:
   - name: default
-    context:
-      clear-input:
-        disabled: true
-  - name: file-selected
-  - name: input-file-disabled
+  - name: active
     context:
       input-file:
-        modifier: inv-input-file__btn--disabled
-        disabled: true
-      clear-input:
-        disabled: true
-      label:
-        modifier: "inv-label--disabled"
-  - name: input-file-required
+        text:
+          modifier: inv-input-file__text--active
+  - name: file-name
     context:
       input-file:
-        modifier: inv-input-file__btn--required
+        modifier: inv-input-file--selected
       clear-input:
-        disabled: true
-  - name: input-file-error
-    context:
-      input-file:
-        modifier: inv-input-file__btn--error
-        button-text: visitas.txt
-      form-text:
-        value: "Cara, nunca vi uma senha menos segura."
-        modifier: "inv-form-text--error"
+        disabled: false
+  #   context:
+  #     clear-input:
+  #       disabled: true
+  # - name: file-selected
+  # - name: input-file-disabled
+  #   context:
+  #     input-file:
+  #       modifier: inv-input-file__btn--disabled
+  #       disabled: true
+  #     clear-input:
+  #       disabled: true
+  #     label:
+  #       modifier: "inv-label--disabled"
+  # - name: input-file-required
+  #   context:
+  #     input-file:
+  #       modifier: inv-input-file__btn--required
+  #     clear-input:
+  #       disabled: true
+  # - name: input-file-error
+  #   context:
+  #     input-file:
+  #       modifier: inv-input-file__btn--error
+  #       button-text: visitas.txt
+  #     form-text:
+  #       value: "Cara, nunca vi uma senha menos segura."
+  #       modifier: "inv-form-text--error"
 
