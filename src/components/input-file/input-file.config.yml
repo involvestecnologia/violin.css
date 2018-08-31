@@ -24,6 +24,13 @@ variants:
         modifier: inv-input-file--selected
       clear-input:
         disabled: false
+  - name: disabled
+    context:
+      input-file:
+        text:
+          modifier: inv-input-file__text--disabled
+        icon:
+          modifier: inv-input-file-icon--disabled
   #   context:
   #     clear-input:
   #       disabled: true

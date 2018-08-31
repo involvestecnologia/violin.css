@@ -1,7 +1,7 @@
-<div class="inv-input-file {{ input-file.modifier }}">
+<div class="inv-input-file inv-input-file--disabled {{ input-file.modifier }}">
   <label for="input-file" class="inv-input-file__text {{ input-file.text.modifier }}">
     <span>{{ input-file.button-text }}</span>
-    <i class="material-icons inv-input-file-icon">file_upload</i>
+    <i class="material-icons inv-input-file-icon {{ input-file.icon.modifier }}">file_upload</i>
   </label>
   <input id="input-file" type="file" value=""/>
   <button class="inv-clear-input" {{ternary clear-input.disabled "disabled" "" }}>
