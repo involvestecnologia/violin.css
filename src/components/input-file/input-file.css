@@ -17,8 +17,7 @@
 }
 
 .inv-input-file--disabled {
-  cursor: unset;
-  background-color: var(--color-default--white);
+  cursor: not-allowed;
 }
 
 .inv-input-file-icon {
@@ -26,6 +25,10 @@
   right: 0;
   padding-right: 8px;
   color: var(--color-system--regular);
+}
+
+.inv-input-file-icon--disabled {
+  color: var(--color-default--light);
 }
 
 .inv-input-file__text {
@@ -55,14 +58,17 @@
 
 .inv-input-file > .inv-input-file__text:active,
 .inv-input-file__text--active {
-  background-color: #CCD4DD;
+  background-color: var(--color-default--light);
 }
 
 .inv-input-file__text--disabled {
   background-color: var(--color-default--white);
-  cursor: help;
+  pointer-events: none;
 }
 
-.inv-input-file-icon--disabled {
-  color: var(--color-default--light);
+.inv-input-file__text--error {
+  background-color: var(--color-error--white);
+  -webkit-appearance: none;
+  -webkit-box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
+  box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }

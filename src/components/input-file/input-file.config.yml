@@ -22,15 +22,34 @@ variants:
     context:
       input-file:
         modifier: inv-input-file--selected
+        button-text: file.txt
       clear-input:
         disabled: false
   - name: disabled
     context:
       input-file:
+        modifier: inv-input-file--disabled
         text:
           modifier: inv-input-file__text--disabled
         icon:
           modifier: inv-input-file-icon--disabled
+        input:
+          disabled: true
+  - name: error
+    context:
+      input-file:
+        modifier: inv-input-file--error
+        text:
+          modifier: inv-input-file__text--error
+  - name: error-uploaded
+    context:
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        button-text: file.txt
+        text:
+          modifier: inv-input-file__text--error
+      clear-input:
+        disabled: false
   #   context:
   #     clear-input:
   #       disabled: true
