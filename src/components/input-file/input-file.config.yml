@@ -50,6 +50,15 @@ variants:
           modifier: inv-input-file__text--error
       clear-input:
         disabled: false
+  - name: error-active
+    context:
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        button-text: file.txt
+        text:
+          modifier: inv-input-file__text--error inv-input-file__text--error-active
+      clear-input:
+        disabled: false
   #   context:
   #     clear-input:
   #       disabled: true

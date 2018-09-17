@@ -72,3 +72,8 @@
   -webkit-box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
   box-shadow: var(--shadow-border-2) var(--color-error--regular) inset;
 }
+
+.inv-input-file > .inv-input-file__text--error:active,
+.inv-input-file__text--error-active {
+  background-color: var(--color-error--light);
+}
