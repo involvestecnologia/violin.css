@@ -12,26 +12,15 @@
     <title>Violin.css | Default</title>
 </head>
 <body style="padding: 10px">
-  <div class="inv-input-file__container">
-  <label for="error" class="inv-label ">
-    Input label
-    <span>- obrigatório</span>
+  <div class="inv-input-file ">
+  <label for="input-file" class="inv-input-file__text ">
+    <span>Enviar arquivo</span>
+    <i class="material-icons inv-input-file-icon ">file_upload</i>
   </label>
-  <div class="inv-input-file">
-    <button class="inv-input-file__btn ">
-      Enviar arquivo <i class="material-icons inv-input-icon ">
-  file_upload
-</i>
-
-    </button>
-    <input type="file"  /> <button class="inv-clear-input" disabled>
-  <i class="material-icons">clear</i>
-</button>
-
-  </div>
-  <div class="inv-form-text ">
-    
-  </div>
+  <input id="input-file" type="file" />
+  <button class="inv-clear-input" disabled>
+    <i class="material-icons">clear</i>
+  </button>
 </div>
 
 </body>

@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/index.css">
+    <link rel="stylesheet" href="../../custom-theme/index.css">
+    <title>Violin.css | Form Field File</title>
+    <style>
+      .inv-form-field {
+        margin-bottom: 15px;
+      }
+    </style>
+</head>
+<body style="padding: 10px">
+  <!-- Start: @form-field-file--default -->
+<div class="inv-form-field ">
+    <label for="default" class="inv-label ">
+      Input File label
+      <span></span>
+    </label>
+
+  <div class="inv-input-file ">
+    <label for="input-file" class="inv-input-file__text ">
+      <span>Enviar arquivo</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" disabled>
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text ">
+    
+  </div>
+</div>
+<!-- End: @form-field-file--default -->
+
+<!-- Start: @form-field-file--active -->
+<div class="inv-form-field ">
+    <label for="" class="inv-label ">
+      Input File label
+      <span></span>
+    </label>
+
+  <div class="inv-input-file ">
+    <label for="input-file" class="inv-input-file__text inv-input-file__text--active">
+      <span>Enviar arquivo</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" disabled>
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text ">
+    
+  </div>
+</div>
+<!-- End: @form-field-file--active -->
+
+<!-- Start: @form-field-file--file-name -->
+<div class="inv-form-field ">
+    <label for="" class="inv-label ">
+      Input File label
+      <span></span>
+    </label>
+
+  <div class="inv-input-file inv-input-file--selected">
+    <label for="input-file" class="inv-input-file__text ">
+      <span>file.txt</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" >
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text ">
+    
+  </div>
+</div>
+<!-- End: @form-field-file--file-name -->
+
+<!-- Start: @form-field-file--disabled -->
+<div class="inv-form-field ">
+    <label for="" class="inv-label inv-label--disabled">
+      Input File label
+      <span>- desabilitado</span>
+    </label>
+
+  <div class="inv-input-file inv-input-file--disabled">
+    <label for="input-file" class="inv-input-file__text inv-input-file__text--disabled">
+      <span>Enviar arquivo</span>
+      <i class="material-icons inv-input-file-icon inv-input-file-icon--disabled">file_upload</i>
+    </label>
+    <input id="input-file" type="file" disabled/>
+    <button class="inv-clear-input" disabled>
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text ">
+    
+  </div>
+</div>
+<!-- End: @form-field-file--disabled -->
+
+<!-- Start: @form-field-file--error -->
+<div class="inv-form-field ">
+    <label for="error" class="inv-label ">
+      Input File label
+      <span>- obrigatório</span>
+    </label>
+
+  <div class="inv-input-file inv-input-file--error">
+    <label for="input-file" class="inv-input-file__text inv-input-file__text--error">
+      <span>Enviar arquivo</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" disabled>
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text inv-form-text--error">
+    Nenhum arquivo selecionado
+  </div>
+</div>
+<!-- End: @form-field-file--error -->
+
+<!-- Start: @form-field-file--error-uploaded -->
+<div class="inv-form-field ">
+    <label for="error" class="inv-label ">
+      Input File label
+      <span>- obrigatório</span>
+    </label>
+
+  <div class="inv-input-file inv-input-file--selected inv-input-file--error">
+    <label for="input-file" class="inv-input-file__text inv-input-file__text--error">
+      <span>file.txt</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" >
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text inv-form-text--error">
+    Mano, o arquivo selecionado é inválido
+  </div>
+</div>
+<!-- End: @form-field-file--error-uploaded -->
+
+<!-- Start: @form-field-file--error-active -->
+<div class="inv-form-field ">
+    <label for="error" class="inv-label ">
+      Input File label
+      <span>- obrigatório</span>
+    </label>
+
+  <div class="inv-input-file inv-input-file--selected inv-input-file--error">
+    <label for="input-file" class="inv-input-file__text inv-input-file__text--error inv-input-file__text--error-active">
+      <span>file.txt</span>
+      <i class="material-icons inv-input-file-icon ">file_upload</i>
+    </label>
+    <input id="input-file" type="file" />
+    <button class="inv-clear-input" >
+      <i class="material-icons">clear</i>
+    </button>
+  </div>
+
+  <div class="inv-form-text inv-form-text--error">
+    Mano, o arquivo selecionado é inválido
+  </div>
+</div>
+<!-- End: @form-field-file--error-active -->
+
+</body>
+</html>
+

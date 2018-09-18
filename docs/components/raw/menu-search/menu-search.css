@@ -8,8 +8,8 @@
   top: 0;
   display: flex;
   align-items: center;
-  left: 16px;
   height: 100%;
+  left: 16px;
 }
 
 .inv-menu-search__label > i {
@@ -43,6 +43,18 @@
 }
 
 @media (min-width: 500px) {
+  .inv-menu-search__label {
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .inv-menu-search--open .inv-menu-search__label {
+    justify-content: flex-start;
+    padding-left: 16px;
+    width: 200px;
+  }
+
   .inv-menu-search > .inv-input {
     width: 56px;
     padding-left: var(--space-16);
