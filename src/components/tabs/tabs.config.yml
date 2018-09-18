@@ -1,7 +1,7 @@
 title: Tabs
 status: "wip"
 collated: true
-preview: "@preview"
+preview: "@preview-form-field"
 context:
   tabs:
     list:
