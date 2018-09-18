@@ -1,0 +1,19 @@
+<ul class="inv-tabs {{ tabs.modifier }}">
+  {{#each tabs.list}}
+    <li class="inv-tab {{ this.tab.modifier }}">
+      <a class="inv-tab__link" href="#">
+
+        {{#if this.tab.icon}}
+          <i class="material-icons inv-tab__icon {{ this.tab.icon-modifier }}">{{ this.tab.icon }}</i>
+        {{/if}}
+
+        {{#if this.tab.number}}
+          <span class="inv-tab__number">{{ this.tab.number }}</span>
+        {{/if}}
+
+        {{ this.tab.text }}
+
+      </a>
+    </li>
+  {{/each}}
+</ul>
