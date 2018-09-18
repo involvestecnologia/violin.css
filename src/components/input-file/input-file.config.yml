@@ -3,12 +3,8 @@ status: "wip"
 collated: true
 preview: "@preview"
 context:
-  label:
-    value: "Input label"
-    posfix: "- obrigatório"
-    for: "error"
   input-file:
-    button-text: Enviar arquivo
+    placeholder: Enviar arquivo
   clear-input:
     disabled: true
 variants:
@@ -22,7 +18,7 @@ variants:
     context:
       input-file:
         modifier: inv-input-file--selected
-        button-text: file.txt
+        placeholder: file.txt
       clear-input:
         disabled: false
   - name: disabled
@@ -45,7 +41,7 @@ variants:
     context:
       input-file:
         modifier: inv-input-file--selected inv-input-file--error
-        button-text: file.txt
+        placeholder: file.txt
         text:
           modifier: inv-input-file__text--error
       clear-input:
@@ -54,36 +50,8 @@ variants:
     context:
       input-file:
         modifier: inv-input-file--selected inv-input-file--error
-        button-text: file.txt
+        placeholder: file.txt
         text:
           modifier: inv-input-file__text--error inv-input-file__text--error-active
       clear-input:
         disabled: false
-  #   context:
-  #     clear-input:
-  #       disabled: true
-  # - name: file-selected
-  # - name: input-file-disabled
-  #   context:
-  #     input-file:
-  #       modifier: inv-input-file__btn--disabled
-  #       disabled: true
-  #     clear-input:
-  #       disabled: true
-  #     label:
-  #       modifier: "inv-label--disabled"
-  # - name: input-file-required
-  #   context:
-  #     input-file:
-  #       modifier: inv-input-file__btn--required
-  #     clear-input:
-  #       disabled: true
-  # - name: input-file-error
-  #   context:
-  #     input-file:
-  #       modifier: inv-input-file__btn--error
-  #       button-text: visitas.txt
-  #     form-text:
-  #       value: "Cara, nunca vi uma senha menos segura."
-  #       modifier: "inv-form-text--error"
-
