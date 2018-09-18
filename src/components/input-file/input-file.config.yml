@@ -21,6 +21,13 @@ variants:
         placeholder: file.txt
       clear-input:
         disabled: false
+  - name: long-file-name
+    context:
+      input-file:
+        modifier: inv-input-file--selected
+        placeholder: file-name-too-long-to-fit-the-input.txt-long-to-fit-the-input.txt-long-to-fit-the-input.txt
+      clear-input:
+        disabled: false
   - name: disabled
     context:
       input-file:

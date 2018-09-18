@@ -50,10 +50,12 @@
 }
 
 .inv-input-file__text > span {
-  max-width: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  direction: rtl;
+  text-align: left;
+  padding-right: 8px;
 }
 
 .inv-input-file > .inv-input-file__text:active,
