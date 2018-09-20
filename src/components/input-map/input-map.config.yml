@@ -1,0 +1,75 @@
+title: Input Map
+status: "wip"
+collated: true
+preview: "@preview-form-field"
+context:
+  input-map:
+    img: https://www.lonifasiko.com/wp-content/uploads/2015/12/Google-Maps-Offline-Navegaci%C3%B3n-Mapas-5-672x372.jpg
+    selected: false
+    disabled: false
+    search:
+      visible: false
+  input:
+    placeholder: Adicionar localização
+  input-icon:
+    icon: flag
+  clear-input:
+    disabled: true
+variants:
+  - name: default
+  - name: selected
+    context:
+      input-map:
+        selected: true
+  - name: search-empty
+    context:
+      input-map:
+        search:
+          visible: true
+  - name: search-value
+    context:
+      input-map:
+        selected: true
+        search:
+          visible: true
+      input:
+        value: Restaurante Paixão de Frutos do Mar
+      clear-input:
+        disabled: false
+  - name: search-disabled
+    context:
+      disabled: true
+      input-map:
+        modifier: inv-input-map--disabled
+        search:
+          visible: true
+      input-icon:
+        modifier: inv-input-icon--disabled
+  - name: search-value-disabled
+    context:
+      disabled: true
+      input-map:
+        modifier: inv-input-map--disabled
+        selected: true
+        search:
+          visible: true
+      input:
+        value: Restaurante Paixão de Frutos do Mar
+      input-icon:
+        modifier: inv-input-icon--disabled
+  - name: search-empty-error
+    context:
+      input-map:
+        search:
+          visible: true
+      input:
+        modifier: inv-input--error
+  - name: search-value-error
+    context:
+      input-map:
+        selected: true
+        search:
+          visible: true
+      input:
+        modifier: inv-input--error
+        value: Restaurante Paixão de Frutos do Mar
