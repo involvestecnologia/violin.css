@@ -13,6 +13,8 @@ context:
       - tab:
           text: Reports
       - tab:
+          modifier: inv-tab--section-divider
+      - tab:
           text: Address
       - tab:
           text: Notifications

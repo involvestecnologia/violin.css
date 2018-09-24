@@ -83,3 +83,9 @@
 .inv-tab--fixed {
   max-width: 41px;
 }
+
+.inv-tab--section-divider {
+  border-left: unset;
+  min-height: 16px;
+  height: 16px;
+}
