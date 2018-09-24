@@ -73,3 +73,5 @@ variants:
       input:
         modifier: inv-input--error
         value: Restaurante Paixão de Frutos do Mar
+      clear-input:
+        disabled: false
