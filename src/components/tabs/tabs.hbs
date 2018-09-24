@@ -1,7 +1,7 @@
 <ul class="inv-tabs {{ tabs.modifier }}">
   {{#each tabs.list}}
-    <li class="inv-tab {{ this.tab.modifier }}">
-      <a class="inv-tab__link" href="#" data-message="{{ this.tab.message }}">
+    <li class="inv-tab {{ this.tab.modifier }}" data-message="{{ this.tab.message }}">
+      <a class="inv-tab__link" href="#" >
 
         {{#if this.tab.icon}}
           <i class="material-icons inv-tab__icon {{ this.tab.icon-modifier }}">{{ this.tab.icon }}</i>
