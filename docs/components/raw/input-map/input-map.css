@@ -8,6 +8,7 @@
   background-color: var(--color-system--white);
   border: 1px solid var(--color-system--light);
   border-radius: 4px 4px 0 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,8 +23,9 @@
 }
 
 .inv-input-map__preview > img {
-  border-radius: 4px 4px 0 0;
-  max-height: 120px;
+  border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+  max-height: 118px;
   width: 100%;
   max-width: 100%;
 }
