@@ -19,8 +19,16 @@
   color: var(--color-system--regular);
 }
 
+.inv-tab > .inv-tab__link:hover > .inv-tab__number {
+  background-color: var(--color-system--regular);
+}
+
 .inv-tab > .inv-tab__link:active {
   color: var(--color-default--dark);
+}
+
+.inv-tab > .inv-tab__link:active > .inv-tab__number {
+  background-color: var(--color-default--dark);
 }
 
 .inv-tab--active {
@@ -38,6 +46,10 @@
 }
 
 .inv-tab--active > .inv-tab__link > .inv-tab__number {
+  background-color: var(--color-primary--regular);
+}
+
+.inv-tab--active > .inv-tab__link:hover > .inv-tab__number {
   background-color: var(--color-primary--regular);
 }
 
@@ -63,7 +75,7 @@
   min-height: 18px;
   min-width: 18px;
   border-radius: 3px;
-  background-color: var(--color-system--regular);
+  background-color: var(--color-default--regular);
   color: var(--color-system--white);
   margin-right: 6px;
   display: flex;
@@ -86,6 +98,14 @@
 .inv-tabs--horizontal > .inv-tab--active {
   border-bottom: 6px solid var(--color-primary--regular);
   padding-bottom: 8px;
+}
+
+.inv-tabs--horizontal > .inv-tab--blocked::before {
+  top: 50px;
+}
+
+.inv-tabs--horizontal > .inv-tab--blocked::after {
+  top: 26px;
 }
 
 .inv-tabs--fill > .inv-tab {
