@@ -17,9 +17,30 @@ context:
       - tab:
           text: Address
       - tab:
-          text: Notifications
+          text: Notifications (hover)
+          modifier: inv-tab--blocked
+          message: "Preencha a etapa anterior antes de continuar. (Customizavel)"
 variants:
   - name: default
+  - name: blocked
+    context:
+      tabs:
+        list:
+        - tab:
+            text: Agendamento
+        - tab:
+            text: Nomeclatura
+            modifier: inv-tab--active
+        - tab:
+            text: Período
+        - tab:
+            text: Produtos
+        - tab:
+            modifier: inv-tab--section-divider
+        - tab:
+            text: Destinatários
+            modifier: inv-tab--blocked-tooltip
+            message: 'Preencha a etapa anterior antes de continuar. (Customizavel)'
   - name: icons
     context:
       tabs:
