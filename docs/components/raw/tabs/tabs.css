@@ -19,8 +19,16 @@
   color: var(--color-system--regular);
 }
 
+.inv-tab > .inv-tab__link:hover > .inv-tab__number {
+  background-color: var(--color-system--regular);
+}
+
 .inv-tab > .inv-tab__link:active {
   color: var(--color-default--dark);
+}
+
+.inv-tab > .inv-tab__link:active > .inv-tab__number {
+  background-color: var(--color-default--dark);
 }
 
 .inv-tab--active {
@@ -38,6 +46,10 @@
 }
 
 .inv-tab--active > .inv-tab__link > .inv-tab__number {
+  background-color: var(--color-primary--regular);
+}
+
+.inv-tab--active > .inv-tab__link:hover > .inv-tab__number {
   background-color: var(--color-primary--regular);
 }
 
@@ -63,7 +75,7 @@
   min-height: 18px;
   min-width: 18px;
   border-radius: 3px;
-  background-color: var(--color-system--regular);
+  background-color: var(--color-default--regular);
   color: var(--color-system--white);
   margin-right: 6px;
   display: flex;
@@ -88,6 +100,14 @@
   padding-bottom: 8px;
 }
 
+.inv-tabs--horizontal > .inv-tab--blocked::before {
+  top: 50px;
+}
+
+.inv-tabs--horizontal > .inv-tab--blocked::after {
+  top: 26px;
+}
+
 .inv-tabs--fill > .inv-tab {
   width: 100%;
   justify-content: center;
@@ -108,12 +128,18 @@
   display: none;
 }
 
-.inv-tab--blocked-tooltip > .inv-tab__link::before,
-.inv-tab--blocked > .inv-tab__link::before {
+.inv-tab--blocked-tooltip,
+.inv-tab--blocked {
+  position: relative;
+}
+
+.inv-tab--blocked-tooltip::before,
+.inv-tab--blocked::before {
   content: attr(data-message);
   position: absolute;
   font-family: var(--font-family);
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
   white-space: pre-wrap;
   line-height: 19px;
   color: var(--color-system--white);
@@ -131,8 +157,8 @@
   visibility: hidden;
 }
 
-.inv-tab--blocked-tooltip > .inv-tab__link::after,
-.inv-tab--blocked > .inv-tab__link::after {
+.inv-tab--blocked-tooltip::after,
+.inv-tab--blocked::after {
   content: '';
   position: absolute;
   border-left: solid 12px transparent;
@@ -147,14 +173,10 @@
   visibility: hidden;
 }
 
-.inv-tab--blocked > .inv-tab__link:hover::before,
-.inv-tab--blocked > .inv-tab__link:hover::after {
-  opacity: 1;
-  visibility: visible;
-}
-
-.inv-tab--blocked-tooltip > .inv-tab__link::before,
-.inv-tab--blocked-tooltip > .inv-tab__link::after {
+.inv-tab--blocked-tooltip::before,
+.inv-tab--blocked-tooltip::after,
+.inv-tab--blocked:hover::before,
+.inv-tab--blocked:hover::after {
   opacity: 1;
   visibility: visible;
 }
