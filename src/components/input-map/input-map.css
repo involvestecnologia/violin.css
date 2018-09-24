@@ -33,6 +33,7 @@
 .inv-input-map__search {
   display: flex;
   position: relative;
+  padding-top: 1px;
 }
 
 .inv-input-map__search > .inv-input-icon {
