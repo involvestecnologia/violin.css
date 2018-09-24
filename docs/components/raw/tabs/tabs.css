@@ -15,6 +15,14 @@
   align-items: center;
 }
 
+.inv-tab > .inv-tab__link:hover {
+  color: var(--color-system--regular);
+}
+
+.inv-tab > .inv-tab__link:active {
+  color: var(--color-default--dark);
+}
+
 .inv-tab--active {
   color: var(--color-primary--regular);
   border-left: 6px solid var(--color-primary--regular);
@@ -25,6 +33,10 @@
   color: var(--color-primary--regular);
 }
 
+.inv-tab--active > .inv-tab__link:hover {
+  color: var(--color-primary--regular);
+}
+
 .inv-tab--active > .inv-tab__link > .inv-tab__number {
   background-color: var(--color-primary--regular);
 }
@@ -32,10 +44,11 @@
 .inv-tab__link {
   display: flex;
   align-items: center;
-  color: var(--color-system--regular);
+  color: var(--color-default--regular);
   font-size: var(--font-content--size);
   font-weight: bold;
   text-decoration: none;
+  position: relative;
 }
 
 .inv-tab__icon {
@@ -82,4 +95,66 @@
 
 .inv-tab--fixed {
   max-width: 41px;
+}
+
+.inv-tab--section-divider {
+  border-left: unset;
+  min-height: 16px;
+  height: 16px;
+}
+
+.inv-tab--section-divider > .inv-tab__link::before,
+.inv-tab--section-divider > .inv-tab__link::after {
+  display: none;
+}
+
+.inv-tab--blocked-tooltip > .inv-tab__link::before,
+.inv-tab--blocked > .inv-tab__link::before {
+  content: attr(data-message);
+  position: absolute;
+  font-family: var(--font-family);
+  font-size: 14px;
+  white-space: pre-wrap;
+  line-height: 19px;
+  color: var(--color-system--white);
+  background-color: var(--color-system--dark);
+  border-radius: 12px;
+  box-shadow: var(--shadow-16) var(--color-default--shadow);
+  max-width: 320px;
+  width: 264px;
+  padding: 16px;
+  top: 34px;
+  left: 8px;
+  z-index: var(--z-index-2);
+  transition: opacity 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.inv-tab--blocked-tooltip > .inv-tab__link::after,
+.inv-tab--blocked > .inv-tab__link::after {
+  content: '';
+  position: absolute;
+  border-left: solid 12px transparent;
+  border-right: solid 12px transparent;
+  border-top: solid 12px transparent;
+  border-bottom: solid 12px var(--color-system--dark);;
+  top: 10px;
+  left: 24px;
+  z-index: var(--z-index-2);
+  transition: opacity 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.inv-tab--blocked > .inv-tab__link:hover::before,
+.inv-tab--blocked > .inv-tab__link:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.inv-tab--blocked-tooltip > .inv-tab__link::before,
+.inv-tab--blocked-tooltip > .inv-tab__link::after {
+  opacity: 1;
+  visibility: visible;
 }
