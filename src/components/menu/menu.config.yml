@@ -9,8 +9,6 @@ context:
   menu-logo:
     src: /assets/images/logo-full.png
     alt: Menu Logo
-  menu-brand:
-    src: /assets/images/brand-full.png
   icon: search
   input:
     placeholder: "Ctrl+k para buscar"
@@ -63,10 +61,8 @@ variants:
         open: true
         modifier: "inv-menu--visible"
       menu-logo:
-        src: /assets/images/logo.png
+        src: /assets/images/logo-full.png
         alt: Menu Logo
-      menu-brand:
-        src: /assets/images/brand.png
       menu-search:
         modifier: "inv-menu-search--open"
       menu-list:

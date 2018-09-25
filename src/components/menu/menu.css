@@ -14,7 +14,6 @@
   width: 100%;
   z-index: var(--z-index-1);
   display: flex;
-  padding-bottom: 13px;
 }
 
 .inv-menu__search {
@@ -47,19 +46,32 @@
   padding-right: var(--space-8);
 }
 
-.inv-menu__brand {
-  align-self: center;
+.inv-menu__user {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #1a2f50;
+  min-height: 62px;
+  max-height: 62px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: var(--color-system--white);
+  font-size: 14px;
+  font-weight: 600;
 }
 
-.inv-menu__brand > img {
-  max-height: 24px;
-  max-width: 80px;
-  padding-top: var(--space-16);
-  padding-bottom: var(--space-24);
+.inv-menu__user > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
 
-.inv-menu__container--open > .inv-menu__brand {
-  max-width: 236px;
+.inv-menu__user > span {
+  padding-left: 8px;
+}
+
+.inv-menu__user:active {
+  background-color: rgba(232, 234, 236, 0.1);
 }
 
 @media (min-width: 500px) {
@@ -74,8 +86,6 @@
   .inv-menu__container {
     display: flex;
     max-width: 72px;
-    border-radius: 0 10px 10px 0;
-    padding-bottom: var(--space-32);
     height: auto;
     height: 100%;
   }
@@ -106,11 +116,40 @@
     display: block;
   }
 
-  .inv-menu__brand > img {
-    max-width: 48px;
-    max-height: 24px;
-    padding-top: 16px;
-    padding-bottom: 24px;
+  .inv-menu__user {
+    justify-content: center;
+    padding-left: unset;
+    padding-right: unset;
+    cursor: default;
+  }
+  
+  .inv-menu__user > span {
+    display: none;
+    padding-left: unset;
+  }
+
+  .inv-menu__user:active {
+    background-color: #1a2f50;
+  }
+
+  .inv-menu__container--open > .inv-menu__user {
+    justify-content: flex-start;
+    padding-left: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+  }
+
+  .inv-menu__container--open > .inv-menu__user > span {
+    display: block;
+    padding-left: 8px;
+  }
+
+  .inv-menu__container--open > .inv-menu__user:hover {
+    background-color: rgba(232, 234, 236, 0.2);
+  }
+
+  .inv-menu__container--open > .inv-menu__user:active {
+    background-color: rgba(232, 234, 236, 0.1);
   }
 
   .inv-menu__container--open > .inv-menu__search {
