@@ -149,7 +149,7 @@
   max-width: 232px;
   width: 232px;
   padding: 16px;
-  top: 35px;
+  top: 37px;
   left: 8px;
   z-index: var(--z-index-2);
   transition: opacity 0.5s;
@@ -164,8 +164,8 @@
   border-left: solid 12px transparent;
   border-right: solid 12px transparent;
   border-top: solid 12px transparent;
-  border-bottom: solid 12px var(--color-system--dark);;
-  top: 12px;
+  border-bottom: solid 12px var(--color-system--dark);
+  top: 13px;
   left: 24px;
   z-index: var(--z-index-2);
   transition: opacity 0.5s;

@@ -202,10 +202,10 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-        <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__brand"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span> <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand.png"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand-full.png"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Menu Logo"</span> /&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__user"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://http2.mlstatic.com/boneco-de-pelucia-pokemon-pikachu-musical-atacado-D_NQ_NP_981705-MLB25066460524_092016-F.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"User Avatar"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>João da Silva<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
@@ -247,16 +247,10 @@
       </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">picture</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__brand"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">source</span>
-        <span class="hljs-attr">media</span>=<span class="hljs-string">"(min-width: 500px)"</span>
-        <span class="hljs-attr">srcset</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand.png"</span>
-      &gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-name">img</span>
-        <span class="hljs-attr">src</span>=<span class="hljs-string">"https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/brand-full.png"</span>
-        <span class="hljs-attr">alt</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ menu-logo.alt }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>
-      /&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">picture</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu__user"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://http2.mlstatic.com/boneco-de-pelucia-pokemon-pikachu-musical-atacado-D_NQ_NP_981705-MLB25066460524_092016-F.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"User Avatar"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>João da Silva<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
@@ -275,9 +269,6 @@
   <span class="hljs-attr">"menu-logo"</span>: {
     <span class="hljs-attr">"src"</span>: <span class="hljs-string">"/assets/images/logo-full.png"</span>,
     <span class="hljs-attr">"alt"</span>: <span class="hljs-string">"Menu Logo"</span>
-  },
-  <span class="hljs-attr">"menu-brand"</span>: {
-    <span class="hljs-attr">"src"</span>: <span class="hljs-string">"/assets/images/brand-full.png"</span>
   },
   <span class="hljs-attr">"icon"</span>: <span class="hljs-string">"search"</span>,
   <span class="hljs-attr">"input"</span>: {
@@ -401,7 +392,6 @@
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">z-index</span>: <span class="hljs-built_in">var</span>(--z-index-1);
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">13px</span>;
 }
 
 <span class="hljs-selector-class">.inv-menu__search</span> {
@@ -434,19 +424,32 @@
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">var</span>(--space-8);
 }
 
-<span class="hljs-selector-class">.inv-menu__brand</span> {
-  <span class="hljs-attribute">align-self</span>: center;
+<span class="hljs-selector-class">.inv-menu__user</span> {
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a2f50</span>;
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">62px</span>;
+  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">62px</span>;
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
 }
 
-<span class="hljs-selector-class">.inv-menu__brand</span> &gt; <span class="hljs-selector-tag">img</span> {
-  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">24px</span>;
-  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">80px</span>;
-  <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">var</span>(--space-16);
-  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">var</span>(--space-24);
+<span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
 }
 
-<span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__brand</span> {
-  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">236px</span>;
+<span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">8px</span>;
+}
+
+<span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:active</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.1);
 }
 
 @<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">500px</span>) {
@@ -461,8 +464,6 @@
   <span class="hljs-selector-class">.inv-menu__container</span> {
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">72px</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">10px</span> <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-built_in">var</span>(--space-32);
     <span class="hljs-attribute">height</span>: auto;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
   }
@@ -493,11 +494,40 @@
     <span class="hljs-attribute">display</span>: block;
   }
 
-  <span class="hljs-selector-class">.inv-menu__brand</span> &gt; <span class="hljs-selector-tag">img</span> {
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">48px</span>;
-    <span class="hljs-attribute">max-height</span>: <span class="hljs-number">24px</span>;
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">16px</span>;
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">24px</span>;
+  <span class="hljs-selector-class">.inv-menu__user</span> {
+    <span class="hljs-attribute">justify-content</span>: center;
+    <span class="hljs-attribute">padding-left</span>: unset;
+    <span class="hljs-attribute">padding-right</span>: unset;
+    <span class="hljs-attribute">cursor</span>: default;
+  }
+  
+  <span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">span</span> {
+    <span class="hljs-attribute">display</span>: none;
+    <span class="hljs-attribute">padding-left</span>: unset;
+  }
+
+  <span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:active</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a2f50</span>;
+  }
+
+  <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span> {
+    <span class="hljs-attribute">justify-content</span>: flex-start;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+  }
+
+  <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">span</span> {
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">8px</span>;
+  }
+
+  <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:hover</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.2);
+  }
+
+  <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:active</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.1);
   }
 
   <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__search</span> {
@@ -529,7 +559,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">3.1 KB</span>
                 </li>
             </ul>
         </div>
