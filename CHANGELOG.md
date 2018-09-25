@@ -1,3 +1,39 @@
+<a name="0.0.28"></a>
+## [0.0.28](https://github.com/involvestecnologia/violin.css/compare/v0.0.27...v0.0.28) (2018-09-25)
+
+
+### Bug Fixes
+
+* **input-map:** Add 1px padding between map and input at input-map component ([6a871b8](https://github.com/involvestecnologia/violin.css/commit/6a871b8))
+* **tabs:** Add section divider modifier to tabs component ([d043696](https://github.com/involvestecnologia/violin.css/commit/d043696))
+
+
+### Features
+
+* **component:** add error variant to input file component ([1be11fa](https://github.com/involvestecnologia/violin.css/commit/1be11fa))
+* **component:** add form field file docs ([8efcfeb](https://github.com/involvestecnologia/violin.css/commit/8efcfeb))
+* **component:** add new variants to input file component ([29ea055](https://github.com/involvestecnologia/violin.css/commit/29ea055))
+* **component:** input file component ([9087711](https://github.com/involvestecnologia/violin.css/commit/9087711))
+* **component:** renaming variant attribute into input file component ([9be8200](https://github.com/involvestecnologia/violin.css/commit/9be8200))
+* **form-field-map:** Add form-field-map component ([c10cf8b](https://github.com/involvestecnologia/violin.css/commit/c10cf8b))
+* **input-file-component:** Add reverse ellipsis for large file names into input file component ([38680e7](https://github.com/involvestecnologia/violin.css/commit/38680e7))
+* **input-map:** Add fake map image for input-map component ([546c256](https://github.com/involvestecnologia/violin.css/commit/546c256))
+* **input-map:** add first draft of input-map component ([d20dc00](https://github.com/involvestecnologia/violin.css/commit/d20dc00))
+* **input-map:** Adjust preview border ([b6c2e35](https://github.com/involvestecnologia/violin.css/commit/b6c2e35))
+* **input-map:** Adjusts fake map image into input-map component ([c9ab7ce](https://github.com/involvestecnologia/violin.css/commit/c9ab7ce))
+* **menu:** Add user avatar into menu component ([235ce4a](https://github.com/involvestecnologia/violin.css/commit/235ce4a))
+* **menu:** adjust avatar div lenght ([6f85e7a](https://github.com/involvestecnologia/violin.css/commit/6f85e7a))
+* **tabs:** add first draft of tabs component ([aa13530](https://github.com/involvestecnologia/violin.css/commit/aa13530))
+* **tabs:** Add tooltip to blocked tabs at tabs component ([d120584](https://github.com/involvestecnologia/violin.css/commit/d120584))
+* **tabs:** Adjust tooltip ([8f7e409](https://github.com/involvestecnologia/violin.css/commit/8f7e409))
+* **tabs:** Changes tabs tooltip width ([ce017c1](https://github.com/involvestecnologia/violin.css/commit/ce017c1))
+* **tabs:** Hover and active effects added to tabs component ([2af3532](https://github.com/involvestecnologia/violin.css/commit/2af3532))
+* **tabs:** tabs preview adjusted ([a49c390](https://github.com/involvestecnologia/violin.css/commit/a49c390))
+* **tabs:** tooltip horizontal ([4db2f0c](https://github.com/involvestecnologia/violin.css/commit/4db2f0c))
+* **tabs:** Tooltip position ([7c7c391](https://github.com/involvestecnologia/violin.css/commit/7c7c391))
+
+
+
 <a name="0.0.27"></a>
 ## [0.0.27](https://github.com/involvestecnologia/violin.css/compare/v0.0.26...v0.0.27) (2018-08-29)
 
@@ -13,11 +49,6 @@
 
 
 
-<a name="0.0.25"></a>
-## [0.0.25](https://github.com/involvestecnologia/violin.css/compare/v0.0.24...v0.0.25) (2018-08-16)
-
-
-
 <a name="0.0.24"></a>
 ## [0.0.24](https://github.com/involvestecnologia/violin.css/compare/v0.0.23...v0.0.24) (2018-08-16)
 
@@ -28,18 +59,8 @@
 
 
 
-<a name="0.0.23"></a>
-## [0.0.23](https://github.com/involvestecnologia/violin.css/compare/v0.0.22...v0.0.23) (2018-08-14)
-
-
-
 <a name="0.0.22"></a>
 ## [0.0.22](https://github.com/involvestecnologia/violin.css/compare/v0.0.21...v0.0.22) (2018-08-14)
-
-
-
-<a name="0.0.21"></a>
-## [0.0.21](https://github.com/involvestecnologia/violin.css/compare/v0.0.20...v0.0.21) (2018-08-13)
 
 
 ### Bug Fixes
