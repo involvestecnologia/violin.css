@@ -146,10 +146,10 @@
   background-color: var(--color-system--dark);
   border-radius: 12px;
   box-shadow: var(--shadow-16) var(--color-default--shadow);
-  max-width: 320px;
-  width: 264px;
+  max-width: 232px;
+  width: 232px;
   padding: 16px;
-  top: 34px;
+  top: 35px;
   left: 8px;
   z-index: var(--z-index-2);
   transition: opacity 0.5s;
@@ -165,7 +165,7 @@
   border-right: solid 12px transparent;
   border-top: solid 12px transparent;
   border-bottom: solid 12px var(--color-system--dark);;
-  top: 10px;
+  top: 12px;
   left: 24px;
   z-index: var(--z-index-2);
   transition: opacity 0.5s;
