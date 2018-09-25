@@ -51,6 +51,7 @@
   display: flex;
   align-items: center;
   background-color: #1a2f50;
+  height: 62px;
   min-height: 62px;
   max-height: 62px;
   padding-left: 16px;
@@ -68,6 +69,8 @@
 
 .inv-menu__user > span {
   padding-left: 8px;
+  max-width: calc(100% - 40px);
+  word-wrap: break-word;
 }
 
 .inv-menu__user:active {
