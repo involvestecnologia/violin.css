@@ -1,43 +1,64 @@
 title: Input File
-status: "wip"
+status: "ready"
 collated: true
 preview: "@preview"
 context:
-  label:
-    value: "Input label"
-    posfix: "- obrigatório"
-    for: "error"
   input-file:
-    button-text: Enviar arquivo
-  input-icon:
-    icon: "file_upload"
+    placeholder: Enviar arquivo
+  clear-input:
+    disabled: true
 variants:
   - name: default
-    context:
-      clear-input:
-        disabled: true
-  - name: file-selected
-  - name: input-file-disabled
+  - name: active
     context:
       input-file:
-        modifier: inv-input-file__btn--disabled
-        disabled: true
-      clear-input:
-        disabled: true
-      label:
-        modifier: "inv-label--disabled"
-  - name: input-file-required
+        text:
+          modifier: inv-input-file__text--active
+  - name: file-name
     context:
       input-file:
-        modifier: inv-input-file__btn--required
+        modifier: inv-input-file--selected
+        placeholder: file.txt
       clear-input:
-        disabled: true
-  - name: input-file-error
+        disabled: false
+  - name: long-file-name
     context:
       input-file:
-        modifier: inv-input-file__btn--error
-        button-text: visitas.txt
-      form-text:
-        value: "Cara, nunca vi uma senha menos segura."
-        modifier: "inv-form-text--error"
-
+        modifier: inv-input-file--selected
+        placeholder: file-name-too-long-to-fit-the-input.txt-long-to-fit-the-input.txt-long-to-fit-the-input.txt
+      clear-input:
+        disabled: false
+  - name: disabled
+    context:
+      input-file:
+        modifier: inv-input-file--disabled
+        text:
+          modifier: inv-input-file__text--disabled
+        icon:
+          modifier: inv-input-file-icon--disabled
+        input:
+          disabled: true
+  - name: error
+    context:
+      input-file:
+        modifier: inv-input-file--error
+        text:
+          modifier: inv-input-file__text--error
+  - name: error-uploaded
+    context:
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        placeholder: file.txt
+        text:
+          modifier: inv-input-file__text--error
+      clear-input:
+        disabled: false
+  - name: error-active
+    context:
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        placeholder: file.txt
+        text:
+          modifier: inv-input-file__text--error inv-input-file__text--error-active
+      clear-input:
+        disabled: false

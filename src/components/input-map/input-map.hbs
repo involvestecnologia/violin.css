@@ -1,0 +1,18 @@
+<div class="inv-input-map {{ input-map.modifier }}">
+  <div class="inv-input-map__preview">
+    
+    {{#if input-map.selected}}
+      <img src="{{ input-map.img }}" alt="">
+    {{else}}
+      <i class="material-icons">map</i>
+    {{/if}}
+
+  </div>
+  {{#if input-map.search.visible}}
+    <div class="inv-input-map__search">
+    {{>@input}}
+    {{>@input-icon}}
+    {{>@clear-input}}
+  </div>
+  {{/if}}
+</div>

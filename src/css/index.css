@@ -14,6 +14,7 @@
 @import '../components/input/input.css';
 @import '../components/form-text/form-text.css';
 @import '../components/input-icon/input-icon.css';
+@import '../components/input-map/input-map.css';
 @import '../components/content-placeholder/content-placeholder.css';
 @import '../components/checkbox/checkbox.css';
 @import '../components/clear-input/clear-input.css';
@@ -26,6 +27,7 @@
 @import '../components/dropdown/dropdown-action.css';
 @import '../components/dropdown/dropdown-counter.css';
 @import '../components/radial-select/radial-select.css';
+@import '../components/tabs/tabs.css';
 @import '../components/text-link/text-link.css';
 @import '../components/tip/tip.css';
 @import '../components/toggle/toggle.css';

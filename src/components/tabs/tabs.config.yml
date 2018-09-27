@@ -1,0 +1,173 @@
+title: Tabs
+status: "ready"
+collated: true
+preview: "@preview-form-field"
+context:
+  tabs:
+    list:
+      - tab:
+          text: Access Data
+      - tab:
+          text: Profile
+          modifier: inv-tab--active
+      - tab:
+          text: Reports
+      - tab:
+          modifier: inv-tab--section-divider
+      - tab:
+          text: Address
+      - tab:
+          text: Notifications (hover)
+          modifier: inv-tab--blocked
+          message: "Preencha a etapa anterior antes de continuar. (Customizavel)"
+variants:
+  - name: default
+  - name: blocked
+    context:
+      tabs:
+        list:
+        - tab:
+            text: Agendamento
+        - tab:
+            text: Nomeclatura
+            modifier: inv-tab--active
+        - tab:
+            text: Período
+        - tab:
+            text: Produtos
+        - tab:
+            modifier: inv-tab--section-divider
+        - tab:
+            text: Destinatários
+            modifier: inv-tab--blocked-tooltip
+            message: 'Preencha a etapa anterior antes de continuar. (Customizavel)'
+  - name: icons
+    context:
+      tabs:
+        list:
+          - tab:
+              text: Access Data
+              icon: sd_card
+          - tab:
+              text: Profile
+              modifier: inv-tab--active
+              icon: face
+          - tab:
+              text: Reports
+              icon: power
+          - tab:
+              text: Address
+              icon: time_to_leave
+          - tab:
+              text: Notifications
+              icon: notifications
+  - name: numbers
+    context:
+      tabs:
+        list:
+          - tab:
+              text: Access Data
+              number: 1
+          - tab:
+              text: Profile
+              modifier: inv-tab--active
+              number: 2
+          - tab:
+              text: Reports
+              number: 3
+          - tab:
+              text: Address
+              number: 4
+          - tab:
+              text: Notifications
+              number: 5
+  - name: horizontal
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal
+  - name: horizontal icons
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal
+        list:
+          - tab:
+              text: Access
+              icon: sd_card
+          - tab:
+              text: Profile
+              modifier: inv-tab--active
+              icon: face
+          - tab:
+              text: Reports
+              icon: power
+          - tab:
+              text: Address
+              icon: time_to_leave
+          - tab:
+              text: Notifications
+              icon: notifications
+  - name: horizontal numbers
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal
+        list:
+          - tab:
+              text: Access Data
+              number: 1
+          - tab:
+              text: Profile
+              modifier: inv-tab--active
+              number: 2
+          - tab:
+              text: Reports
+              number: 3
+          - tab:
+              text: Address
+              number: 4
+          - tab:
+              text: Notifications
+              number: 5
+  - name: horizontal icons only
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal inv-tabs--icons-only
+        list:
+          - tab:
+              icon: sd_card
+              icon-modifier: inv-tab__icon--only
+          - tab:
+              modifier: inv-tab--active
+              icon: face
+              icon-modifier: inv-tab__icon--only
+          - tab:
+              icon: power
+              icon-modifier: inv-tab__icon--only
+          - tab:
+              icon: time_to_leave
+              icon-modifier: inv-tab__icon--only
+          - tab:
+              icon: notifications
+              icon-modifier: inv-tab__icon--only
+  - name: fill icons
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal inv-tabs--icons-only inv-tabs--fill
+        list:
+          - tab:
+              modifier: inv-tab--active
+              icon: help
+          - tab:
+              icon: question_answer
+  - name: fixed tab
+    context:
+      tabs:
+        modifier: inv-tabs--horizontal inv-tabs--icons-only inv-tabs--fill
+        list:
+          - tab:
+              modifier: inv-tab--fixed
+              icon: keyboard_arrow_right
+          - tab:
+              modifier: inv-tab--active
+              icon: help
+          - tab:
+              icon: question_answer

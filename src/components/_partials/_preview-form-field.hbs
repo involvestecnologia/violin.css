@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="{{ path '/assets/images/favicon.png' }}" type="image/png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ path '/assets/css/index.css' }}">
+    <link rel="stylesheet" href="{{ path '/custom-theme/index.css' }}">
+    <title>Violin.css | {{ _target.label }}</title>
+    <style>
+      .inv-form-field {
+        margin-bottom: 15px;
+      }
+      .inv-tabs,
+      .inv-input-map {
+        margin-bottom: 50px;
+      }
+    </style>
+</head>
+<body style="padding: 10px">
+  {{{ yield }}}
+</body>
+</html>

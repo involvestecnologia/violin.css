@@ -1,0 +1,93 @@
+title: Form Field File
+status: "ready"
+preview: "@preview-form-field"
+collated: true
+context:
+  label:
+    value: "Input File label"
+    show: true
+  input-file:
+    placeholder: Enviar arquivo
+  clear-input:
+    disabled: true
+variants:
+  - name: default
+    context:
+      label:
+        for: "default"
+      input:
+        for: "default"
+  - name: active
+    context:
+      input-file:
+        text:
+          modifier: inv-input-file__text--active
+  - name: file-name
+    context:
+      input-file:
+        modifier: inv-input-file--selected
+        placeholder: file.txt
+      clear-input:
+        disabled: false
+  - name: long-file-name
+    context:
+      input-file:
+        modifier: inv-input-file--selected
+        placeholder: "esse arquivo tem um nome grande demais.pdf"
+      clear-input:
+        disabled: false
+  - name: disabled
+    context:
+      label:
+        posfix: "- desabilitado"
+        modifier: "inv-label--disabled"
+      input-file:
+        modifier: inv-input-file--disabled
+        text:
+          modifier: inv-input-file__text--disabled
+        icon:
+          modifier: inv-input-file-icon--disabled
+        input:
+          disabled: true
+  - name: error
+    context:
+      label:
+        posfix: "- obrigatório"
+        for: "error"
+      input-file:
+        modifier: inv-input-file--error
+        text:
+          modifier: inv-input-file__text--error
+      form-text:
+        value: "Nenhum arquivo selecionado"
+        modifier: "inv-form-text--error"
+  - name: error-uploaded
+    context:
+      label:
+        posfix: "- obrigatório"
+        for: "error"
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        placeholder: file.txt
+        text:
+          modifier: inv-input-file__text--error
+      clear-input:
+        disabled: false
+      form-text:
+        value: "Mano, o arquivo selecionado é inválido"
+        modifier: "inv-form-text--error"
+  - name: error-active
+    context:
+      label:
+        posfix: "- obrigatório"
+        for: "error"
+      input-file:
+        modifier: inv-input-file--selected inv-input-file--error
+        placeholder: file.txt
+        text:
+          modifier: inv-input-file__text--error inv-input-file__text--error-active
+      clear-input:
+        disabled: false
+      form-text:
+        value: "Mano, o arquivo selecionado é inválido"
+        modifier: "inv-form-text--error"
