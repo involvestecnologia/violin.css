@@ -158,19 +158,19 @@
     <code class="Code Code--lang-html">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list "</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list_item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list__item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>wifi<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Profile<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list_item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list__item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>face<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Pontos de Venda<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list_item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list__item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>search<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Métricas<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list_item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list__item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>people<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Acessos Externos<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -184,7 +184,7 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list </span></span></span><span class="hljs-template-variable">{{ menu-list.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
   </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> menu-list.list}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list_item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-menu-list__item"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span></span><span class="hljs-template-variable">{{this.item.icon}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{this.item.text}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -270,8 +270,8 @@
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">var</span>(--space-8);
 }
 
-<span class="hljs-selector-class">.inv-menu-list_item</span>,
-<span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list_item</span> {
+<span class="hljs-selector-class">.inv-menu-list__item</span>,
+<span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list__item</span> {
   <span class="hljs-attribute">min-height</span>: <span class="hljs-number">22px</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
   <span class="hljs-attribute">text-decoration</span>: none;
@@ -285,20 +285,20 @@
   <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">12px</span>;
 }
 
-<span class="hljs-selector-class">.inv-menu-list_item</span><span class="hljs-selector-pseudo">:hover</span> {
+<span class="hljs-selector-class">.inv-menu-list__item</span><span class="hljs-selector-pseudo">:hover</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.2);
 }
 
-<span class="hljs-selector-class">.inv-menu-list_item</span><span class="hljs-selector-pseudo">:active</span> {
+<span class="hljs-selector-class">.inv-menu-list__item</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.1);
 }
 
-<span class="hljs-selector-class">.inv-menu-list_item</span> &gt; <span class="hljs-selector-tag">i</span> {
+<span class="hljs-selector-class">.inv-menu-list__item</span> &gt; <span class="hljs-selector-tag">i</span> {
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--regular);
 }
 
-<span class="hljs-selector-class">.inv-menu-list_item</span> &gt; <span class="hljs-selector-tag">span</span> {
+<span class="hljs-selector-class">.inv-menu-list__item</span> &gt; <span class="hljs-selector-tag">span</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
@@ -314,19 +314,19 @@
     <span class="hljs-attribute">overflow</span>: auto;
   }
 
-  <span class="hljs-selector-class">.inv-menu-list_item</span> {
+  <span class="hljs-selector-class">.inv-menu-list__item</span> {
     <span class="hljs-attribute">justify-content</span>: center;
   }
 
-  <span class="hljs-selector-class">.inv-menu-list_item</span> &gt; <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-selector-class">.inv-menu-list__item</span> &gt; <span class="hljs-selector-tag">span</span> {
     <span class="hljs-attribute">display</span>: none;
   }
 
-  <span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list_item</span> {
+  <span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list__item</span> {
     <span class="hljs-attribute">justify-content</span>: flex-start;
   }
 
-  <span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list_item</span> &gt; <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-selector-class">.inv-menu-list--open</span> &gt; <span class="hljs-selector-class">.inv-menu-list__item</span> &gt; <span class="hljs-selector-tag">span</span> {
     <span class="hljs-attribute">display</span>: block;
   }
 }

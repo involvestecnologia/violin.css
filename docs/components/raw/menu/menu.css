@@ -135,23 +135,23 @@
     background-color: #1a2f50;
   }
 
-  .inv-menu__container--open > .inv-menu__user {
+  .inv-menu__container--open .inv-menu__user {
     justify-content: flex-start;
     padding-left: 16px;
     padding-right: 16px;
     cursor: pointer;
   }
 
-  .inv-menu__container--open > .inv-menu__user > span {
+  .inv-menu__container--open .inv-menu__user > span {
     display: block;
     padding-left: 8px;
   }
 
-  .inv-menu__container--open > .inv-menu__user:hover {
+  .inv-menu__container--open .inv-menu__user:hover {
     background-color: rgba(232, 234, 236, 0.2);
   }
 
-  .inv-menu__container--open > .inv-menu__user:active {
+  .inv-menu__container--open .inv-menu__user:active {
     background-color: rgba(232, 234, 236, 0.1);
   }
 

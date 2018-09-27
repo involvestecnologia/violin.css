@@ -5,11 +5,12 @@
   overflow: auto;
 }
 
-.inv-menu-list-categorie-container__back-button {
+.inv-menu-list-categorie__back-button {
   text-decoration: none;
+  cursor: pointer;
 }
 
-.inv-menu-list-categorie-container__back-button > i {
+.inv-menu-list-categorie__back-button > i {
   min-height: 44px;
   display: flex;
   align-items: center;
