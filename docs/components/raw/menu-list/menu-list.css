@@ -55,14 +55,21 @@
     justify-content: center;
   }
 
+  .inv-menu-list__item--open {
+    justify-content: flex-start;
+    cursor: pointer;
+  }
+
   .inv-menu-list__item > span {
     display: none;
   }
 
+  .inv-menu-list__item--open,
   .inv-menu-list--open > .inv-menu-list__item {
     justify-content: flex-start;
   }
 
+  .inv-menu-list__item--open > span,
   .inv-menu-list--open > .inv-menu-list__item > span {
     display: block;
   }
