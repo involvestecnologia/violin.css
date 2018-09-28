@@ -124,6 +124,7 @@
     padding-left: unset;
     padding-right: unset;
     cursor: default;
+    pointer-events: none;
   }
   
   .inv-menu__user > span {
@@ -140,6 +141,7 @@
     padding-left: 16px;
     padding-right: 16px;
     cursor: pointer;
+    pointer-events: initial;
   }
 
   .inv-menu__container--open .inv-menu__user > span {
