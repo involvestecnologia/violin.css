@@ -11,10 +11,11 @@
       </picture>
     </div>
 
-    <div class="inv-menu__search">
-      {{> @menu-search--default }}
-      <div class="inv-menu__search-tip">Ctrl+k</div>
+    <div class="inv-menu__search" title="Click to search">
+      <i class="material-icons">search</i>
+      <span>Ctrl+k para buscar</span>
     </div>
+    <div class="inv-menu__search-tip">Ctrl+k</div>
 
     <div class="inv-menu__list">
       {{#if menu.categorie}}
