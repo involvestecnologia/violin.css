@@ -5,34 +5,33 @@
     <div class="inv-menu-header">
       {{> @menu-collapse-button}}
       <picture>
-        <source
-          media="(min-width: 500px)"
-          srcset="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"
-        >
-        <img
-          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
-          alt="{{ menu-logo.alt }}"
-        />
+        <source media="(min-width: 500px)" srcset="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png">
+        <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
+          alt="{{ menu-logo.alt }}" />
       </picture>
     </div>
 
-    <div class="inv-menu__search">
-      {{> @menu-search--default }}
-      <div class="inv-menu__search-tip">Ctrl+k</div>
+    <div class="inv-menu__search" title="Click to search">
+      <i class="material-icons">search</i>
+      <span>Ctrl+k para buscar</span>
     </div>
+    <div class="inv-menu__search-tip">Ctrl+k</div>
 
     <div class="inv-menu__list">
       {{#if menu.categorie}}
-        {{> @menu-list-categorie }}
+      {{> @menu-list-categorie }}
       {{else}}
-        {{> @menu-list--open }}
+      {{> @menu-list--open }}
       {{/if}}
     </div>
 
-    <a class="inv-menu__user" href="#">
-      <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/pikachu.jpg" alt="User Avatar">
-      <span>João</span>
-    </a>
+    <div>
+      <a class="inv-menu__user" href="#">
+        <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/pikachu.jpg"
+          alt="User Avatar">
+        <span>João</span>
+      </a>
+    </div>
 
   </div>
 </div>

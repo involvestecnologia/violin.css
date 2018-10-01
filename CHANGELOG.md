@@ -1,3 +1,29 @@
+<a name="0.0.30"></a>
+## [0.0.30](https://github.com/involvestecnologia/violin.css/compare/v0.0.29...v0.0.30) (2018-09-28)
+
+
+### Bug Fixes
+
+* **menu-user:** fix menu-user state ([31d3dbe](https://github.com/involvestecnologia/violin.css/commit/31d3dbe))
+
+
+### Features
+
+* **menu-list:** add menu-list__item--open modifier ([af78f04](https://github.com/involvestecnologia/violin.css/commit/af78f04))
+
+
+
+<a name="0.0.29"></a>
+## [0.0.29](https://github.com/involvestecnologia/violin.css/compare/v0.0.28...v0.0.29) (2018-09-27)
+
+
+### Bug Fixes
+
+* **menu:** fix class name into menu-list and menu-list-categorie ([16e494e](https://github.com/involvestecnologia/violin.css/commit/16e494e))
+* **menu-user:** Fix selector into menu-user, at menu component ([6c0182f](https://github.com/involvestecnologia/violin.css/commit/6c0182f))
+
+
+
 <a name="0.0.28"></a>
 ## [0.0.28](https://github.com/involvestecnologia/violin.css/compare/v0.0.27...v0.0.28) (2018-09-25)
 
