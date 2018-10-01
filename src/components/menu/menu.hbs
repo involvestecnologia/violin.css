@@ -1,9 +1,12 @@
 <div class="inv-menu {{ menu.modifier }}">
-  {{> @menu-expand-button}}
+  <button class="inv-menu-btn inv-menu-btn--expand">
+    <i class="material-icons">menu</i>
+  </button>
+
   <div class="inv-menu__container {{ ternary menu.open "inv-menu__container--open" "" }}">
 
     <div class="inv-menu-header">
-      <button class="inv-menu-collapse">
+      <button class="inv-menu-btn">
         <i class="material-icons">keyboard_arrow_left</i>
       </button>
       <img

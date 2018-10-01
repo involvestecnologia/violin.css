@@ -28,8 +28,8 @@
   max-height: 40px;
 }
 
-.inv-menu-collapse {
-  background-color: transparent;
+.inv-menu-btn {
+  background-color: var(--color-system--dark);
   border: none;
   cursor: pointer;
   outline: 0;
@@ -37,20 +37,25 @@
   height: 40px;
 }
 
-.inv-menu-collapse > i {
+.inv-menu-btn--expand {
+  border-radius: 0 0 6px 0;
+  width: 56px;
+  height: 56px;
+}
+
+.inv-menu-btn > i {
   font-size: 40px;
   color: var(--color-system--white);
   transition: color 0.1s;
 }
 
-.inv-menu-collapse:hover > i {
+.inv-menu-btn:hover > i {
   color: var(--color-default--regular);
 }
 
-.inv-menu-collapse:active > i {
+.inv-menu-btn:active > i {
   color: var(--color-default--dark);
 }
-
 
 .inv-menu-logo {
   position: absolute;
@@ -134,7 +139,7 @@
     height: 100%;
   }
 
-  .inv-menu > .inv-menu-expand-button {
+  .inv-menu > .inv-menu-btn--expand {
     display: none;
   }
 
@@ -165,7 +170,7 @@
     flex-shrink: 0;
   }
 
-  .inv-menu-header > .inv-menu-collapse {
+  .inv-menu-header > .inv-menu-btn {
     display: none;
   }
 
