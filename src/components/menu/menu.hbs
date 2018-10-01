@@ -3,7 +3,10 @@
   <div class="inv-menu__container {{ ternary menu.open "inv-menu__container--open" "" }}">
 
     <div class="inv-menu-header">
-      {{> @menu-collapse-button}}
+      {{!-- {{> @menu-collapse-button}} --}}
+      <button class="inv-menu-collapse">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </button>
       <img
           class="inv-menu-logo"
           src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"

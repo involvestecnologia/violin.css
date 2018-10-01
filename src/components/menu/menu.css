@@ -28,6 +28,30 @@
   max-height: 40px;
 }
 
+.inv-menu-collapse {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.inv-menu-collapse > i {
+  font-size: 40px;
+  color: var(--color-system--white);
+  transition: color 0.1s;
+}
+
+.inv-menu-collapse:hover > i {
+  color: var(--color-default--regular);
+}
+
+.inv-menu-collapse:active > i {
+  color: var(--color-default--dark);
+}
+
+
 .inv-menu-logo {
   position: absolute;
   grid-area: b;
@@ -141,11 +165,7 @@
     flex-shrink: 0;
   }
 
-  .inv-menu-header > picture {
-    text-align: center;
-  }
-
-  .inv-menu-header > .inv-menu-collapse-button {
+  .inv-menu-header > .inv-menu-collapse {
     display: none;
   }
 
