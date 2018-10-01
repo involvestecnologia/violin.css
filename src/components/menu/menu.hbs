@@ -4,11 +4,14 @@
 
     <div class="inv-menu-header">
       {{> @menu-collapse-button}}
-      <picture>
-        <source media="(min-width: 500px)" srcset="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png">
-        <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
+      <img
+          class="inv-menu-logo"
+          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
           alt="{{ menu-logo.alt }}" />
-      </picture>
+      <img
+          class="inv-menu-logo inv-menu-logo--small"
+          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"
+          alt="{{ menu-logo.alt }}" />
     </div>
 
     <div class="inv-menu__search" title="Click to search">
