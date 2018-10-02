@@ -1,5 +1,5 @@
 <a name="0.0.30"></a>
-## [0.0.30](https://github.com/involvestecnologia/violin.css/compare/v0.0.29...v0.0.30) (2018-09-28)
+## [0.0.30](https://github.com/involvestecnologia/violin.css/compare/v0.0.29...0.0.30) (2018-09-28)
 
 
 ### Bug Fixes

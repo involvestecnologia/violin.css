@@ -62,7 +62,10 @@ Versão outline, com menos destaque.
 Versão menor do botão.
 
 ``` html
-<a href="#" class="inv-btn inv-btn--small">Button</a>
+<a href="#" class="inv-btn inv-btn--small">
+  <i class="material-icons">mode_edit</i>
+  Button
+</a>
 <button class="inv-btn inv-btn--small">Button</button>
 ```
 
