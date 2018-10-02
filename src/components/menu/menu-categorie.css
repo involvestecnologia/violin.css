@@ -1,4 +1,5 @@
 .inv-menu-list-categorie-container {
+  flex: 1;
   display: flex;
   padding-right: var(--space-16);
   height: 100%;
