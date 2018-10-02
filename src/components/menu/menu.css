@@ -64,6 +64,8 @@
   min-height: inherit;
   max-height: inherit;
   transition: opacity 0.1s;
+  visibility: visible;
+  opacity: 1;
 }
 
 .inv-menu-logo--small {
@@ -96,11 +98,6 @@
 .inv-menu__search-tip {
   visibility: hidden;
   margin-bottom: 12px;
-}
-
-.inv-menu__list {
-  flex: 1;
-  overflow: auto;
 }
 
 .inv-menu__user {
@@ -150,20 +147,6 @@
     height: 100%;
   }
 
-  .inv-menu__container--open {
-    max-width: 236px;
-  }
-
-  .inv-menu-logo {
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .inv-menu-logo--small {
-    visibility: visible;
-    opacity: 1;
-  }
-
   .inv-menu-header {
     display: flex;
     justify-content: center;
@@ -172,6 +155,16 @@
 
   .inv-menu-header > .inv-menu-btn {
     display: none;
+  }
+
+  .inv-menu-logo--small {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .inv-menu-logo--large {
+    visibility: hidden;
+    opacity: 0;
   }
 
   .inv-menu__search > span {
@@ -206,14 +199,31 @@
     background-color: #1a2f50;
   }
 
-  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo {
+  .inv-menu__container:hover,
+  .inv-menu__container--open {
+    max-width: 236px;
+  }
+
+  .inv-menu__container:hover > .inv-menu-header > .inv-menu-logo--small,
+  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo--small {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .inv-menu__container:hover > .inv-menu-header > .inv-menu-logo--large,
+  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo--large {
     visibility: visible;
     opacity: 1;
   }
 
-  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo--small {
+  .inv-menu__container:hover > .inv-menu__search > span,
+  .inv-menu__container--open > .inv-menu__search > span {
+    display: block;
+  }
+
+  .inv-menu__container:hover > .inv-menu__search-tip,
+  .inv-menu__container--open > .inv-menu__search-tip {
     visibility: hidden;
-    opacity: 0;
   }
 
   .inv-menu__container--open .inv-menu__user {
@@ -237,20 +247,4 @@
     background-color: rgba(232, 234, 236, 0.1);
   }
 
-  .inv-menu__container--open > .inv-menu__search > span {
-    display: block;
-  }
-
-  .inv-menu__container--open > .inv-menu__search-tip {
-    visibility: hidden;
-  }
-
-  .inv-menu__container--open > .inv-menu__list {
-    flex: 1;
-    overflow: auto;
-  }
-
-  .inv-menu__container--open > .inv-menu__search > .inv-menu__search-tip {
-    display: none;
-  }
 }

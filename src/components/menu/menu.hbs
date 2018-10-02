@@ -10,12 +10,12 @@
         <i class="material-icons">keyboard_arrow_left</i>
       </button>
       <img
-          class="inv-menu-logo"
-          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
-          alt="{{ menu-logo.alt }}" />
-      <img
           class="inv-menu-logo inv-menu-logo--small"
           src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"
+          alt="{{ menu-logo.alt }}" />
+      <img
+          class="inv-menu-logo inv-menu-logo--large"
+          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
           alt="{{ menu-logo.alt }}" />
     </div>
 
@@ -25,13 +25,11 @@
     </div>
     <div class="inv-menu__search-tip">Ctrl+k</div>
 
-    <div class="inv-menu__list">
-      {{#if menu.categorie}}
-      {{> @menu-list-categorie }}
-      {{else}}
-      {{> @menu-list--open }}
-      {{/if}}
-    </div>
+    {{#if menu.categorie}}
+    {{> @menu-list-categorie }}
+    {{else}}
+    {{> @menu-list--open }}
+    {{/if}}
 
     <div>
       <a class="inv-menu__user" href="#">

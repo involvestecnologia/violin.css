@@ -1,4 +1,4 @@
-/* .inv-menu-list-categorie-container {
+.inv-menu-list-categorie-container {
   display: flex;
   padding-right: var(--space-16);
   height: 100%;
@@ -75,4 +75,4 @@
 
 .inv-menu-list-categorie__title > span {
   padding-left: var(--space-8);
-} */
+}

@@ -36,6 +36,6 @@
 @import '../components/input-progress/input-progress.css';
 @import '../components/input-file/input-file.css';
 @import '../components/menu/menu.css';
-@import '../components/menu-list/menu-list.css';
-@import '../components/menu-list-categorie/menu-list-categorie.css';
+@import '../components/menu/menu-list.css';
+@import '../components/menu/menu-categorie.css';
 @import '../components/menu-search-modal/menu-search-modal.css';
