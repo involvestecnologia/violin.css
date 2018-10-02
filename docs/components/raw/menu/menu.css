@@ -17,6 +17,62 @@
   display: flex;
 }
 
+.inv-menu-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "a b c";
+  padding-left: var(--space-8);
+  padding-right: var(--space-8);
+  min-height: 40px;
+  max-height: 40px;
+}
+
+.inv-menu-btn {
+  background-color: var(--color-system--dark);
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.inv-menu-btn--expand {
+  border-radius: 0 0 6px 0;
+  width: 56px;
+  height: 56px;
+}
+
+.inv-menu-btn > i {
+  font-size: 40px;
+  color: var(--color-system--white);
+  transition: color 0.1s;
+}
+
+.inv-menu-btn:hover > i {
+  color: var(--color-default--regular);
+}
+
+.inv-menu-btn:active > i {
+  color: var(--color-default--dark);
+}
+
+.inv-menu-logo {
+  position: absolute;
+  grid-area: b;
+  justify-self: center;
+  min-height: inherit;
+  max-height: inherit;
+  transition: opacity 0.1s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.inv-menu-logo--small {
+  visibility: hidden;
+  opacity: 0;
+}
+
 .inv-menu__search {
   display: flex;
   align-items: center;
@@ -42,18 +98,6 @@
 .inv-menu__search-tip {
   visibility: hidden;
   margin-bottom: 12px;
-}
-
-.inv-menu__list {
-  flex: 1;
-  overflow: auto;
-}
-
-.inv-menu-header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding-left: var(--space-8);
-  padding-right: var(--space-8);
 }
 
 .inv-menu__user {
@@ -83,6 +127,10 @@
   word-wrap: break-word;
 }
 
+.inv-menu__user:hover {
+  background-color: rgba(232, 234, 236, 0.2);
+}
+
 .inv-menu__user:active {
   background-color: rgba(232, 234, 236, 0.1);
 }
@@ -92,7 +140,7 @@
     height: 100%;
   }
 
-  .inv-menu > .inv-menu-expand-button {
+  .inv-menu > .inv-menu-btn--expand {
     display: none;
   }
 
@@ -103,22 +151,24 @@
     height: 100%;
   }
 
-  .inv-menu__container--open {
-    max-width: 236px;
-  }
-
   .inv-menu-header {
     display: flex;
     justify-content: center;
     flex-shrink: 0;
   }
 
-  .inv-menu-header > picture {
-    text-align: center;
+  .inv-menu-header > .inv-menu-btn {
+    display: none;
   }
 
-  .inv-menu-header > .inv-menu-collapse-button {
-    display: none;
+  .inv-menu-logo--small {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .inv-menu-logo--large {
+    visibility: hidden;
+    opacity: 0;
   }
 
   .inv-menu__search > span {
@@ -149,11 +199,35 @@
     padding-left: unset;
   }
 
-  .inv-menu__user:active {
-    background-color: #1a2f50;
+  .inv-menu__container:hover,
+  .inv-menu__container--open {
+    max-width: 236px;
   }
 
-  .inv-menu__container--open .inv-menu__user {
+  .inv-menu__container:hover > .inv-menu-header > .inv-menu-logo--small,
+  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo--small {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .inv-menu__container:hover > .inv-menu-header > .inv-menu-logo--large,
+  .inv-menu__container--open > .inv-menu-header > .inv-menu-logo--large {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .inv-menu__container:hover > .inv-menu__search > span,
+  .inv-menu__container--open > .inv-menu__search > span {
+    display: block;
+  }
+
+  .inv-menu__container:hover > .inv-menu__search-tip,
+  .inv-menu__container--open > .inv-menu__search-tip {
+    visibility: hidden;
+  }
+
+  .inv-menu__container:hover > .inv-menu__user,
+  .inv-menu__container--open > .inv-menu__user {
     justify-content: flex-start;
     padding-left: 16px;
     padding-right: 16px;
@@ -161,33 +235,9 @@
     pointer-events: initial;
   }
 
-  .inv-menu__container--open .inv-menu__user > span {
+  .inv-menu__container:hover > .inv-menu__user > span,
+  .inv-menu__container--open > .inv-menu__user > span {
     display: block;
     padding-left: 8px;
-  }
-
-  .inv-menu__container--open .inv-menu__user:hover {
-    background-color: rgba(232, 234, 236, 0.2);
-  }
-
-  .inv-menu__container--open .inv-menu__user:active {
-    background-color: rgba(232, 234, 236, 0.1);
-  }
-
-  .inv-menu__container--open > .inv-menu__search > span {
-    display: block;
-  }
-
-  .inv-menu__container--open > .inv-menu__search-tip {
-    visibility: hidden;
-  }
-
-  .inv-menu__container--open > .inv-menu__list {
-    flex: 1;
-    overflow: auto;
-  }
-
-  .inv-menu__container--open > .inv-menu__search > .inv-menu__search-tip {
-    display: none;
   }
 }

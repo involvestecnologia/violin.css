@@ -23,20 +23,24 @@
     class="container"
     style=" height: 100%; ">
     <div class="inv-menu inv-menu--visible">
-  <button class="inv-menu-expand-button">
+  <button class="inv-menu-btn inv-menu-btn--expand">
     <i class="material-icons">menu</i>
   </button>
+
   <div class="inv-menu__container inv-menu__container--open">
 
     <div class="inv-menu-header">
-      <button class="inv-menu-collapse-button">
+      <button class="inv-menu-btn">
         <i class="material-icons">keyboard_arrow_left</i>
       </button>
-      <picture>
-        <source media="(min-width: 500px)" srcset="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png">
-        <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
+      <img
+          class="inv-menu-logo inv-menu-logo--small"
+          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo.png"
           alt="Menu Logo" />
-      </picture>
+      <img
+          class="inv-menu-logo inv-menu-logo--large"
+          src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/logo-full.png"
+          alt="Menu Logo" />
     </div>
 
     <div class="inv-menu__search" title="Click to search">
@@ -45,7 +49,7 @@
     </div>
     <div class="inv-menu__search-tip">Ctrl+k</div>
 
-    <div class="inv-menu__list">
+
       <div class="inv-menu-list inv-menu-list--open">
           <a href="#" class="inv-menu-list__item">
             <i class="material-icons">wifi</i>
@@ -64,15 +68,13 @@
             <span>Acessos Externos</span>
           </a>
       </div>
-    </div>
 
-    <div>
-      <a class="inv-menu__user" href="#">
-        <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/pikachu.jpg"
-          alt="User Avatar">
-        <span>João</span>
-      </a>
-    </div>
+
+    <a class="inv-menu__user" href="#">
+      <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/assets/images/pikachu.jpg"
+        alt="User Avatar">
+      <span>João</span>
+    </a>
 
   </div>
 </div>
