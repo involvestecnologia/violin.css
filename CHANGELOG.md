@@ -1,36 +1,15 @@
-<a name="0.0.30"></a>
-## [0.0.30](https://github.com/involvestecnologia/violin.css/compare/v0.0.29...0.0.30) (2018-09-28)
-
-
-### Bug Fixes
-
-* **menu-user:** fix menu-user state ([31d3dbe](https://github.com/involvestecnologia/violin.css/commit/31d3dbe))
-
-
-### Features
-
-* **menu-list:** add menu-list__item--open modifier ([af78f04](https://github.com/involvestecnologia/violin.css/commit/af78f04))
-
-
-
-<a name="0.0.29"></a>
-## [0.0.29](https://github.com/involvestecnologia/violin.css/compare/v0.0.28...v0.0.29) (2018-09-27)
-
-
-### Bug Fixes
-
-* **menu:** fix class name into menu-list and menu-list-categorie ([16e494e](https://github.com/involvestecnologia/violin.css/commit/16e494e))
-* **menu-user:** Fix selector into menu-user, at menu component ([6c0182f](https://github.com/involvestecnologia/violin.css/commit/6c0182f))
-
-
-
-<a name="0.0.28"></a>
-## [0.0.28](https://github.com/involvestecnologia/violin.css/compare/v0.0.27...v0.0.28) (2018-09-25)
+<a name="0.0.32"></a>
+## [0.0.32](https://github.com/involvestecnologia/violin.css/compare/v0.0.27...v0.0.32) (2018-10-02)
 
 
 ### Bug Fixes
 
 * **input-map:** Add 1px padding between map and input at input-map component ([6a871b8](https://github.com/involvestecnologia/violin.css/commit/6a871b8))
+* **menu:** fix class name into menu-list and menu-list-categorie ([16e494e](https://github.com/involvestecnologia/violin.css/commit/16e494e))
+* **menu:** fix menu search section ([6c74b01](https://github.com/involvestecnologia/violin.css/commit/6c74b01))
+* **menu:** replaces menu-search for a div ([522e827](https://github.com/involvestecnologia/violin.css/commit/522e827))
+* **menu-user:** fix menu-user state ([31d3dbe](https://github.com/involvestecnologia/violin.css/commit/31d3dbe))
+* **menu-user:** Fix selector into menu-user, at menu component ([6c0182f](https://github.com/involvestecnologia/violin.css/commit/6c0182f))
 * **tabs:** Add section divider modifier to tabs component ([d043696](https://github.com/involvestecnologia/violin.css/commit/d043696))
 
 
@@ -47,8 +26,10 @@
 * **input-map:** add first draft of input-map component ([d20dc00](https://github.com/involvestecnologia/violin.css/commit/d20dc00))
 * **input-map:** Adjust preview border ([b6c2e35](https://github.com/involvestecnologia/violin.css/commit/b6c2e35))
 * **input-map:** Adjusts fake map image into input-map component ([c9ab7ce](https://github.com/involvestecnologia/violin.css/commit/c9ab7ce))
+* **menu:** add hover to menu component ([3646861](https://github.com/involvestecnologia/violin.css/commit/3646861))
 * **menu:** Add user avatar into menu component ([235ce4a](https://github.com/involvestecnologia/violin.css/commit/235ce4a))
 * **menu:** adjust avatar div lenght ([6f85e7a](https://github.com/involvestecnologia/violin.css/commit/6f85e7a))
+* **menu-list:** add menu-list__item--open modifier ([af78f04](https://github.com/involvestecnologia/violin.css/commit/af78f04))
 * **tabs:** add first draft of tabs component ([aa13530](https://github.com/involvestecnologia/violin.css/commit/aa13530))
 * **tabs:** Add tooltip to blocked tabs at tabs component ([d120584](https://github.com/involvestecnologia/violin.css/commit/d120584))
 * **tabs:** Adjust tooltip ([8f7e409](https://github.com/involvestecnologia/violin.css/commit/8f7e409))
@@ -75,6 +56,11 @@
 
 
 
+<a name="0.0.25"></a>
+## [0.0.25](https://github.com/involvestecnologia/violin.css/compare/v0.0.24...v0.0.25) (2018-08-16)
+
+
+
 <a name="0.0.24"></a>
 ## [0.0.24](https://github.com/involvestecnologia/violin.css/compare/v0.0.23...v0.0.24) (2018-08-16)
 
@@ -85,8 +71,18 @@
 
 
 
+<a name="0.0.23"></a>
+## [0.0.23](https://github.com/involvestecnologia/violin.css/compare/v0.0.22...v0.0.23) (2018-08-14)
+
+
+
 <a name="0.0.22"></a>
 ## [0.0.22](https://github.com/involvestecnologia/violin.css/compare/v0.0.21...v0.0.22) (2018-08-14)
+
+
+
+<a name="0.0.21"></a>
+## [0.0.21](https://github.com/involvestecnologia/violin.css/compare/v0.0.20...v0.0.21) (2018-08-13)
 
 
 ### Bug Fixes
