@@ -139,6 +139,14 @@
   border-width: 2px;
 }
 
+.inv-btn--very-large.inv-btn--addon > i {
+  font-size: 34px;
+}
+
+.inv-btn--small.inv-btn--addon > i {
+  font-size: 18px;
+}
+
 /*
   OTHER VARIATIONS
 */
