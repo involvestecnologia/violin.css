@@ -26,9 +26,36 @@
     <div class="inv-menu__search-tip">Ctrl+k</div>
 
     {{#if menu.categorie}}
-    {{> @menu-list-categorie }}
+
+      <div class="inv-menu-list-categorie-container">
+        <a href="#" class="inv-menu-list-categorie__back-button">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </a>
+        <div class="inv-menu-list-categorie">
+          <div class="inv-menu-list-categorie__title">
+            <i class="material-icons">people</i><span>Colaboradores</span>
+          </div>
+          {{#each menu-list-categorie.list}}
+            {{#if this.item.title}}
+              <div class="inv-menu-list-categorie__separator">{{ this.item.title }}</div>
+            {{else}}
+              <a href="#" class="inv-menu-list-categorie__item">{{ this.item.text }}</a>
+            {{/if}}
+          {{/each}}
+        </div>
+      </div>
+
     {{else}}
-    {{> @menu-list--open }}
+
+      <div class="inv-menu-list {{ menu-list.modifier }}">
+        {{#each menu-list.list}}
+          <a href="#" class="inv-menu-list__item">
+            <i class="material-icons">{{this.item.icon}}</i>
+            <span>{{this.item.text}}</span>
+          </a>
+        {{/each}}
+      </div>
+
     {{/if}}
 
     <div>
