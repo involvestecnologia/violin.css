@@ -18,7 +18,7 @@
   flex-shrink: 0;
   padding-left: var(--space-16);
   padding-right: var(--space-16);
-
+  cursor: pointer;
   text-decoration: none;
   color: var(--color-system--white);
   font-weight: 600;
