@@ -41,6 +41,11 @@
   border-radius: 0 0 6px 0;
   width: 56px;
   height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-1);
+  display: flex;
 }
 
 .inv-menu-btn > i {
@@ -76,7 +81,8 @@
 .inv-menu__search {
   display: flex;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
   border-radius: 10px;
   box-sizing: border-box;
   font-weight: 600;
@@ -149,6 +155,11 @@
     max-width: 72px;
     height: auto;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-index-1);
   }
 
   .inv-menu-header {
