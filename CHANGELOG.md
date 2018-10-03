@@ -1,3 +1,15 @@
+<a name="0.0.33"></a>
+## [0.0.33](https://github.com/involvestecnologia/violin.css/compare/v0.0.32...v0.0.33) (2018-10-03)
+
+
+### Bug Fixes
+
+* **menu:** Add cursor point to menu list item so it can be used also in divs ([a3e4592](https://github.com/involvestecnologia/violin.css/commit/a3e4592))
+* **menu:** fix menu search and menu categorie layout ([8af8dd3](https://github.com/involvestecnologia/violin.css/commit/8af8dd3))
+* **menu-expand:** fix menu expand layout ([68eca10](https://github.com/involvestecnologia/violin.css/commit/68eca10))
+
+
+
 <a name="0.0.32"></a>
 ## [0.0.32](https://github.com/involvestecnologia/violin.css/compare/v0.0.27...v0.0.32) (2018-10-02)
 
