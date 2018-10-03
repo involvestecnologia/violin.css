@@ -41,6 +41,11 @@
   border-radius: 0 0 6px 0;
   width: 56px;
   height: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index-1);
+  display: flex;
 }
 
 .inv-menu-btn > i {
