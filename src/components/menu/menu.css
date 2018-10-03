@@ -81,7 +81,8 @@
 .inv-menu__search {
   display: flex;
   align-items: center;
-  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
   border-radius: 10px;
   box-sizing: border-box;
   font-weight: 600;
