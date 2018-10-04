@@ -1,6 +1,6 @@
 .inv-menu__container {
   display: none;
-  background: var(--color-system--dark) linear-gradient(170.25deg, var(--color-system--dark) 0%, #0c101c 99.94%);
+  background: var(--color-system--dark);
   flex-direction: column;
   height: 100%;
   padding-top: var(--space-16);
