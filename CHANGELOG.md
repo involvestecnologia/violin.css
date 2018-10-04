@@ -1,3 +1,13 @@
+<a name="0.0.34"></a>
+## [0.0.34](https://github.com/involvestecnologia/violin.css/compare/v0.0.33...v0.0.34) (2018-10-04)
+
+
+### Bug Fixes
+
+* **menu:** fix menu layout ([0dc4cd9](https://github.com/involvestecnologia/violin.css/commit/0dc4cd9))
+
+
+
 <a name="0.0.33"></a>
 ## [0.0.33](https://github.com/involvestecnologia/violin.css/compare/v0.0.32...v0.0.33) (2018-10-03)
 
