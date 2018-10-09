@@ -15,7 +15,7 @@
       </div>
       {{/if}}
 
-      <div class="inv-menu-search-modal__list">
+      <div class="inv-menu-search-modal__list {{ menu-search-modal.list-modifier }}">
         {{#each menu-search-modal.list}}
         <a class="inv-menu-search-modal-list__item {{ this.item.modifier }} " href="#">
           {{#each this.item.text}}
