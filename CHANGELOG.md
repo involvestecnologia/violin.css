@@ -1,3 +1,13 @@
+<a name="0.0.35"></a>
+## [0.0.35](https://github.com/involvestecnologia/violin.css/compare/v0.0.34...v0.0.35) (2018-10-09)
+
+
+### Bug Fixes
+
+* **menu-search:** Fix menu modal search component ([b149c4c](https://github.com/involvestecnologia/violin.css/commit/b149c4c))
+
+
+
 <a name="0.0.34"></a>
 ## [0.0.34](https://github.com/involvestecnologia/violin.css/compare/v0.0.33...v0.0.34) (2018-10-04)
 
