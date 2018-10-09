@@ -39,6 +39,11 @@
   position: relative;
 }
 
+.inv-form-field > .inv-input-icon {
+  cursor: default;
+  user-select: none;
+}
+
 .inv-menu-search-modal__message {
   height: 100%;
   width: 100%;
@@ -46,6 +51,15 @@
   justify-content: center;
   align-items: center;
   padding-top: 80px;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s, height 0.1s;
+}
+
+.inv-menu-search-modal__message--hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
 }
 
 .inv-menu-search-modal__message > span {
@@ -85,6 +99,16 @@
   overflow-y: auto;
   margin-top: var(--space-24);
   outline: none;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: opacity 0.1s, height 0.1s;
+}
+
+.inv-menu-search-modal__list--visible {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
 }
 
 .inv-menu-search-modal-list__item {
@@ -208,6 +232,12 @@
     margin-top: 0;
     padding-top: unset;
     padding-bottom: var(--space-8);
+  }
+
+  .inv-menu-search-modal__message--hidden {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
   }
 
   .inv-menu-search-modal__message > span {
