@@ -18,10 +18,20 @@ variants:
         value: 'tela de pontos de venda'
       menu-search-modal:
         message: ''
+        list-modifier: inv-menu-search-modal__list--visible
         list:
-        - item: ['PDV / ', 'Listagem']
-        - item: ['PDV / ', 'Novo']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
   - name: without-result
     context:
       menu-search-modal:
@@ -32,6 +42,7 @@ variants:
     context:
       menu-search-modal:
         message: ''
+        list-modifier: inv-menu-search-modal__list--visible
         list:
         - item:
             modifier: ''
@@ -49,16 +60,30 @@ variants:
     context:
       menu-search-modal:
         message: ''
+        list-modifier: inv-menu-search-modal__list--visible
         list:
-        - item: ['PDV / ', 'Listagem']
-        - item: ['PDV / ', 'Novo']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
-        - item: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: inv-menu-search-modal-list__item--selected
+            text: ['Colaboradores / ', 'Afastamentos / ', 'Novo afastamento']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
+        - item:
+            modifier: ''
+            text: ['PDV / ', 'Listagem']
 
