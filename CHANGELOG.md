@@ -1,3 +1,8 @@
+<a name="0.0.38"></a>
+## [0.0.38](https://github.com/involvestecnologia/violin.css/compare/v0.0.37...v0.0.38) (2018-10-19)
+
+
+
 <a name="0.0.37"></a>
 ## [0.0.37](https://github.com/involvestecnologia/violin.css/compare/v0.0.35...v0.0.37) (2018-10-19)
 

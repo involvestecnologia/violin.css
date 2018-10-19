@@ -119,8 +119,6 @@
   color: var(--color-system--white);
   font-size: 14px;
   font-weight: 600;
-  position: fixed;
-  bottom: 0;
 }
 
 .inv-menu__user > img {
@@ -211,6 +209,8 @@
   .inv-menu__user {
     cursor: default;
     pointer-events: none;
+    position: fixed;
+    bottom: 0;
   }
 
   .inv-menu__user > span {
