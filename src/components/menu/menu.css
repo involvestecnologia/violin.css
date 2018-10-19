@@ -144,6 +144,7 @@
 .inv-menu__user:hover {
   background-color: rgba(232, 234, 236, 0.2);
   color: var(--color-system--white);
+  text-decoration: none;
 }
 
 .inv-menu__user:active {
