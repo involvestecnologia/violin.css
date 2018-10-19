@@ -51,10 +51,14 @@
 
 .inv-menu-list-categorie__item:hover {
   background-color: rgba(232, 234, 236, 0.2);
+  color: var(--color-system--white);
+  text-decoration: none;
 }
 
 .inv-menu-list-categorie__item:active {
   background-color: rgba(232, 234, 236, 0.1);
+  color: var(--color-system--white);
+  text-decoration: none;
 }
 
 .inv-menu-list-categorie__separator {

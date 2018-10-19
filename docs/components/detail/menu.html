@@ -380,17 +380,17 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-969e6fd7a981c86d0b24975df1a184ca">menu-categorie.css</option>
+                <option value="file-3db5a73bf2ff1dc8faba2ebee550cdea">menu-categorie.css</option>
                 
-                <option value="file-4b2e8a5c4d401dfb72d2ff816b620bfd">menu-list.css</option>
+                <option value="file-858373757e98922798683bed7b8c5a14">menu-list.css</option>
                 
-                <option value="file-ebba5d1a27441e38693d9d19c25c93e7">menu.css</option>
+                <option value="file-fc025faca535a810a8699d6dee20666f">menu.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-969e6fd7a981c86d0b24975df1a184ca" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-3db5a73bf2ff1dc8faba2ebee550cdea" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -451,10 +451,14 @@
 
 <span class="hljs-selector-class">.inv-menu-list-categorie__item</span><span class="hljs-selector-pseudo">:hover</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.2);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">text-decoration</span>: none;
 }
 
 <span class="hljs-selector-class">.inv-menu-list-categorie__item</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.1);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">text-decoration</span>: none;
 }
 
 <span class="hljs-selector-class">.inv-menu-list-categorie__separator</span> {
@@ -492,12 +496,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.6 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-4b2e8a5c4d401dfb72d2ff816b620bfd" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-858373757e98922798683bed7b8c5a14" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -585,7 +589,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-ebba5d1a27441e38693d9d19c25c93e7" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-fc025faca535a810a8699d6dee20666f" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -705,35 +709,46 @@
   <span class="hljs-attribute">text-decoration</span>: none;
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: flex-start;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1a2f50</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">62px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">236px</span>;
   <span class="hljs-attribute">min-height</span>: <span class="hljs-number">62px</span>;
   <span class="hljs-attribute">max-height</span>: <span class="hljs-number">62px</span>;
-  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">16px</span>;
-  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">16px</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
   <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+  <span class="hljs-attribute">position</span>: fixed;
+  <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">img</span> {
   <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">text-decoration</span>: none;
 }
 
 <span class="hljs-selector-class">.inv-menu__user</span> &gt; <span class="hljs-selector-tag">span</span> {
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">8px</span>;
   <span class="hljs-attribute">max-width</span>: <span class="hljs-built_in">calc</span>(100% - 40px);
   <span class="hljs-attribute">word-wrap</span>: break-word;
+  <span class="hljs-attribute">text-decoration</span>: none;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">max-height</span>: <span class="hljs-number">34px</span>;
+  <span class="hljs-attribute">overflow</span>: hidden;
 }
 
 <span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:hover</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.2);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">text-decoration</span>: none;
 }
 
 <span class="hljs-selector-class">.inv-menu__user</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">rgba</span>(232, 234, 236, 0.1);
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
 }
 
 @<span class="hljs-keyword">media</span> (min-width: <span class="hljs-number">500px</span>) {
@@ -793,9 +808,6 @@
   }
 
   <span class="hljs-selector-class">.inv-menu__user</span> {
-    <span class="hljs-attribute">justify-content</span>: center;
-    <span class="hljs-attribute">padding-left</span>: unset;
-    <span class="hljs-attribute">padding-right</span>: unset;
     <span class="hljs-attribute">cursor</span>: default;
     <span class="hljs-attribute">pointer-events</span>: none;
   }
@@ -835,8 +847,6 @@
   <span class="hljs-selector-class">.inv-menu__container</span><span class="hljs-selector-pseudo">:hover</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span>,
   <span class="hljs-selector-class">.inv-menu__container--open</span> &gt; <span class="hljs-selector-class">.inv-menu__user</span> {
     <span class="hljs-attribute">justify-content</span>: flex-start;
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">16px</span>;
-    <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">16px</span>;
     <span class="hljs-attribute">cursor</span>: pointer;
     <span class="hljs-attribute">pointer-events</span>: initial;
   }
@@ -863,7 +873,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.9 KB</span>
+                    <span class="Meta-value">5 KB</span>
                 </li>
             </ul>
         </div>
