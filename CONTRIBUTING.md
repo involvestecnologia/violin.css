@@ -16,7 +16,7 @@ O violin.css  feito com base no design system dos produtos da Involves, por isso
 ## Processo de pull request
 
 - Siga as instruções do README.md para preparar seu ambiente, e iniciar o desenvolvimento =)
-- Crie sua branch com o seguinte formato: bug/enhacement/numerodaissue-descricao
+- Crie sua branch com o seguinte formato: bug/enhancement/numerodaissue-descricao
 - Antes de iniciar o desenvolvimento, recomendamos que rode os testes de regressão visual (npm run test:visual) e verifique se tudo está OK
 - Se você está implementando um novo componente, adicione os testes no arquivo backstop.json
 - Se você está implementando um novo componente ou alterando um componente existente, antes de fazer o PR rode npm run test:visual e npm run test:visual:approve, assim suas alterações serão consideradas nos testes de regressão visual
