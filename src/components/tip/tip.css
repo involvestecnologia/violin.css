@@ -14,8 +14,6 @@
 .inv-tip::before {
   position: absolute;
   content: attr(data-tooltip);
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   max-width: 320px;
   white-space: normal;
