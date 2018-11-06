@@ -18,7 +18,7 @@
   "license": "MIT",
   "scripts": {
     "commit": "git-cz",
-    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "version": "conventional-changelog -p angular -i .github/CHANGELOG.md -s -r 0 && git add .github/CHANGELOG.md",
     "start": "concurrently 'npm run start:css' 'npm run start:fractal' --restart-after=3000 --restart-tries=1000",
     "start:css": "postcss src/css/index.css -o public/assets/css/index.css -u postcss-import autoprefixer -w --verbose",
     "start:fractal": "fractal start --sync",
