@@ -9,15 +9,27 @@
     <link rel="stylesheet" href="{{ path '/custom-theme/index.css' }}">
     <title>Violin.css | {{ _target.label }}</title>
     <style>
+      body {
+        height: 100vh;
+      }
       .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .item {
+        margin: 0 220px;
       }
     </style>
 </head>
-<body style="padding: 50px">
+<body>
   <div class="container">
-    {{{ yield }}}
+    <div class="item">
+      {{{ yield }}}
+    </div>
   </div>
 </body>
 </html>
