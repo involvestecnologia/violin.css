@@ -94,6 +94,7 @@
 }
 
 .inv-tip:hover {
+  cursor: default;
   color: var(--color-primary--regular);
 }
 
