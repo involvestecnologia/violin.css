@@ -1,15 +1,16 @@
-<a name="0.0.38"></a>
-## [0.0.38](https://github.com/involvestecnologia/violin.css/compare/v0.0.37...v0.0.38) (2018-10-19)
-
-
-
-<a name="0.0.37"></a>
-## [0.0.37](https://github.com/involvestecnologia/violin.css/compare/v0.0.35...v0.0.37) (2018-10-19)
+<a name="0.1.0"></a>
+# [0.1.0](https://github.com/involvestecnologia/violin.css/compare/v0.0.35...v0.1.0) (2018-11-09)
 
 
 ### Bug Fixes
 
 * Fix bugs in layout of menu component ([e889264](https://github.com/involvestecnologia/violin.css/commit/e889264))
+* **tip:** Change cursor style when the icon is hovered ([181854b](https://github.com/involvestecnologia/violin.css/commit/181854b))
+
+
+### Features
+
+* **tip:** Add tip component layout ([0397000](https://github.com/involvestecnologia/violin.css/commit/0397000))
 
 
 
@@ -46,23 +47,18 @@
 
 
 <a name="0.0.32"></a>
-## [0.0.32](https://github.com/involvestecnologia/violin.css/compare/v0.0.31...v0.0.32) (2018-10-02)
-
-
-### Features
-
-* **menu:** add hover to menu component ([3646861](https://github.com/involvestecnologia/violin.css/commit/3646861))
-
-
-
-<a name="0.0.31"></a>
-## [0.0.31](https://github.com/involvestecnologia/violin.css/compare/0.0.31...v0.0.31) (2018-10-02)
+## [0.0.32](https://github.com/involvestecnologia/violin.css/compare/0.0.31...v0.0.32) (2018-10-02)
 
 
 ### Bug Fixes
 
 * **menu:** fix menu search section ([6c74b01](https://github.com/involvestecnologia/violin.css/commit/6c74b01))
 * **menu:** replaces menu-search for a div ([522e827](https://github.com/involvestecnologia/violin.css/commit/522e827))
+
+
+### Features
+
+* **menu:** add hover to menu component ([3646861](https://github.com/involvestecnologia/violin.css/commit/3646861))
 
 
 
