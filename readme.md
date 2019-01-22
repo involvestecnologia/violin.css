@@ -3,7 +3,7 @@
     <img src="https://raw.githubusercontent.com/involvestecnologia/violin.css/master/public/images/logo.jpg" alt="violin.css" />
   </a>
 
-  <h3 align="center">Violin.css</h3>
+  <h3 align="center">Violin.css [DISCONTINUED]</h3>
 
   <p align="center">
     Design system e framework css da Involves.
@@ -11,6 +11,9 @@
     <a href="https://involvestecnologia.github.io/violin.css/index.html"><strong>Documentação »</strong></a>
   </p>
 </p>
+
+
+<h3><b>Importante:</b> Projeto descontinuado devido a inserção do código no repositório de <a href="https://gitlab.agilepromoter.com/fronteam/agile-angular-components"><strong>Componentes Angular</strong></a></h3>
 
 ### Status
 
