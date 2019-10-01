@@ -11,7 +11,7 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
 
 
 <title>Dropdown | Violin.css</title>
@@ -87,7 +87,7 @@
                 class="Preview-iframe"
                 data-role="window"
                 src="../preview/dropdown.html"
-                sandbox="allow-same-origin allow-scripts allow-forms"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -161,16 +161,16 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content "</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input "</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: 000-00-000"</span> /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon "</span>&gt;</span>
-      
-    <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__box"</span>&gt;</span>
 
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -248,17 +248,17 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7ac30a42bc85382d3988f51dfc705bde">dropdown-action.css</option>
+                <option value="file-559aae8da31f66018c2022ec79547c50">dropdown-action.css</option>
                 
-                <option value="file-fae3012e6ca3116d17d76b1dd8d77630">dropdown-counter.css</option>
+                <option value="file-193fcc90a3b67c457716da03d115016d">dropdown-counter.css</option>
                 
-                <option value="file-34cf448e230ee0d5dfc03dd1f49c73ee">dropdown.css</option>
+                <option value="file-d72322e778290dfabb3bffda26bdb245">dropdown.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7ac30a42bc85382d3988f51dfc705bde" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-559aae8da31f66018c2022ec79547c50" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -309,7 +309,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-fae3012e6ca3116d17d76b1dd8d77630" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-193fcc90a3b67c457716da03d115016d" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -352,7 +352,7 @@
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-34cf448e230ee0d5dfc03dd1f49c73ee" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-d72322e778290dfabb3bffda26bdb245" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -546,7 +546,7 @@
 <li>Campo para limpar valores - <code>clear-input</code></li>
 </ul>
 <h3 id="default-dropdown">Default Dropdown</h3>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input "</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Selecione uma cidade"</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon"</span>&gt;</span>arrow_drop_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
@@ -558,9 +558,9 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="dropdown-com-campo-de-a-o">Dropdown com campo de ação</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="dropdown-com-campo-de-ação">Dropdown com campo de ação</h3>
 <p>Utilizado para exibir textos indicativos ao invés da listagem (ex: texto de nenhum resultado encontrado)</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- Caixa de ação --&gt;</span>
+<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Caixa de ação --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown-action"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown-action__result"</span>&gt;</span>
     Nenhum resultado cadastrado.
@@ -568,7 +568,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown-action__action"</span>&gt;</span>
     Aperte Enter para adicionar um novo.
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><code class="lang-html"><pre><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><pre><code class="language-html"><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content inv-dropdown__content--open"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input inv-input--focused"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Selecione uma cidade"</span> /&gt;</span>
@@ -590,9 +590,9 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="dropdown-com-contador">Dropdown com contador</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="dropdown-com-contador">Dropdown com contador</h3>
 <p>Utilizado para exibir a contagem de itens selecionados</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown-counter"</span>&gt;</span>3/10<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><code class="lang-html"><pre><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown-counter"</span>&gt;</span>3/10<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><pre><code class="language-html"><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content inv-dropdown__content--open"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input inv-input--focused"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: 000-00-000"</span> /&gt;</span>
@@ -608,9 +608,9 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><h3 id="dropdown-com-listagem-de-itens">Dropdown com listagem de itens</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><h3 id="dropdown-com-listagem-de-itens">Dropdown com listagem de itens</h3>
 <p>Basta utilizar o componente de listagem</p>
-<code class="lang-html"><pre><span class="hljs-comment">&lt;!-- Listagem simples --&gt;</span>
+<pre><code class="language-html"><span class="hljs-comment">&lt;!-- Listagem simples --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-list"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-list__item"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#1 Opção<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -636,7 +636,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-checkbox"</span>  /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>#2 Opção<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><code class="lang-html"><pre><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><pre><code class="language-html"><span class="hljs-comment">&lt;!-- Utilização no dropdown --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content inv-dropdown__content--open"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input inv-input--focused"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Ex: 000-00-000"</span> /&gt;</span>
@@ -657,25 +657,23 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><table>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><table>
 <thead>
 <tr>
 <th>Modificadores</th>
 <th>Uso</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#dropdown-content-open"><code>.inv-dropdown__content--open</code></a></td>
 <td>Modifica o dropdown para abrir a listagem</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="dropdown-content-open">Dropdown Content Open</h3>
 <p>Torna a listagem visível.</p>
 <p>Para isso ser possível, deve ser adicionado o modificador <code>inv-dropdown__content--open</code> no elemento <code>inv-dropdown__content</code>.</p>
 <p>Também será necessário ativar o estado do input adicionando o modificador <code>inv-input--focused</code></p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-dropdown__content inv-dropdown__content--open"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">""</span> <span class="hljs-attr">name</span>=<span class="hljs-string">""</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-input inv-input--focused"</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">"Selecione uma cidade"</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-input-icon"</span>&gt;</span>arrow_drop_down<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
@@ -687,7 +685,7 @@
   <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-clear-input"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>clear<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
         
     </div>
 </div>
@@ -1668,7 +1666,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1798,7 +1796,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
 
 
 

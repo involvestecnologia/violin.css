@@ -9,20 +9,52 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/index.css">
     <link rel="stylesheet" href="../../custom-theme/index.css">
-    <title>Violin.css | Default</title>
+    <title>Violin.css | Tip</title>
     <style>
+      body {
+        height: 100vh;
+      }
       .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .item {
+        margin: 0 220px;
       }
     </style>
 </head>
-<body style="padding: 50px">
+<body>
   <div class="container">
-    <i class="material-icons inv-tip " data-tooltip="Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.">
+    <div class="item">
+      <!-- Start: @tip--default -->
+<i class="material-icons inv-tip inv-tip--bottom-left" data-tooltip="Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.">
   info_outline
 </i>
+<!-- End: @tip--default -->
 
+<!-- Start: @tip--bottom-right -->
+<i class="material-icons inv-tip inv-tip--bottom-right" data-tooltip="Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.">
+  info_outline
+</i>
+<!-- End: @tip--bottom-right -->
+
+<!-- Start: @tip--top-right -->
+<i class="material-icons inv-tip inv-tip--top-right" data-tooltip="Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.">
+  info_outline
+</i>
+<!-- End: @tip--top-right -->
+
+<!-- Start: @tip--top-left -->
+<i class="material-icons inv-tip inv-tip--top-left" data-tooltip="Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo.">
+  info_outline
+</i>
+<!-- End: @tip--top-left -->
+
+    </div>
   </div>
 </body>
 </html>

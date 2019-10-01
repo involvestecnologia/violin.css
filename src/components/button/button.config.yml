@@ -44,3 +44,7 @@ variants:
     context:
       name: "Very large"
       modifier: "inv-btn--accent inv-btn--very-large"
+  - name: block
+    context:
+      name: "Block"
+      modifier: "inv-btn--accent inv-btn--very-large inv-btn--block"

@@ -11,7 +11,7 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
 
 
 <title>Radial Select | Violin.css</title>
@@ -87,7 +87,7 @@
                 class="Preview-iframe"
                 data-role="window"
                 src="../preview/radial-select.html"
-                sandbox="allow-same-origin allow-scripts allow-forms"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -160,21 +160,21 @@
         
             <pre><span class="hljs-comment">&lt;!-- Default --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"male"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"male"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"male"</span>&gt;</span>male<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"female"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"female"</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"female"</span>&gt;</span>female<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"male"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"male"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"male"</span>&gt;</span>male<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"female"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"female"</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"female"</span>&gt;</span>female<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 </pre>
         
             <pre><span class="hljs-comment">&lt;!-- Disabled --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">disabled</span> /&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled"</span>&gt;</span>disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">disabled</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled"</span>&gt;</span>disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
 </pre>
         
@@ -247,13 +247,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-649a1b55b3166c03b34609ceafa6f88c">radial-select.css</option>
+                <option value="file-8dc41b261eaa5a42570da6d7008acce0">radial-select.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-649a1b55b3166c03b34609ceafa6f88c" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-8dc41b261eaa5a42570da6d7008acce0" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -412,7 +412,7 @@
 </ul>
 <h3 id="default-radial-select">Default Radial Select</h3>
 <p>Componente padrão, comum para ações regulares dos usuários.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"male"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"male"</span> /&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"male"</span>&gt;</span>male<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -420,27 +420,25 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"female"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"female"</span> /&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"female"</span>&gt;</span>female<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code><table>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre><table>
 <thead>
 <tr>
 <th>Modificadores</th>
 <th>Uso</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#radial-select-disabled"><code>disabled</code></a></td>
 <td>Modifica o radial select com estado de desabilitado</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="radial-select-disabled">Radial Select Disabled</h3>
 <p>Versão de desabilitada do componente.</p>
 <p>Basta inserir o atributo <code>disabled</code> no input radio.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"sex"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__radio"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"disabled"</span> <span class="hljs-attr">disabled</span> /&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-radial-select__label"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"disabled"</span>&gt;</span>disabled<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre></code>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
         
     </div>
 </div>
@@ -1421,7 +1419,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1551,7 +1549,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
 
 
 

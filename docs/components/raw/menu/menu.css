@@ -164,7 +164,7 @@
     max-width: 72px;
     height: auto;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -209,8 +209,6 @@
   .inv-menu__user {
     cursor: default;
     pointer-events: none;
-    position: fixed;
-    bottom: 0;
   }
 
   .inv-menu__user > span {

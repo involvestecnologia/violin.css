@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
+
+
+<title>Tip: Bottom Right | Violin.css</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>Violin.css</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-912e7d51b871da66d99f5f94b4ad3f25">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/tip--bottom-right.html" title="Component preview">
+            Tip: Bottom Right
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-912e7d51b871da66d99f5f94b4ad3f25">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/tip--bottom-right.html"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-912e7d51b871da66d99f5f94b4ad3f25">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-912e7d51b871da66d99f5f94b4ad3f25-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip inv-tip--bottom-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo."</span>&gt;</span>
+    info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-view">
+    <code class="Code Code--lang-handlebars">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip </span></span></span><span class="hljs-template-variable">{{ tip.modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{ tip.text }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"tip"</span>: {
+    <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-tip--bottom-right"</span>,
+    <span class="hljs-attr">"text"</span>: <span class="hljs-string">"Valida o IMEI ao realizar o login pelo celular. O sistema irá permitir que o usuário acesse o sistema através de um celular com o IMEI diferente do especificado. Essa validação só será realizada caso tenha sido configurada nas permissões do Perfil de Acesso. Para permitir que o usuário acesse de outro aparelho basta limpar o campo."</span>
+  }
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-d7e245735bd05d2a9402b00d54e16db2">tip.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-d7e245735bd05d2a9402b00d54e16db2" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.inv-tip</span> {
+  <span class="hljs-attribute">--tooltip-arrow-border</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">--tooltip-arrow-spacing</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">--tooltip-bottom-horizontal-spacing</span>: <span class="hljs-number">24px</span>;
+  <span class="hljs-attribute">--tooltip-bottom-vertical-spacing</span>: <span class="hljs-number">35px</span>;
+  <span class="hljs-attribute">--tooltip-top-vertical-spacing</span>: -<span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">--tooltip-top-left-horizontal-spacing</span>: <span class="hljs-number">48px</span>;
+  <span class="hljs-attribute">--tooltip-top-right-horizontal-spacing</span>: -<span class="hljs-number">24px</span>;
+
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--regular);
+}
+
+<span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">content</span>: <span class="hljs-built_in">attr</span>(data-tooltip);
+  <span class="hljs-attribute">width</span>: max-content;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">320px</span>;
+  <span class="hljs-attribute">white-space</span>: normal;
+  <span class="hljs-attribute">font-family</span>: <span class="hljs-built_in">var</span>(--font-family);
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">19px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--dark);
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-16) <span class="hljs-built_in">var</span>(--color-default--shadow);
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">16px</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-built_in">var</span>(--z-index-5);
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">0.5s</span>;
+  <span class="hljs-attribute">visibility</span>: hidden;
+}
+
+<span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">''</span>;
+  <span class="hljs-attribute">position</span>: absolute;
+  <span class="hljs-attribute">border-left</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+  <span class="hljs-attribute">border-right</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-built_in">var</span>(--z-index-5);
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">transition</span>: opacity <span class="hljs-number">0.5s</span>;
+  <span class="hljs-attribute">visibility</span>: hidden;
+}
+
+<span class="hljs-selector-class">.inv-tip--bottom-right</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-bottom-vertical-spacing);
+  <span class="hljs-attribute">left</span>: <span class="hljs-built_in">calc</span>(-1 * var(--tooltip-bottom-horizontal-spacing));
+}
+
+<span class="hljs-selector-class">.inv-tip--bottom-right</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-arrow-spacing);
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) <span class="hljs-built_in">var</span>(--color-system--dark);
+}
+
+<span class="hljs-selector-class">.inv-tip--bottom-left</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-bottom-vertical-spacing);
+  <span class="hljs-attribute">left</span>: <span class="hljs-built_in">calc</span>(var(--tooltip-bottom-horizontal-spacing) * <span class="hljs-number">2</span>);
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(-100%);
+}
+
+<span class="hljs-selector-class">.inv-tip--bottom-left</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-arrow-spacing);
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) <span class="hljs-built_in">var</span>(--color-system--dark);
+}
+
+<span class="hljs-selector-class">.inv-tip--top-right</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-top-vertical-spacing);
+  <span class="hljs-attribute">left</span>: <span class="hljs-built_in">var</span>(--tooltip-top-right-horizontal-spacing);
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-100%);
+}
+
+<span class="hljs-selector-class">.inv-tip--top-right</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">calc</span>(-1 * var(--tooltip-arrow-spacing));
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) <span class="hljs-built_in">var</span>(--color-system--dark);
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+}
+
+<span class="hljs-selector-class">.inv-tip--top-left</span><span class="hljs-selector-pseudo">::before</span> {
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">var</span>(--tooltip-top-vertical-spacing);
+  <span class="hljs-attribute">left</span>: <span class="hljs-built_in">var</span>(--tooltip-top-left-horizontal-spacing);
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(-100%) <span class="hljs-built_in">translateX</span>(-100%);
+}
+
+<span class="hljs-selector-class">.inv-tip--top-left</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: <span class="hljs-built_in">calc</span>(-1 * var(--tooltip-arrow-spacing));
+  <span class="hljs-attribute">border-top</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) <span class="hljs-built_in">var</span>(--color-system--dark);
+  <span class="hljs-attribute">border-bottom</span>: solid <span class="hljs-built_in">var</span>(--tooltip-arrow-border) transparent;
+}
+
+<span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">:hover</span> {
+  <span class="hljs-attribute">cursor</span>: default;
+  <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-primary--regular);
+}
+
+<span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">::before</span>,
+<span class="hljs-selector-class">.inv-tip</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">::after</span> {
+  <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">visibility</span>: visible;
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/tip/tip.css"><span>/components/raw/tip/tip.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src/components/tip/tip.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">2.9 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@tip--bottom-right</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(4)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="tip--default.html">
+                    <span>Default</span>
+                </a>, 
+            
+                <a href="">
+                    <span>Bottom Right</span>
+                </a>, 
+            
+                <a href="tip--top-right.html">
+                    <span>Top Right</span>
+                </a>, 
+            
+                <a href="tip--top-left.html">
+                    <span>Top Left</span>
+                </a>
+            
+            </span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/tip--bottom-right.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/tip--bottom-right.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">src/components/tip/tip.hbs</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-912e7d51b871da66d99f5f94b4ad3f25-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <h2 id="tip">Tip</h2>
+<p>Tooltip com texto para auxiliar o usuário com informações relevantes.</p>
+<p>Possui a classe base <code>.inv-tip</code>, deve sempre utilizar uma classe modificadora e de preferência em ícones <code>&lt;i&gt;&lt;/i&gt;</code> ou span  <code>&lt;span&gt;&lt;/span&gt;</code>.</p>
+<h3 id="modificadores">Modificadores</h3>
+<table>
+<thead>
+<tr>
+<th>Modificadores</th>
+<th>Uso</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="#bottom-left"><code>.inv-tip--bottom-left</code></a></td>
+<td>Posiciona o tooltip na parte inferior esquerda</td>
+</tr>
+<tr>
+<td><a href="#bottom-right"><code>.inv-tip--bottom-right</code></a></td>
+<td>Posiciona o tooltip na parte inferior direita</td>
+</tr>
+<tr>
+<td><a href="#top-left"><code>.inv-tip--top-left</code></a></td>
+<td>Posiciona o tooltip na parte superior esquerda</td>
+</tr>
+<tr>
+<td><a href="#top-right"><code>.inv-tip--top-right</code></a></td>
+<td>Posiciona o tooltip na parte superior direita</td>
+</tr>
+</tbody></table>
+<h3 id="bottom-left">Bottom Left</h3>
+<p>Posiciona o tooltip na parte inferior esquerda</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip inv-tip--bottom-left"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Descrição"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></code></pre><h3 id="bottom-right">Bottom Right</h3>
+<p>Posiciona o tooltip na parte inferior direita</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip inv-tip--bottom-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Descrição"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></code></pre><h3 id="top-left">Top Left</h3>
+<p>Posiciona o tooltip na parte superior esquerda</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip inv-tip--top-left"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Descrição"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></code></pre><h3 id="top-right">Top Right</h3>
+<p>Posiciona o tooltip na parte superior direita</p>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons inv-tip inv-tip--top-right"</span> <span class="hljs-attr">data-tooltip</span>=<span class="hljs-string">"Descrição"</span>&gt;</span>
+  info_outline
+<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span></code></pre>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="breadcrumbs.html" data-pjax>
+                <span>Breadcrumbs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button.html" data-pjax>
+                <span>Button</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="checkbox.html" data-pjax>
+                <span>Checkbox</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="clear-input.html" data-pjax>
+                <span>Clear Input</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="content-placeholder.html" data-pjax>
+                <span>Content Placeholder</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-dropdown">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Dropdown</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--open.html" data-pjax>
+                <span>Open</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--action.html" data-pjax>
+                <span>Action</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--counter.html" data-pjax>
+                <span>Counter</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--select.html" data-pjax>
+                <span>Select</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="dropdown--multiselect.html" data-pjax>
+                <span>Multiselect</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-field.html" data-pjax>
+                <span>Form Field</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-field-file.html" data-pjax>
+                <span>Form Field File</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-field-map.html" data-pjax>
+                <span>Form Field Map</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-text.html" data-pjax>
+                <span>Form Text</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form-toggle.html" data-pjax>
+                <span>Form Toggle</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="helper.html" data-pjax>
+                <span>Helper</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input.html" data-pjax>
+                <span>Input</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-addon.html" data-pjax>
+                <span>Input Addon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-file.html" data-pjax>
+                <span>Input File</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-icon.html" data-pjax>
+                <span>Input Icon</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-map.html" data-pjax>
+                <span>Input Map</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="input-progress.html" data-pjax>
+                <span>Input Progress</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="label.html" data-pjax>
+                <span>Label</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="list.html" data-pjax>
+                <span>List</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-menu">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Menu</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--mobile.html" data-pjax>
+                <span>Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--categorie.html" data-pjax>
+                <span>Categorie</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu--open.html" data-pjax>
+                <span>Open</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-menu-search-modal">
+            <h4 class="Tree-collectionLabel" data-role="toggle">
+                <span>Menu Search Modal</span>
+            </h4>
+            <ul class="Tree-collectionItems" data-role="items">
+            
+            
+            
+            
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu-search-modal--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu-search-modal--with-results.html" data-pjax>
+                <span>With Results</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu-search-modal--without-result.html" data-pjax>
+                <span>Without Result</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu-search-modal--with-selected-item.html" data-pjax>
+                <span>With Selected Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="menu-search-modal--scroll.html" data-pjax>
+                <span>Scroll</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+            </ul>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="radial-select.html" data-pjax>
+                <span>Radial Select</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tabs.html" data-pjax>
+                <span>Tabs</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="text-link.html" data-pjax>
+                <span>Text Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tip.html" data-pjax>
+                <span>Tip</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="toggle.html" data-pjax>
+                <span>Toggle</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="typhography.html" data-pjax>
+                <span>Typhography</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="warning.html" data-pjax>
+                <span>Warning</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../index.html" data-pjax>
+                <span>Violin.css</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
+
+
+
+</body>
+</html>

@@ -11,7 +11,7 @@
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.2.1" type="text/css">
 
 
 <title>Button | Violin.css</title>
@@ -87,7 +87,7 @@
                 class="Preview-iframe"
                 data-role="window"
                 src="../preview/button.html"
-                sandbox="allow-same-origin allow-scripts allow-forms"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-modals"
                  style=""
                 marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
             </iframe>
@@ -161,7 +161,7 @@
             <pre><span class="hljs-comment">&lt;!-- Default --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn "</span>&gt;</span>
 
-  Default
+    Default
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -169,7 +169,7 @@
             <pre><span class="hljs-comment">&lt;!-- Disabled --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn "</span> <span class="hljs-attr">disabled</span>&gt;</span>
 
-  Disabled
+    Disabled
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -178,7 +178,7 @@
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--addon"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
 
-  Addon
+    Addon
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -186,7 +186,7 @@
             <pre><span class="hljs-comment">&lt;!-- Primary --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary"</span>&gt;</span>
 
-  Primary
+    Primary
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -194,7 +194,7 @@
             <pre><span class="hljs-comment">&lt;!-- Accent --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent"</span>&gt;</span>
 
-  Accent
+    Accent
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -202,7 +202,7 @@
             <pre><span class="hljs-comment">&lt;!-- Outline Default --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--outline"</span>&gt;</span>
 
-  Outline default
+    Outline default
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -210,7 +210,7 @@
             <pre><span class="hljs-comment">&lt;!-- Outline Primary --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary inv-btn--outline"</span>&gt;</span>
 
-  Outline primary
+    Outline primary
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -218,7 +218,7 @@
             <pre><span class="hljs-comment">&lt;!-- Outline Accent --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent inv-btn--outline"</span>&gt;</span>
 
-  Outline accent
+    Outline accent
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -226,7 +226,7 @@
             <pre><span class="hljs-comment">&lt;!-- Small --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary inv-btn--small"</span>&gt;</span>
 
-  Small
+    Small
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -234,7 +234,15 @@
             <pre><span class="hljs-comment">&lt;!-- Very Large --&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent inv-btn--very-large"</span>&gt;</span>
 
-  Very large
+    Very large
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+</pre>
+        
+            <pre><span class="hljs-comment">&lt;!-- Block --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent inv-btn--very-large inv-btn--block"</span>&gt;</span>
+
+    Block
 <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 
 </pre>
@@ -351,6 +359,15 @@
 
 </pre>
         
+            <pre>
+<span class="hljs-comment">/* Block */</span>
+{
+  <span class="hljs-attr">"name"</span>: <span class="hljs-string">"Block"</span>,
+  <span class="hljs-attr">"modifier"</span>: <span class="hljs-string">"inv-btn--accent inv-btn--very-large inv-btn--block"</span>
+}
+
+</pre>
+        
         
     </code>
 </div>
@@ -366,13 +383,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-1428f4e3026d5073d81d27b74f1ef54f">button.css</option>
+                <option value="file-b973457176105f3607af1cbb279a0962">button.css</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-1428f4e3026d5073d81d27b74f1ef54f" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-b973457176105f3607af1cbb279a0962" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -542,6 +559,11 @@
   <span class="hljs-attribute">margin-right</span>: <span class="hljs-built_in">var</span>(--space-8);
 }
 
+<span class="hljs-selector-class">.inv-btn--block</span> {
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+ 
 <span class="hljs-comment">/*
   DISABLED
 */</span>
@@ -574,7 +596,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.1 KB</span>
+                    <span class="Meta-value">4.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -597,7 +619,7 @@
         
         
         <li class="Meta-item">
-            <strong class="Meta-key">Variants <em class="Meta-count">(10)</em>:</strong>
+            <strong class="Meta-key">Variants <em class="Meta-count">(11)</em>:</strong>
             <span class="Meta-value Meta-value--linkList">
             
                 <a href="button--default.html">
@@ -638,6 +660,10 @@
             
                 <a href="button--very-large.html">
                     <span>Very Large</span>
+                </a>, 
+            
+                <a href="button--block.html">
+                    <span>Block</span>
                 </a>
             
             </span>
@@ -678,16 +704,15 @@
 <p>Tendo a classe base <code>.inv-btn</code>, e podendo ser utilizado em conjunto com <code>&lt;button&gt;</code> e <code>&lt;a&gt;</code></p>
 <h3 id="default-button">Default Button</h3>
 <p>Botão padrão, comum para ações regulares dos usuários, menos “importante” que o primary button.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre></code><table>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre><table>
 <thead>
 <tr>
 <th>Modificadores</th>
 <th>Uso</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td><a href="#addon-button"><code>.inv-button--addon</code></a></td>
 <td>Possibilita utilizar icones com o botão</td>
 </tr>
@@ -711,36 +736,35 @@
 <td><a href="#very-large-button"><code>.inv-button--very-large</code></a></td>
 <td>Torna o botão grande</td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <h3 id="addon-button">Addon Button</h3>
 <p>Versão com icone.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--addon"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--addon"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   Button
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--very-addon"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   Button
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre></code><h3 id="primary-button">Primary Button</h3>
+<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre><h3 id="primary-button">Primary Button</h3>
 <p>Botão primário, comum para ações primárias mais comuns de acordo com a necessidade do usuário.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span></span></pre></code><h3 id="accent-button">Accent Button</h3>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary"</span>&gt;</span>Primary<span class="hljs-tag">&lt;/<span class="hljs-name">button</span></span></code></pre><h3 id="accent-button">Accent Button</h3>
 <p>Botão acentuado, menos utilizado, é o botão de maior foco, para ações extremamente importantes.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent"</span>&gt;</span>Accent<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent"</span>&gt;</span>Accent<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre></code><h3 id="outline-button">Outline Button</h3>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent"</span>&gt;</span>Accent<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--accent"</span>&gt;</span>Accent<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre><h3 id="outline-button">Outline Button</h3>
 <p>Versão outline, com menos destaque.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--outline"</span>&gt;</span>Outline<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--outline"</span>&gt;</span>Outline<span class="hljs-tag">&lt;/<span class="hljs-name">button</span></span></pre></code><h3 id="small-button">Small Button</h3>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--outline"</span>&gt;</span>Outline<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--outline"</span>&gt;</span>Outline<span class="hljs-tag">&lt;/<span class="hljs-name">button</span></span></code></pre><h3 id="small-button">Small Button</h3>
 <p>Versão menor do botão.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--small"</span>&gt;</span>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--small"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
   Button
 <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--small"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre></code><h3 id="very-large-button">Very Large Button</h3>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--small"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre><h3 id="very-large-button">Very Large Button</h3>
 <p>Versão maior do botão.</p>
-<code class="lang-html"><pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--very-large"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--very-large"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre></code>
+<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--very-large"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--very-large"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></code></pre>
         
     </div>
 </div>
@@ -1721,7 +1745,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1851,7 +1875,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.2.1"></script>
 
 
 

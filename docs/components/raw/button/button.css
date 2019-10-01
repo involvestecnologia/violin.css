@@ -160,6 +160,11 @@
   margin-right: var(--space-8);
 }
 
+.inv-btn--block {
+  display: flex;
+  width: 100%;
+}
+ 
 /*
   DISABLED
 */
