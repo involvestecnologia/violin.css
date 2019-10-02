@@ -6,7 +6,7 @@
   --color-system--shadow: rgba(29, 46, 68, 0.25);
   --color-system--dark: #10213e;
   --color-system--regular: #85909f;
-  --color-system--light: #e5e8eb;
+  --color-system--light: #F4F5F6;
   --color-system--white: #fff;
 
   /* GLOBAL */
@@ -16,15 +16,19 @@
   --color-default--dark: #68778c;
   --color-default--regular: #9aa9bc;
   --color-default--light: #ccd4dd;
-  --color-default--white: #f5f6f8;
+  --color-default--white: #E5E8EB;
 
   /* GLOBAL - PRIMARY */
   --color-primary--shadow: rgba(68, 108, 162, 0.25);
-  --color-primary--dark: #446ca2;
-  --color-primary--regular: #5d96e1;
-  --color-primary--light: #aecaf0;
-  --color-primary--white: #eef4fc;
+  --color-primary--dark: #3864B7;
+  --color-primary--regular: #4693F8;
+  --color-primary--light: #C7DFFD;
+  --color-primary--white: #F6FAFF;
 
+  /* GLOBAL - ACID */
+  --color-acid--dark: #5E78FF;
+  --color-acid--regular: #4865FC;
+  
   /* GLOBAL - ACCENT */
   --color-accent--shadow: rgba(163, 62, 71, 0.25);
   --color-accent--dark: #a33e47;
@@ -36,10 +40,10 @@
 
   /* STATUS - ERROR */
   --color-error--shadow: rgba(155, 71, 81, 0.25);
-  --color-error--dark: #9b4751;
-  --color-error--regular: #ee585a;
-  --color-error--light: #f6abac;
-  --color-error--white: #fdeeee;
+  --color-error--dark: #B64458;
+  --color-error--regular: #ED4759;
+  --color-error--light: #F9C2C8;
+  --color-error--white: #FDEDEF;
 
   /* STATUS - ALERT */
   --color-alert--shadow: rgba(155, 142, 81, 0.25);
@@ -57,10 +61,10 @@
 
   /* STATUS - DONE */
   --color-done--shadow: rgba(58, 146, 97, 0.25);
-  --color-done--dark: #3a9261;
-  --color-done--regular: #4cd575;
-  --color-done--light: #a5eaba;
-  --color-done--white: #edfbf1;
+  --color-done--dark: #219B81;
+  --color-done--regular: #27C499;
+  --color-done--light: #B3EADB;
+  --color-done--white: #E9F9F5;
 
   /* STATUS - CANCEL */
   --color-cancel--shadow: rgba(139, 152, 166, 0.25);

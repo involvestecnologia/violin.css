@@ -12,19 +12,18 @@
   background-color: var(--color-default--regular);
   border: none;
   border-radius: 4px;
-  box-shadow: var(--shadow-8) var(--color-default--shadow);
   color: var(--color-system--white);
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
   font-weight: bold;
-  min-height: 40px;
-  outline: 0;
+  height: 40px;
+  outline: none;
   padding-left: var(--space-16);
   padding-right: var(--space-16);
-  transition: 0.2s box-shadow, 0.2s background-color;
+  transition: 0.2s box-shadow, 0.2s background-color, 0.2s color;
 }
 
 .inv-btn:hover {
@@ -43,7 +42,6 @@
 /* PRIMARY */
 .inv-btn--primary {
   background-color: var(--color-primary--regular);
-  box-shadow: var(--shadow-8) var(--color-primary--shadow);
 }
 
 .inv-btn--primary:hover {
@@ -58,7 +56,6 @@
 /* ACCENT */
 .inv-btn--accent {
   background-color: var(--color-accent--regular);
-  box-shadow: var(--shadow-8) var(--color-accent--shadow);
 }
 
 .inv-btn--accent:hover {
@@ -80,12 +77,14 @@
 
 .inv-btn--outline:hover {
   background-color: var(--color-system--white);
+  box-shadow: var(--shadow-12) var(--color-default--shadow);
 }
 
 .inv-btn--outline:active {
   background-color: var(--color-system--white);
   border-color: var(--color-default--dark);
   color: var(--color-default--dark);
+  box-shadow: var(--shadow-3) var(--color-default--shadow);
 }
 
 /* OUTLINE PRIMARY */
@@ -125,13 +124,13 @@
 */
 
 .inv-btn--small {
-  min-height: 32px;
+  height: 32px;
 }
 
 .inv-btn--very-large {
   min-width: 288px;
-  min-height: 60px;
-  border-radius: 8px;
+  height: 60px;
+  border-radius: 4px;
   font-size: 18px;
 }
 

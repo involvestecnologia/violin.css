@@ -157,10 +157,12 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-402fa53879d8043ceee3f64232c0476e-panel-html">
     <code class="Code Code--lang-html">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary inv-btn--outline"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin: 10px"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn inv-btn--primary inv-btn--outline"</span>&gt;</span>
 
-    Outline primary
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></pre>
+        Outline primary
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -168,13 +170,15 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-402fa53879d8043ceee3f64232c0476e-panel-view">
     <code class="Code Code--lang-handlebars">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn </span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> </span></span><span class="hljs-template-variable">{{ternary disabled "disabled" "" }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
-  </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> icon}}</span><span class="xml">
-    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-  </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">style</span>=<span class="hljs-string">"margin: 10px"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-btn </span></span></span><span class="hljs-template-variable">{{ modifier }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> </span></span><span class="hljs-template-variable">{{ternary disabled "disabled" "" }}</span><span class="xml"><span class="hljs-tag">&gt;</span>
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> icon}}</span><span class="xml">
+      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"material-icons"</span>&gt;</span>mode_edit<span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 
-  </span><span class="hljs-template-variable">{{ name }}</span><span class="xml">
-<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span></span></pre>
+    </span><span class="hljs-template-variable">{{ name }}</span><span class="xml">
+  <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
 
@@ -231,19 +235,18 @@
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-default--regular);
   <span class="hljs-attribute">border</span>: none;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-8) <span class="hljs-built_in">var</span>(--color-default--shadow);
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">cursor</span>: pointer;
-  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">display</span>: inline-flex;
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">align-items</span>: center;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
   <span class="hljs-attribute">font-weight</span>: bold;
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">outline</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+  <span class="hljs-attribute">outline</span>: none;
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-built_in">var</span>(--space-16);
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-built_in">var</span>(--space-16);
-  <span class="hljs-attribute">transition</span>: <span class="hljs-number">0.2s</span> box-shadow, <span class="hljs-number">0.2s</span> background-color;
+  <span class="hljs-attribute">transition</span>: <span class="hljs-number">0.2s</span> box-shadow, <span class="hljs-number">0.2s</span> background-color, <span class="hljs-number">0.2s</span> color;
 }
 
 <span class="hljs-selector-class">.inv-btn</span><span class="hljs-selector-pseudo">:hover</span> {
@@ -262,7 +265,6 @@
 <span class="hljs-comment">/* PRIMARY */</span>
 <span class="hljs-selector-class">.inv-btn--primary</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-primary--regular);
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-8) <span class="hljs-built_in">var</span>(--color-primary--shadow);
 }
 
 <span class="hljs-selector-class">.inv-btn--primary</span><span class="hljs-selector-pseudo">:hover</span> {
@@ -277,7 +279,6 @@
 <span class="hljs-comment">/* ACCENT */</span>
 <span class="hljs-selector-class">.inv-btn--accent</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-accent--regular);
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-8) <span class="hljs-built_in">var</span>(--color-accent--shadow);
 }
 
 <span class="hljs-selector-class">.inv-btn--accent</span><span class="hljs-selector-pseudo">:hover</span> {
@@ -299,12 +300,14 @@
 
 <span class="hljs-selector-class">.inv-btn--outline</span><span class="hljs-selector-pseudo">:hover</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-12) <span class="hljs-built_in">var</span>(--color-default--shadow);
 }
 
 <span class="hljs-selector-class">.inv-btn--outline</span><span class="hljs-selector-pseudo">:active</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--color-system--white);
   <span class="hljs-attribute">border-color</span>: <span class="hljs-built_in">var</span>(--color-default--dark);
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--dark);
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-built_in">var</span>(--shadow-3) <span class="hljs-built_in">var</span>(--color-default--shadow);
 }
 
 <span class="hljs-comment">/* OUTLINE PRIMARY */</span>
@@ -344,13 +347,13 @@
 */</span>
 
 <span class="hljs-selector-class">.inv-btn--small</span> {
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">32px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
 }
 
 <span class="hljs-selector-class">.inv-btn--very-large</span> {
   <span class="hljs-attribute">min-width</span>: <span class="hljs-number">288px</span>;
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">60px</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">8px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
 }
 
@@ -416,7 +419,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.2 KB</span>
+                    <span class="Meta-value">4.1 KB</span>
                 </li>
             </ul>
         </div>
