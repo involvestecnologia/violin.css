@@ -159,7 +159,7 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label inv-label--disabled"</span>&gt;</span>
     Senha Genérica
-    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>- desabilitado<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span>- desabilitado<span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></pre>
         
     </code>
@@ -170,7 +170,7 @@
     <code class="Code Code--lang-handlebars">
         <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"</span></span></span><span class="hljs-template-variable">{{label.for}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"inv-label </span></span></span><span class="hljs-template-variable">{{label.modifier}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">"</span>&gt;</span>
   </span><span class="hljs-template-variable">{{label.value}}</span><span class="xml">
-  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span></span><span class="hljs-template-variable">{{label.posfix}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">small</span>&gt;</span></span><span class="hljs-template-variable">{{label.posfix}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">small</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -218,9 +218,10 @@
                             
                             <code class="Code Code--lang-CSS FileBrowser-code">
                                 <pre><span class="hljs-selector-class">.inv-label</span> {
+  <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-system--dark);
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
-  <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">600</span>;
+  <span class="hljs-attribute">font-weight</span>: bold;
   <span class="hljs-attribute">text-align</span>: left;
   <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">3px</span>;
 }
@@ -230,7 +231,7 @@
   <span class="hljs-attribute">cursor</span>: not-allowed;
 }
 
-<span class="hljs-selector-class">.inv-label</span> &gt; <span class="hljs-selector-tag">span</span> {
+<span class="hljs-selector-class">.inv-label</span> &gt; <span class="hljs-selector-tag">small</span> {
   <span class="hljs-attribute">color</span>: <span class="hljs-built_in">var</span>(--color-default--regular);
   <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
   <span class="hljs-attribute">font-style</span>: italic;
@@ -251,7 +252,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">326 Bytes</span>
+                    <span class="Meta-value">353 Bytes</span>
                 </li>
             </ul>
         </div>
